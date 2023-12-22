@@ -1,23 +1,27 @@
-import { HeartFilledIcon, MagicWandIcon } from "@radix-ui/react-icons";
+import { ExclamationTriangleIcon } from "@heroicons/react/16/solid";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <div className="flex bg-background text-foreground h-full flex-col items-center">
-      <div className="flex gap-2 justify-center items-center w-full h-60 flex-row">
-        <h1 className="text-7xl font-bold">
-          <span className="text-primary">S</span>kattjakt
-          <span className="text-primary">.gg</span>
-        </h1>
-      </div>
-      <div className="flex h-full items-center">
-        <div className="bg-primary/20 flex items-center py-4 px-8 rounded-lg">
-          <p className="text-primary">Under construction</p>
-          <MagicWandIcon className="ml-4 w-5 h-5 text-primary" />
+      <div className="flex gap-2 justify-center items-center w-full h-full flex-col">
+        <div className="py-4 w-full flex justify-center">
+          <Image
+            src={"/skattjakt-logo.png"}
+            alt="Skattjakt Logo"
+            width={64}
+            height={64}
+          />
+        </div>
+        <div className="px-16 w-full flex justify-center py-4">
+          <h1 className="text-7xl font-bold">Skattjakt</h1>
         </div>
       </div>
-      <div className="flex gap-2 justify-center items-center w-full h-60 bg-card flex-row">
-        <p>Made with love by Darkly</p>
-        <HeartFilledIcon className="text-primary w-6 h-6" />
+      <div className="flex h-full items-center">
+        <div className="bg-rose-950 flex items-center py-4 px-8 rounded-lg gap-2">
+          <ExclamationTriangleIcon width={16} className="fill-rose-300" />
+          <p className="text-rose-300">Under development</p>
+        </div>
       </div>
     </div>
   );
