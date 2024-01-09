@@ -1,7 +1,7 @@
 import { create } from 'zustand'
-import { createSpinSlice } from './spinSlice'
-import { spinSlice } from './spinSlice'
+import { createItemsSlice } from './itemsSlice'
+import { itemsSlice } from './itemsSlice'
 
-export const useBoundStore = create<spinSlice>()((...a) => ({
-    ...createSpinSlice(...a)
+export const useBoundStore = create<itemsSlice>()((...a) => ({
+    ...createItemsSlice(...a)
 }))

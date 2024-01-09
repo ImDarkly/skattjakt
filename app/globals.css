@@ -31,7 +31,7 @@
     --foreground: 0 0% 95%;
     --card: 24 9.8% 10%;
     --card-foreground: 0 0% 95%;
-    --popover: 0 0% 9%;
+    --popover: 24 10% 10%;
     --popover-foreground: 0 0% 95%;
     --primary: 350 89% 60%;
     --primary-foreground: 356 100% 97%;
@@ -58,8 +58,13 @@
   }
 }
 
+html {
+  height: 100svh;
+  user-select: none;
+}
 body {
-  height: 100dvh;
+  height: 100svh;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   -webkit-tap-highlight-color: transparent;

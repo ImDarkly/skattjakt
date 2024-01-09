@@ -4,7 +4,7 @@ import SkattjaktLogo from "@/assets/skattjakt-logo.svg";
 
 export const Topbar = () => {
   return (
-    <div className="sticky top-0 w-full">
+    <div className="sticky top-0 w-full z-10">
       <div className="flex h-20 w-full py-3 px-4 bg-background/80 backdrop-blur-xl items-center">
         <div>
           <Link href={"/generator"} className="w-full">
