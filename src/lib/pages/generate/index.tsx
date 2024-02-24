@@ -18,6 +18,7 @@ export default function Generate() {
   const setCard = useBoundStore().generateCard;
   const { card } = useBoundStore();
   const [spinning, setSpinning] = useState(false);
+  const basePath = import.meta.env.BASE_URL;
   const cardLink =
     card.length === 25
       ? Array.from(
@@ -82,7 +83,7 @@ export default function Generate() {
           <BingoCard disabled />
           <div className="flex h-12 w-full flex-row items-center justify-end gap-2">
             <div className="w-full">
-              <Link className="w-full" to={`/card?${cardLink}`}>
+              <Link className="w-full" to={`${basePath}card?${cardLink}`}>
                 <Button className="w-full" variant="secondary">
                   <Icon
                     width={24}
