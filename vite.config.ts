@@ -9,14 +9,15 @@ import type { VitePWAOptions } from 'vite-plugin-pwa';
 import { VitePWA } from 'vite-plugin-pwa';
 import tsConfigPaths from 'vite-tsconfig-paths';
 import svgr from 'vite-plugin-svgr';
+const isProduction = process.env.NODE_ENV === "production";
 
 const pwaOptions: Partial<VitePWAOptions> = {
   registerType: 'autoUpdate',
   manifest: {
-    short_name: 'vite-react-tailwind-starter',
-    name: 'Vite React App Template',
+    short_name: 'skattjakt',
+    name: 'Skattjakt',
     lang: 'en',
-    start_url: '/',
+    start_url: isProduction ? "/skattjakt/" : "",
     background_color: '#0c0a09',
     theme_color: '#0c0a09',
     dir: 'ltr',
@@ -52,4 +53,5 @@ export default defineConfig({
   define: {
     APP_VERSION: JSON.stringify(process.env.npm_package_version),
   },
+  base: isProduction ? "/skattjakt/" : "",
 });
