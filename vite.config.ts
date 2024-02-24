@@ -17,7 +17,7 @@ const pwaOptions: Partial<VitePWAOptions> = {
     short_name: 'skattjakt',
     name: 'Skattjakt',
     lang: 'en',
-    start_url: isProduction ? "/skattjakt/" : "/",
+    start_url: "/skattjakt/",
     background_color: '#0c0a09',
     theme_color: '#0c0a09',
     dir: 'ltr',
