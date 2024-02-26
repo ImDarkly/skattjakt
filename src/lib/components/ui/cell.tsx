@@ -28,7 +28,7 @@ export const Cell = ({
       role="button"
       tabIndex={0}
       className={`group/cell relative ${
-        disabled ? '' : 'cursor-pointer'
+        disabled ? 'cursor-default' : 'cursor-pointer'
       } bg-se flex items-center justify-center overflow-hidden break-words rounded-[8px] transition-all`}
     >
       <div

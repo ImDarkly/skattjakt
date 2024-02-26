@@ -8,6 +8,8 @@ import {
   TooltipTrigger,
 } from './ui/tooltip';
 
+const isProduction = process.env.NODE_ENV === 'production';
+
 const version = APP_VERSION;
 export const Footer = () => {
   return (
@@ -18,14 +20,17 @@ export const Footer = () => {
           <TooltipTrigger asChild>
             <Icon
               icon="heroicons:heart-16-solid"
-              className="text-2xl text-primary"
+              className="light:hover:drop-shadow-[0px_0px_8px_rgba(244,63,94,1)] text-2xl text-primary transition-all duration-500 hover:drop-shadow-[0px_0px_8px_rgba(225,29,72,1)]"
             />
           </TooltipTrigger>
           <TooltipContent
             className="bg-primary text-primary-foreground"
             side="top"
           >
-            <p>Version @{version}</p>
+            <p>
+              Version @{version}
+              {isProduction ? '' : 'dev'}
+            </p>
           </TooltipContent>
         </Tooltip>
       </TooltipProvider>
@@ -35,7 +40,7 @@ export const Footer = () => {
           <TooltipTrigger asChild>
             <Link
               to="https://github.com/ImDarkly"
-              className="font-bold underline hover:text-primary"
+              className="font-bold text-primary hover:text-primary/90"
             >
               ImDarkly
             </Link>
