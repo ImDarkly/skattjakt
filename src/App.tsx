@@ -4,7 +4,7 @@ import Layout from '@/lib/layout';
 import Routings from '@/lib/router/Routings';
 
 const App = () => (
-  <Router>
+  <Router basename="/skattjakt">
     <Layout>
       <Routings />
     </Layout>
