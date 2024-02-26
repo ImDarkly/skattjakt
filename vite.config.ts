@@ -17,7 +17,7 @@ const pwaOptions: Partial<VitePWAOptions> = {
     short_name: 'skattjakt',
     name: 'Skattjakt',
     lang: 'en',
-    start_url: "/skattjakt/",
+    start_url: isProduction ? "/skattjakt/" : "",
     background_color: '#0c0a09',
     theme_color: '#0c0a09',
     dir: 'ltr',
@@ -53,5 +53,5 @@ export default defineConfig({
   define: {
     APP_VERSION: JSON.stringify(process.env.npm_package_version),
   },
-  base: "/skattjakt/",
+  base: isProduction ? "/skattjakt/" : "",
 });
