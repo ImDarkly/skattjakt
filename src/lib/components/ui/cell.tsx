@@ -29,12 +29,10 @@ export const Cell = ({
       tabIndex={0}
       className={`group/cell relative ${
         disabled ? 'cursor-default' : 'cursor-pointer'
-      } bg-se flex items-center justify-center overflow-hidden break-words rounded-[8px] transition-all`}
+      }  flex items-center justify-center overflow-hidden break-words rounded-[8px] transition-all`}
     >
       <div
-        className={`h-full w-full bg-secondary p-3 ${
-          checked ? 'opacity-30' : ''
-        }`}
+        className={`h-full w-full bg-card p-3 ${checked ? 'opacity-30' : ''}`}
       >
         <img
           src={`./items/${tag}.png`}

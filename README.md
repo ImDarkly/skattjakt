@@ -1,42 +1,55 @@
-<img src="https://og.sznm.dev/api/generate?heading=vite-react-tailwind-starter&text=React+vite+template+with+TailwindCSS+and+TypeScript+setup.&template=color&center=true&height=330" />
+# Skattjakt
 
-This is a project bootstrapped with [`@vitejs/app`](https://vitejs.dev/guide/#scaffolding-your-first-vite-project) (`react-ts`), added with [TailwindCSS](https://tailwindcss.com) and [TypeScript](https://www.typescriptlang.org) setup.
+An open source Minecraft bingo generator.
 
-- ⚡ blazing fast dev server and build
-- 🔗 route management added (`react-router-dom` configured)
+> **Warning**
+> Skattjakt is not affiliated with Mojang.
+> See the roadmap below.
 
-[**Live Demo**](https://vite-react-tailwind-starter.sznm.dev/)
+## About this project
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/git?s=https://github.com/sozonome/vite-react-tailwind-starter) [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/sozonome/vite-react-tailwind-starter)
+This project was created for you to give possibility to generate bingo card for every world you want without any restrictions.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/sozonome/vite-react-tailwind-starter)
+## Features
 
-## Getting Started
+- Сard generating
+- Card sharing
+- Dark/light mode
+- UI Components built using **shadcn/ui**
+- Styled using **Tailwind CSS**
+- Written in **TypeScript**
+- State management **Zustand**
+- Developed with **React**
+- Utilizes **Vite** for fast development
+- Implements **React Router** for navigation
 
-You can either click [`Use this template`](https://github.com/sozonome/vite-react-tailwind-starter/generate) button on this repository and clone the repo or use npx degit like so:
+## Roadmap
 
-```bash
-npx degit sozonome/vite-react-tailwind-starter <app_name>
+- [ ] Loading UI for entire application
+- [ ] Merge _generate_ and _card_ pages together
+- [ ] Landing page
+- [ ] Card saving
+- [ ] Updated UI
+- [ ] Card renaming
+- [ ] Locking items in generator
+- [ ] Filter items in generator
+
+## Known Issues
+
+## Running Locally
+
+1. Install dependencies using pnpm:
+
+```sh
+pnpm install
 ```
 
-```
-pnpm i
-```
+2. Start the development server:
 
-Then, run the development server:
-
-```bash
+```sh
 pnpm dev
 ```
 
-## Deployment
+## License
 
-- build command: `pnpm build`
-- output directory: `dist`
-
-## References
-
-- [vite](https://vitejs.dev)
-  - [avoid manual import](https://vitejs.dev/guide/features.html#jsx)
-- [TailwindCSS](https://tailwindcss.com/)
-- [TypeScript](https://www.typescriptlang.org)
+Licensed under the [MIT license](https://github.com/ImDarkly/skattjakt/blob/main/LICENSE).

@@ -60,7 +60,7 @@ export default function Card() {
         </div>
         <div className="flex w-full items-center justify-center">
           <h1 className="w-full px-2 text-center text-2xl font-bold">
-            Skattjakt
+            <Link to="https://github.com/ImDarkly/skattjakt">Skattjakt</Link>
           </h1>
         </div>
         <div>
