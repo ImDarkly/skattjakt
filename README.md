@@ -17,7 +17,7 @@ This project was created for you to give possibility to generate bingo card for 
 - UI Components built using **shadcn/ui**
 - Styled using **Tailwind CSS**
 - Written in **TypeScript**
-- State management **Zustand**
+- State management with **Zustand**
 - Developed with **React**
 - Utilizes **Vite** for fast development
 - Implements **React Router** for navigation
