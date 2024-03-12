@@ -4,7 +4,6 @@ An open source Minecraft bingo generator.
 
 > **Warning**
 > Skattjakt is not affiliated with Mojang.
-> See the roadmap below.
 
 ## About this project
 
