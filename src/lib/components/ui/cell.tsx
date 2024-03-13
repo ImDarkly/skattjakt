@@ -41,7 +41,7 @@ export const Cell = ({
           height={16}
           className="w-full transition-transform group-hover/cell:scale-0"
         />
-        <div className="invisible absolute left-2/4 top-2/4 flex h-full w-full -translate-x-2/4 -translate-y-2/4 transform items-center justify-center break-words bg-secondary text-center opacity-0 transition-opacity group-hover/cell:visible group-hover/cell:opacity-100">
+        <div className="invisible absolute left-2/4 top-2/4 flex h-full w-full -translate-x-2/4 -translate-y-2/4 transform items-center justify-center break-words bg-card text-center opacity-0 group-hover/cell:visible group-hover/cell:opacity-100">
           <p
             key={id}
             className="flex h-full w-full items-center justify-center p-1 text-xs text-secondary-foreground md:text-sm xl:text-base"
@@ -53,7 +53,7 @@ export const Cell = ({
       <div
         className={`${
           checked ? 'visible opacity-100' : 'invisible opacity-0'
-        } absolute left-2/4 top-2/4 flex h-full w-full -translate-x-2/4 -translate-y-2/4 transform items-center justify-center transition-all`}
+        } absolute left-2/4 top-2/4 flex h-full w-full -translate-x-2/4 -translate-y-2/4 transform items-center justify-center`}
       >
         <p
           key={id}

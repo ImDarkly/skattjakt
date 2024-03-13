@@ -7,7 +7,7 @@ An open source Minecraft bingo generator.
 
 ## About this project
 
-This project was created for you to give possibility to generate bingo card for every world you want without any restrictions.
+This project was designed to provide you with the capability to generate bingo card for every world you want without any limitations.
 
 ## Features
 
