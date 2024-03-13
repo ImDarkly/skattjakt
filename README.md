@@ -12,7 +12,6 @@ This project was designed to provide you with the capability to generate bingo c
 ## Features
 
 - Сard generating
-- Card sharing
 - Dark/light mode
 - UI Components built using **shadcn/ui**
 - Styled using **Tailwind CSS**
@@ -32,8 +31,11 @@ This project was designed to provide you with the capability to generate bingo c
 - [ ] Card renaming
 - [ ] Locking items in generator
 - [ ] Filter items in generator
+- [ ] Card sharing
 
 ## Known Issues
+
+1. React router hashrouter is not rendering app
 
 ## Running Locally
 

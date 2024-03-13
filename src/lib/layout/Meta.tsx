@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet';
 
-const APP_NAME = 'vite-react-tailwind-starter';
+const APP_NAME = 'Skattjakt';
 
 const Meta = () => {
   return (
