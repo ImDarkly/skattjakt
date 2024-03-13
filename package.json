@@ -4,6 +4,7 @@
   "private": false,
   "author": "imdarkly",
   "type": "module",
+  "homepage": "https://imdarkly.github.io/skattjakt",
   "packageManager": "pnpm@8.15.1",
   "scripts": {
     "dev": "vite",
