@@ -13,6 +13,7 @@ This project was designed to provide you with the capability to generate bingo c
 
 - Сard generating
 - Dark/light mode
+- Sharing cards to other users
 - UI Components built using **shadcn/ui**
 - Styled using **Tailwind CSS**
 - Written in **TypeScript**
@@ -21,21 +22,7 @@ This project was designed to provide you with the capability to generate bingo c
 - Utilizes **Vite** for fast development
 - Implements **React Router** for navigation
 
-## Roadmap
-
-- [ ] Loading UI for entire application
-- [ ] Merge _generate_ and _card_ pages together
-- [ ] Landing page
-- [ ] Card saving
-- [ ] Updated UI
-- [ ] Card renaming
-- [ ] Locking items in generator
-- [ ] Filter items in generator
-- [ ] Card sharing
-
 ## Known Issues
-
-1. React router hashrouter is not rendering app
 
 ## Running Locally
 
