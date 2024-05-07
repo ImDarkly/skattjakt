@@ -15,7 +15,7 @@ const Layout = ({ children }: LayoutProps) => {
   return (
     <ThemeProvider>
       <Meta />
-      <main className={`${isProduction ? 'select-none' : ''} wrapper`}>
+      <main className={`${isProduction ? '' : 'select-none'} wrapper`}>
         {children}
       </main>
       <Toaster />

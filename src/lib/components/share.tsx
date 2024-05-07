@@ -19,21 +19,21 @@ import { Label } from './ui/label';
 import { Switch } from './ui/switch';
 
 export const Share = () => {
-  const [hideControls, setHideControls] = useState(false);
+  const [showControls, setShowControls] = useState(false);
   const pageUrl = window.location.href;
   const [shareUrl, setShareUrl] = useState(`${pageUrl}`);
   const { toast } = useToast();
 
   useEffect(() => {
     const updateShareUrl = (controlsHidden: boolean) => {
-      setShareUrl(`${pageUrl}${controlsHidden ? '&hide-controls' : ''}`);
+      setShareUrl(`${pageUrl}${controlsHidden ? '' : '&show-controls'}`);
     };
 
-    updateShareUrl(hideControls);
-  }, [hideControls, pageUrl]);
+    updateShareUrl(showControls);
+  }, [showControls, pageUrl]);
 
   const handleControlsChange = () => {
-    setHideControls((prevHideControls) => !prevHideControls);
+    setShowControls((prevShowControls) => !prevShowControls);
   };
 
   const handleCopyClick = () => {
@@ -47,7 +47,7 @@ export const Share = () => {
     <div className="w-full">
       <Dialog>
         <DialogTrigger asChild className="w-full">
-          <Button className="w-full">
+          <Button variant="secondary" className="w-full">
             <Icon width={24} icon="heroicons:share-16-solid" />
             Share
           </Button>
@@ -59,11 +59,11 @@ export const Share = () => {
               <div className="flex flex-col gap-2">
                 <Input value={shareUrl} readOnly />
                 <div className="flex h-12 items-center justify-between space-x-2">
-                  <Label htmlFor="hide-controls">Hide controls</Label>
+                  <Label htmlFor="show-controls">Show controls</Label>
                   <Switch
-                    id="hide-controls"
+                    id="show-controls"
                     onCheckedChange={handleControlsChange}
-                    checked={hideControls}
+                    checked={showControls}
                   />
                 </div>
               </div>
