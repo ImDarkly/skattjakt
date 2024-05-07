@@ -5,14 +5,14 @@ import * as React from 'react';
 import { cn } from '@/lib/styles/utils';
 
 const buttonVariants = cva(
-  'inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors transition-transform focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring active:scale-95 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50',
+  'style-preserve relative inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors transition-transform focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50',
   {
     variants: {
       variant: {
         default:
-          'bg-primary text-primary-foreground shadow hover:bg-primary/90 hover:text-primary-foreground/80',
+          'translate-3d bg-primary text-primary-foreground ring-2 ring-inset ring-rose-400 after:absolute after:h-full after:w-full after:rounded-md after:bg-primary after:transition-transform active:translate-y-1',
         secondary:
-          'bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/90 hover:text-secondary-foreground/80',
+          'translate-3d bg-secondary text-secondary-foreground ring-2 ring-inset ring-stone-300 after:absolute after:h-full after:w-full after:rounded-md after:bg-stone-200 after:transition-transform active:translate-y-1 dark:ring-stone-700 dark:after:bg-stone-800',
         destructive:
           'bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/80',
         outline:

@@ -12,5 +12,9 @@ export default {
       sans: ['"Plus Jakarta Sans"', ...fontFamily.sans],
     },
   },
-  plugins: [tailwindTypography, addDynamicIconSelectors()],
+  plugins: [
+    require('tailwindcss-3d'),
+    tailwindTypography, 
+    addDynamicIconSelectors(),
+  ],
 } satisfies Config;
