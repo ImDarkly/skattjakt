@@ -465,26 +465,6 @@
     "name": "Black Wool"
   },
   {
-    "id": 93,
-    "tag": "blackstone",
-    "name": "Blackstone"
-  },
-  {
-    "id": 94,
-    "tag": "blackstone_slab",
-    "name": "Blackstone Slab"
-  },
-  {
-    "id": 95,
-    "tag": "blackstone_stairs",
-    "name": "Blackstone Stairs"
-  },
-  {
-    "id": 96,
-    "tag": "blackstone_wall",
-    "name": "Blackstone Wall"
-  },
-  {
     "id": 97,
     "tag": "blast_furnace",
     "name": "Blast Furnace"
@@ -605,21 +585,6 @@
     "name": "Bowl"
   },
   {
-    "id": 121,
-    "tag": "brain_coral",
-    "name": "Brain Coral"
-  },
-  {
-    "id": 122,
-    "tag": "brain_coral_block",
-    "name": "Brain Coral Block"
-  },
-  {
-    "id": 123,
-    "tag": "brain_coral_fan",
-    "name": "Brain Coral Fan"
-  },
-  {
     "id": 124,
     "tag": "bread",
     "name": "Bread"
@@ -730,21 +695,6 @@
     "name": "Brush"
   },
   {
-    "id": 146,
-    "tag": "bubble_coral",
-    "name": "Bubble Coral"
-  },
-  {
-    "id": 147,
-    "tag": "bubble_coral_block",
-    "name": "Bubble Coral Block"
-  },
-  {
-    "id": 148,
-    "tag": "bubble_coral_fan",
-    "name": "Bubble Coral Fan"
-  },
-  {
     "id": 149,
     "tag": "bucket",
     "name": "Bucket"
@@ -773,11 +723,6 @@
     "id": 154,
     "tag": "calcite",
     "name": "Calcite"
-  },
-  {
-    "id": 155,
-    "tag": "calibrated_sculk_sensor",
-    "name": "Calibrated Sculk Sensor"
   },
   {
     "id": 156,
@@ -933,16 +878,6 @@
     "id": 186,
     "tag": "chiseled_deepslate",
     "name": "Chiseled Deepslate"
-  },
-  {
-    "id": 187,
-    "tag": "chiseled_nether_bricks",
-    "name": "Chiseled Nether Bricks"
-  },
-  {
-    "id": 188,
-    "tag": "chiseled_polished_blackstone",
-    "name": "Chiseled Polished Blackstone"
   },
   {
     "id": 189,
@@ -1158,16 +1093,6 @@
     "id": 231,
     "tag": "cracked_deepslate_tiles",
     "name": "Cracked Deepslate Tiles"
-  },
-  {
-    "id": 232,
-    "tag": "cracked_nether_bricks",
-    "name": "Cracked Nether Bricks"
-  },
-  {
-    "id": 233,
-    "tag": "cracked_polished_blackstone_bricks",
-    "name": "Cracked Polished Blackstone Bricks"
   },
   {
     "id": 234,
@@ -1475,89 +1400,9 @@
     "name": "Daylight Detector"
   },
   {
-    "id": 295,
-    "tag": "dead_brain_coral",
-    "name": "Dead Brain Coral"
-  },
-  {
-    "id": 296,
-    "tag": "dead_brain_coral_block",
-    "name": "Dead Brain Coral Block"
-  },
-  {
-    "id": 297,
-    "tag": "dead_brain_coral_fan",
-    "name": "Dead Brain Coral Fan"
-  },
-  {
-    "id": 298,
-    "tag": "dead_bubble_coral",
-    "name": "Dead Bubble Coral"
-  },
-  {
-    "id": 299,
-    "tag": "dead_bubble_coral_block",
-    "name": "Dead Bubble Coral Block"
-  },
-  {
-    "id": 300,
-    "tag": "dead_bubble_coral_fan",
-    "name": "Dead Bubble Coral Fan"
-  },
-  {
     "id": 301,
     "tag": "dead_bush",
     "name": "Dead Bush"
-  },
-  {
-    "id": 302,
-    "tag": "dead_fire_coral",
-    "name": "Dead Fire Coral"
-  },
-  {
-    "id": 303,
-    "tag": "dead_fire_coral_block",
-    "name": "Dead Fire Coral Block"
-  },
-  {
-    "id": 304,
-    "tag": "dead_fire_coral_fan",
-    "name": "Dead Fire Coral Fan"
-  },
-  {
-    "id": 305,
-    "tag": "dead_horn_coral",
-    "name": "Dead Horn Coral"
-  },
-  {
-    "id": 306,
-    "tag": "dead_horn_coral_block",
-    "name": "Dead Horn Coral Block"
-  },
-  {
-    "id": 307,
-    "tag": "dead_horn_coral_fan",
-    "name": "Dead Horn Coral Fan"
-  },
-  {
-    "id": 308,
-    "tag": "dead_tube_coral",
-    "name": "Dead Tube Coral"
-  },
-  {
-    "id": 309,
-    "tag": "dead_tube_coral_block",
-    "name": "Dead Tube Coral Block"
-  },
-  {
-    "id": 310,
-    "tag": "dead_tube_coral_fan",
-    "name": "Dead Tube Coral Fan"
-  },
-  {
-    "id": 311,
-    "tag": "debug_stick",
-    "name": "Debug Stick"
   },
   {
     "id": 312,
@@ -1860,21 +1705,6 @@
     "name": "Fire Charge"
   },
   {
-    "id": 372,
-    "tag": "fire_coral",
-    "name": "Fire Coral"
-  },
-  {
-    "id": 373,
-    "tag": "fire_coral_block",
-    "name": "Fire Coral Block"
-  },
-  {
-    "id": 374,
-    "tag": "fire_coral_fan",
-    "name": "Fire Coral Fan"
-  },
-  {
     "id": 375,
     "tag": "firework_rocket",
     "name": "Firework Rocket"
@@ -1933,11 +1763,6 @@
     "id": 386,
     "tag": "ghast_tear",
     "name": "Ghast Tear"
-  },
-  {
-    "id": 387,
-    "tag": "gilded_blackstone",
-    "name": "Gilded Blackstone"
   },
   {
     "id": 388,
@@ -2283,21 +2108,6 @@
     "id": 456,
     "tag": "hopper_minecart",
     "name": "Hopper Minecart"
-  },
-  {
-    "id": 457,
-    "tag": "horn_coral",
-    "name": "Horn Coral"
-  },
-  {
-    "id": 458,
-    "tag": "horn_coral_block",
-    "name": "Horn Coral Block"
-  },
-  {
-    "id": 459,
-    "tag": "horn_coral_fan",
-    "name": "Horn Coral Fan"
   },
   {
     "id": 460,
@@ -2795,11 +2605,6 @@
     "name": "Lime Wool"
   },
   {
-    "id": 559,
-    "tag": "lingering_potion",
-    "name": "Lingering Potion"
-  },
-  {
     "id": 560,
     "tag": "lodestone",
     "name": "Lodestone"
@@ -3113,131 +2918,6 @@
     "id": 622,
     "tag": "nautilus_shell",
     "name": "Nautilus Shell"
-  },
-  {
-    "id": 623,
-    "tag": "nether_brick",
-    "name": "Nether Brick"
-  },
-  {
-    "id": 624,
-    "tag": "nether_brick_fence",
-    "name": "Nether Brick Fence"
-  },
-  {
-    "id": 625,
-    "tag": "nether_brick_slab",
-    "name": "Nether Brick Slab"
-  },
-  {
-    "id": 626,
-    "tag": "nether_brick_stairs",
-    "name": "Nether Brick Stairs"
-  },
-  {
-    "id": 627,
-    "tag": "nether_brick_wall",
-    "name": "Nether Brick Wall"
-  },
-  {
-    "id": 628,
-    "tag": "nether_bricks",
-    "name": "Nether Bricks"
-  },
-  {
-    "id": 629,
-    "tag": "nether_gold_ore",
-    "name": "Nether Gold Ore"
-  },
-  {
-    "id": 630,
-    "tag": "nether_quartz_ore",
-    "name": "Nether Quartz Ore"
-  },
-  {
-    "id": 631,
-    "tag": "nether_sprouts",
-    "name": "Nether Sprouts"
-  },
-  {
-    "id": 632,
-    "tag": "nether_star",
-    "name": "Nether Star"
-  },
-  {
-    "id": 633,
-    "tag": "nether_wart",
-    "name": "Nether Wart"
-  },
-  {
-    "id": 634,
-    "tag": "nether_wart_block",
-    "name": "Nether Wart Block"
-  },
-  {
-    "id": 635,
-    "tag": "netherite_axe",
-    "name": "Netherite Axe"
-  },
-  {
-    "id": 636,
-    "tag": "netherite_block",
-    "name": "Netherite Block"
-  },
-  {
-    "id": 637,
-    "tag": "netherite_boots",
-    "name": "Netherite Boots"
-  },
-  {
-    "id": 638,
-    "tag": "netherite_chestplate",
-    "name": "Netherite Chestplate"
-  },
-  {
-    "id": 639,
-    "tag": "netherite_helmet",
-    "name": "Netherite Helmet"
-  },
-  {
-    "id": 640,
-    "tag": "netherite_hoe",
-    "name": "Netherite Hoe"
-  },
-  {
-    "id": 641,
-    "tag": "netherite_ingot",
-    "name": "Netherite Ingot"
-  },
-  {
-    "id": 642,
-    "tag": "netherite_leggings",
-    "name": "Netherite Leggings"
-  },
-  {
-    "id": 643,
-    "tag": "netherite_pickaxe",
-    "name": "Netherite Pickaxe"
-  },
-  {
-    "id": 644,
-    "tag": "netherite_scrap",
-    "name": "Netherite Scrap"
-  },
-  {
-    "id": 645,
-    "tag": "netherite_shovel",
-    "name": "Netherite Shovel"
-  },
-  {
-    "id": 646,
-    "tag": "netherite_sword",
-    "name": "Netherite Sword"
-  },
-  {
-    "id": 647,
-    "tag": "netherrack",
-    "name": "Netherrack"
   },
   {
     "id": 648,
@@ -3595,56 +3275,6 @@
     "name": "Polished Basalt"
   },
   {
-    "id": 719,
-    "tag": "polished_blackstone",
-    "name": "Polished Blackstone"
-  },
-  {
-    "id": 720,
-    "tag": "polished_blackstone_brick_slab",
-    "name": "Polished Blackstone Brick Slab"
-  },
-  {
-    "id": 721,
-    "tag": "polished_blackstone_brick_stairs",
-    "name": "Polished Blackstone Brick Stairs"
-  },
-  {
-    "id": 722,
-    "tag": "polished_blackstone_brick_wall",
-    "name": "Polished Blackstone Brick Wall"
-  },
-  {
-    "id": 723,
-    "tag": "polished_blackstone_bricks",
-    "name": "Polished Blackstone Bricks"
-  },
-  {
-    "id": 724,
-    "tag": "polished_blackstone_button",
-    "name": "Polished Blackstone Button"
-  },
-  {
-    "id": 725,
-    "tag": "polished_blackstone_pressure_plate",
-    "name": "Polished Blackstone Pressure Plate"
-  },
-  {
-    "id": 726,
-    "tag": "polished_blackstone_slab",
-    "name": "Polished Blackstone Slab"
-  },
-  {
-    "id": 727,
-    "tag": "polished_blackstone_stairs",
-    "name": "Polished Blackstone Stairs"
-  },
-  {
-    "id": 728,
-    "tag": "polished_blackstone_wall",
-    "name": "Polished Blackstone Wall"
-  },
-  {
     "id": 729,
     "tag": "polished_deepslate",
     "name": "Polished Deepslate"
@@ -3713,11 +3343,6 @@
     "id": 742,
     "tag": "potato",
     "name": "Potato"
-  },
-  {
-    "id": 743,
-    "tag": "potion",
-    "name": "Potion"
   },
   {
     "id": 744,
@@ -4015,26 +3640,6 @@
     "name": "Red Mushroom Block"
   },
   {
-    "id": 803,
-    "tag": "red_nether_brick_slab",
-    "name": "Red Nether Brick Slab"
-  },
-  {
-    "id": 804,
-    "tag": "red_nether_brick_stairs",
-    "name": "Red Nether Brick Stairs"
-  },
-  {
-    "id": 805,
-    "tag": "red_nether_brick_wall",
-    "name": "Red Nether Brick Wall"
-  },
-  {
-    "id": 806,
-    "tag": "red_nether_bricks",
-    "name": "Red Nether Bricks"
-  },
-  {
     "id": 807,
     "tag": "red_sand",
     "name": "Red Sand"
@@ -4178,31 +3783,6 @@
     "id": 835,
     "tag": "scaffolding",
     "name": "Scaffolding"
-  },
-  {
-    "id": 836,
-    "tag": "sculk",
-    "name": "Sculk"
-  },
-  {
-    "id": 837,
-    "tag": "sculk_catalyst",
-    "name": "Sculk Catalyst"
-  },
-  {
-    "id": 838,
-    "tag": "sculk_sensor",
-    "name": "Sculk Sensor"
-  },
-  {
-    "id": 839,
-    "tag": "sculk_shrieker",
-    "name": "Sculk Shrieker"
-  },
-  {
-    "id": 840,
-    "tag": "sculk_vein",
-    "name": "Sculk Vein"
   },
   {
     "id": 841,
@@ -4383,11 +3963,6 @@
     "id": 876,
     "tag": "spider_eye",
     "name": "Spider Eye"
-  },
-  {
-    "id": 877,
-    "tag": "splash_potion",
-    "name": "Splash Potion"
   },
   {
     "id": 878,
@@ -4783,21 +4358,6 @@
     "id": 956,
     "tag": "tropical_fish_bucket",
     "name": "Tropical Fish Bucket"
-  },
-  {
-    "id": 957,
-    "tag": "tube_coral",
-    "name": "Tube Coral"
-  },
-  {
-    "id": 958,
-    "tag": "tube_coral_block",
-    "name": "Tube Coral Block"
-  },
-  {
-    "id": 959,
-    "tag": "tube_coral_fan",
-    "name": "Tube Coral Fan"
   },
   {
     "id": 960,
