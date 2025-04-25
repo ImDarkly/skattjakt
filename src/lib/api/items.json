@@ -4250,16 +4250,6 @@
     "name": "Stripped Spruce Wood"
   },
   {
-    "id": 935,
-    "tag": "stripped_warped_hyphae",
-    "name": "Stripped Warped Hyphae"
-  },
-  {
-    "id": 936,
-    "tag": "stripped_warped_stem",
-    "name": "Stripped Warped Stem"
-  },
-  {
     "id": 937,
     "tag": "sugar",
     "name": "Sugar"
@@ -4388,96 +4378,6 @@
     "id": 965,
     "tag": "vine",
     "name": "Vine"
-  },
-  {
-    "id": 966,
-    "tag": "warped_button",
-    "name": "Warped Button"
-  },
-  {
-    "id": 967,
-    "tag": "warped_door",
-    "name": "Warped Door"
-  },
-  {
-    "id": 968,
-    "tag": "warped_fence",
-    "name": "Warped Fence"
-  },
-  {
-    "id": 969,
-    "tag": "warped_fence_gate",
-    "name": "Warped Fence Gate"
-  },
-  {
-    "id": 970,
-    "tag": "warped_fungus",
-    "name": "Warped Fungus"
-  },
-  {
-    "id": 971,
-    "tag": "warped_fungus_on_a_stick",
-    "name": "Warped Fungus on a Stick"
-  },
-  {
-    "id": 972,
-    "tag": "warped_hanging_sign",
-    "name": "Warped Hanging Sign"
-  },
-  {
-    "id": 973,
-    "tag": "warped_hyphae",
-    "name": "Warped Hyphae"
-  },
-  {
-    "id": 974,
-    "tag": "warped_nylium",
-    "name": "Warped Nylium"
-  },
-  {
-    "id": 975,
-    "tag": "warped_planks",
-    "name": "Warped Planks"
-  },
-  {
-    "id": 976,
-    "tag": "warped_pressure_plate",
-    "name": "Warped Pressure Plate"
-  },
-  {
-    "id": 977,
-    "tag": "warped_roots",
-    "name": "Warped Roots"
-  },
-  {
-    "id": 978,
-    "tag": "warped_sign",
-    "name": "Warped Sign"
-  },
-  {
-    "id": 979,
-    "tag": "warped_slab",
-    "name": "Warped Slab"
-  },
-  {
-    "id": 980,
-    "tag": "warped_stairs",
-    "name": "Warped Stairs"
-  },
-  {
-    "id": 981,
-    "tag": "warped_stem",
-    "name": "Warped Stem"
-  },
-  {
-    "id": 982,
-    "tag": "warped_trapdoor",
-    "name": "Warped Trapdoor"
-  },
-  {
-    "id": 983,
-    "tag": "warped_wart_block",
-    "name": "Warped Wart Block"
   },
   {
     "id": 984,
@@ -4668,11 +4568,6 @@
     "id": 1021,
     "tag": "white_wool",
     "name": "White Wool"
-  },
-  {
-    "id": 1022,
-    "tag": "wither_skeleton_skull",
-    "name": "Wither Skeleton Skull"
   },
   {
     "id": 1023,
