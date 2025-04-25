@@ -470,16 +470,6 @@
     "name": "Blast Furnace"
   },
   {
-    "id": 98,
-    "tag": "blaze_powder",
-    "name": "Blaze Powder"
-  },
-  {
-    "id": 99,
-    "tag": "blaze_rod",
-    "name": "Blaze Rod"
-  },
-  {
     "id": 100,
     "tag": "blue_banner",
     "name": "Blue Banner"
@@ -3928,31 +3918,6 @@
     "id": 869,
     "tag": "snowball",
     "name": "Snowball"
-  },
-  {
-    "id": 870,
-    "tag": "soul_campfire",
-    "name": "Soul Campfire"
-  },
-  {
-    "id": 871,
-    "tag": "soul_lantern",
-    "name": "Soul Lantern"
-  },
-  {
-    "id": 872,
-    "tag": "soul_sand",
-    "name": "Soul Sand"
-  },
-  {
-    "id": 873,
-    "tag": "soul_soil",
-    "name": "Soul Soil"
-  },
-  {
-    "id": 874,
-    "tag": "soul_torch",
-    "name": "Soul Torch"
   },
   {
     "id": 875,
