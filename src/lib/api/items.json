@@ -75,7 +75,6 @@
   { "id": 80, "tag": "birch_wood", "name": "Birch Wood" },
   { "id": 81, "tag": "black_banner", "name": "Black Banner" },
   { "id": 82, "tag": "black_bed", "name": "Black Bed" },
-  { "id": 83, "tag": "black_candle", "name": "Black Candle" },
   { "id": 84, "tag": "black_carpet", "name": "Black Carpet" },
   { "id": 85, "tag": "black_concrete", "name": "Black Concrete" },
   { "id": 86, "tag": "black_concrete_powder", "name": "Black Concrete Powder" },
@@ -93,14 +92,9 @@
   },
   { "id": 91, "tag": "black_terracotta", "name": "Black Terracotta" },
   { "id": 92, "tag": "black_wool", "name": "Black Wool" },
-  { "id": 93, "tag": "blackstone", "name": "Blackstone" },
-  { "id": 94, "tag": "blackstone_slab", "name": "Blackstone Slab" },
-  { "id": 95, "tag": "blackstone_stairs", "name": "Blackstone Stairs" },
-  { "id": 96, "tag": "blackstone_wall", "name": "Blackstone Wall" },
   { "id": 97, "tag": "blast_furnace", "name": "Blast Furnace" },
   { "id": 100, "tag": "blue_banner", "name": "Blue Banner" },
   { "id": 101, "tag": "blue_bed", "name": "Blue Bed" },
-  { "id": 102, "tag": "blue_candle", "name": "Blue Candle" },
   { "id": 103, "tag": "blue_carpet", "name": "Blue Carpet" },
   { "id": 104, "tag": "blue_concrete", "name": "Blue Concrete" },
   { "id": 105, "tag": "blue_concrete_powder", "name": "Blue Concrete Powder" },
@@ -135,7 +129,6 @@
   { "id": 130, "tag": "bricks", "name": "Bricks" },
   { "id": 131, "tag": "brown_banner", "name": "Brown Banner" },
   { "id": 132, "tag": "brown_bed", "name": "Brown Bed" },
-  { "id": 133, "tag": "brown_candle", "name": "Brown Candle" },
   { "id": 134, "tag": "brown_carpet", "name": "Brown Carpet" },
   { "id": 135, "tag": "brown_concrete", "name": "Brown Concrete" },
   {
@@ -172,7 +165,6 @@
     "name": "Calibrated Sculk Sensor"
   },
   { "id": 156, "tag": "campfire", "name": "Campfire" },
-  { "id": 157, "tag": "candle", "name": "Candle" },
   { "id": 158, "tag": "carrot", "name": "Carrot" },
   { "id": 159, "tag": "carrot_on_a_stick", "name": "Carrot on a Stick" },
   { "id": 160, "tag": "cartography_table", "name": "Cartography Table" },
@@ -206,11 +198,6 @@
   { "id": 184, "tag": "chicken", "name": "Chicken" },
   { "id": 185, "tag": "chiseled_bookshelf", "name": "Chiseled Bookshelf" },
   { "id": 186, "tag": "chiseled_deepslate", "name": "Chiseled Deepslate" },
-  {
-    "id": 188,
-    "tag": "chiseled_polished_blackstone",
-    "name": "Chiseled Polished Blackstone"
-  },
   {
     "id": 189,
     "tag": "chiseled_quartz_block",
@@ -284,33 +271,8 @@
     "tag": "cracked_deepslate_tiles",
     "name": "Cracked Deepslate Tiles"
   },
-  {
-    "id": 233,
-    "tag": "cracked_polished_blackstone_bricks",
-    "name": "Cracked Polished Blackstone Bricks"
-  },
   { "id": 234, "tag": "cracked_stone_bricks", "name": "Cracked Stone Bricks" },
   { "id": 235, "tag": "crafting_table", "name": "Crafting Table" },
-  { "id": 236, "tag": "crimson_button", "name": "Crimson Button" },
-  { "id": 237, "tag": "crimson_door", "name": "Crimson Door" },
-  { "id": 238, "tag": "crimson_fence", "name": "Crimson Fence" },
-  { "id": 239, "tag": "crimson_fence_gate", "name": "Crimson Fence Gate" },
-  { "id": 240, "tag": "crimson_fungus", "name": "Crimson Fungus" },
-  { "id": 241, "tag": "crimson_hanging_sign", "name": "Crimson Hanging Sign" },
-  { "id": 242, "tag": "crimson_hyphae", "name": "Crimson Hyphae" },
-  { "id": 243, "tag": "crimson_nylium", "name": "Crimson Nylium" },
-  { "id": 244, "tag": "crimson_planks", "name": "Crimson Planks" },
-  {
-    "id": 245,
-    "tag": "crimson_pressure_plate",
-    "name": "Crimson Pressure Plate"
-  },
-  { "id": 246, "tag": "crimson_roots", "name": "Crimson Roots" },
-  { "id": 247, "tag": "crimson_sign", "name": "Crimson Sign" },
-  { "id": 248, "tag": "crimson_slab", "name": "Crimson Slab" },
-  { "id": 249, "tag": "crimson_stairs", "name": "Crimson Stairs" },
-  { "id": 250, "tag": "crimson_stem", "name": "Crimson Stem" },
-  { "id": 251, "tag": "crimson_trapdoor", "name": "Crimson Trapdoor" },
   { "id": 252, "tag": "crossbow", "name": "Crossbow" },
   { "id": 253, "tag": "crying_obsidian", "name": "Crying Obsidian" },
   { "id": 254, "tag": "cut_copper", "name": "Cut Copper" },
@@ -326,7 +288,6 @@
   { "id": 260, "tag": "cut_sandstone_slab", "name": "Cut Sandstone Slab" },
   { "id": 261, "tag": "cyan_banner", "name": "Cyan Banner" },
   { "id": 262, "tag": "cyan_bed", "name": "Cyan Bed" },
-  { "id": 263, "tag": "cyan_candle", "name": "Cyan Candle" },
   { "id": 264, "tag": "cyan_carpet", "name": "Cyan Carpet" },
   { "id": 265, "tag": "cyan_concrete", "name": "Cyan Concrete" },
   { "id": 266, "tag": "cyan_concrete_powder", "name": "Cyan Concrete Powder" },
@@ -426,18 +387,6 @@
     "name": "Enchanted Golden Apple"
   },
   { "id": 362, "tag": "enchanting_table", "name": "Enchanting Table" },
-  { "id": 363, "tag": "exposed_copper", "name": "Exposed Copper" },
-  { "id": 364, "tag": "exposed_cut_copper", "name": "Exposed Cut Copper" },
-  {
-    "id": 365,
-    "tag": "exposed_cut_copper_slab",
-    "name": "Exposed Cut Copper Slab"
-  },
-  {
-    "id": 366,
-    "tag": "exposed_cut_copper_stairs",
-    "name": "Exposed Cut Copper Stairs"
-  },
   { "id": 367, "tag": "feather", "name": "Feather" },
   { "id": 368, "tag": "fermented_spider_eye", "name": "Fermented Spider Eye" },
   { "id": 369, "tag": "fern", "name": "Fern" },
@@ -459,15 +408,9 @@
   { "id": 384, "tag": "furnace", "name": "Furnace" },
   { "id": 385, "tag": "furnace_minecart", "name": "Furnace Minecart" },
   { "id": 386, "tag": "ghast_tear", "name": "Ghast Tear" },
-  { "id": 387, "tag": "gilded_blackstone", "name": "Gilded Blackstone" },
   { "id": 388, "tag": "glass", "name": "Glass" },
   { "id": 389, "tag": "glass_bottle", "name": "Glass Bottle" },
   { "id": 390, "tag": "glass_pane", "name": "Glass Pane" },
-  {
-    "id": 391,
-    "tag": "glistering_melon_slice",
-    "name": "Glistering Melon Slice"
-  },
   { "id": 392, "tag": "glow_berries", "name": "Glow Berries" },
   { "id": 393, "tag": "glow_ink_sac", "name": "Glow Ink Sac" },
   { "id": 394, "tag": "glow_item_frame", "name": "Glow Item Frame" },
@@ -498,7 +441,6 @@
   { "id": 420, "tag": "gravel", "name": "Gravel" },
   { "id": 421, "tag": "gray_banner", "name": "Gray Banner" },
   { "id": 422, "tag": "gray_bed", "name": "Gray Bed" },
-  { "id": 423, "tag": "gray_candle", "name": "Gray Candle" },
   { "id": 424, "tag": "gray_carpet", "name": "Gray Carpet" },
   { "id": 425, "tag": "gray_concrete", "name": "Gray Concrete" },
   { "id": 426, "tag": "gray_concrete_powder", "name": "Gray Concrete Powder" },
@@ -518,7 +460,6 @@
   { "id": 432, "tag": "gray_wool", "name": "Gray Wool" },
   { "id": 433, "tag": "green_banner", "name": "Green Banner" },
   { "id": 434, "tag": "green_bed", "name": "Green Bed" },
-  { "id": 435, "tag": "green_candle", "name": "Green Candle" },
   { "id": 436, "tag": "green_carpet", "name": "Green Carpet" },
   { "id": 437, "tag": "green_concrete", "name": "Green Concrete" },
   {
@@ -618,7 +559,6 @@
   { "id": 517, "tag": "lever", "name": "Lever" },
   { "id": 518, "tag": "light_blue_banner", "name": "Light Blue Banner" },
   { "id": 519, "tag": "light_blue_bed", "name": "Light Blue Bed" },
-  { "id": 520, "tag": "light_blue_candle", "name": "Light Blue Candle" },
   { "id": 521, "tag": "light_blue_carpet", "name": "Light Blue Carpet" },
   { "id": 522, "tag": "light_blue_concrete", "name": "Light Blue Concrete" },
   {
@@ -650,7 +590,6 @@
   { "id": 529, "tag": "light_blue_wool", "name": "Light Blue Wool" },
   { "id": 530, "tag": "light_gray_banner", "name": "Light Gray Banner" },
   { "id": 531, "tag": "light_gray_bed", "name": "Light Gray Bed" },
-  { "id": 532, "tag": "light_gray_candle", "name": "Light Gray Candle" },
   { "id": 533, "tag": "light_gray_carpet", "name": "Light Gray Carpet" },
   { "id": 534, "tag": "light_gray_concrete", "name": "Light Gray Concrete" },
   {
@@ -691,7 +630,6 @@
   { "id": 546, "tag": "lily_pad", "name": "Lily Pad" },
   { "id": 547, "tag": "lime_banner", "name": "Lime Banner" },
   { "id": 548, "tag": "lime_bed", "name": "Lime Bed" },
-  { "id": 549, "tag": "lime_candle", "name": "Lime Candle" },
   { "id": 550, "tag": "lime_carpet", "name": "Lime Carpet" },
   { "id": 551, "tag": "lime_concrete", "name": "Lime Concrete" },
   { "id": 552, "tag": "lime_concrete_powder", "name": "Lime Concrete Powder" },
@@ -714,7 +652,6 @@
   { "id": 561, "tag": "loom", "name": "Loom" },
   { "id": 562, "tag": "magenta_banner", "name": "Magenta Banner" },
   { "id": 563, "tag": "magenta_bed", "name": "Magenta Bed" },
-  { "id": 564, "tag": "magenta_candle", "name": "Magenta Candle" },
   { "id": 565, "tag": "magenta_carpet", "name": "Magenta Carpet" },
   { "id": 566, "tag": "magenta_concrete", "name": "Magenta Concrete" },
   {
@@ -841,10 +778,8 @@
   { "id": 665, "tag": "oak_wood", "name": "Oak Wood" },
   { "id": 666, "tag": "observer", "name": "Observer" },
   { "id": 667, "tag": "obsidian", "name": "Obsidian" },
-  { "id": 668, "tag": "ochre_froglight", "name": "Ochre Froglight" },
   { "id": 669, "tag": "orange_banner", "name": "Orange Banner" },
   { "id": 670, "tag": "orange_bed", "name": "Orange Bed" },
-  { "id": 671, "tag": "orange_candle", "name": "Orange Candle" },
   { "id": 672, "tag": "orange_carpet", "name": "Orange Carpet" },
   { "id": 673, "tag": "orange_concrete", "name": "Orange Concrete" },
   {
@@ -867,34 +802,15 @@
   { "id": 679, "tag": "orange_terracotta", "name": "Orange Terracotta" },
   { "id": 680, "tag": "orange_tulip", "name": "Orange Tulip" },
   { "id": 681, "tag": "orange_wool", "name": "Orange Wool" },
-  { "id": 682, "tag": "oxeye_daisy", "name": "Oxeye Daisy" },
-  { "id": 683, "tag": "oxidized_copper", "name": "Oxidized Copper" },
-  { "id": 684, "tag": "oxidized_cut_copper", "name": "Oxidized Cut Copper" },
-  {
-    "id": 685,
-    "tag": "oxidized_cut_copper_slab",
-    "name": "Oxidized Cut Copper Slab"
-  },
-  {
-    "id": 686,
-    "tag": "oxidized_cut_copper_stairs",
-    "name": "Oxidized Cut Copper Stairs"
-  },
   { "id": 687, "tag": "packed_ice", "name": "Packed Ice" },
   { "id": 688, "tag": "packed_mud", "name": "Packed Mud" },
   { "id": 689, "tag": "painting", "name": "Painting" },
   { "id": 690, "tag": "paper", "name": "Paper" },
-  {
-    "id": 691,
-    "tag": "pearlescent_froglight",
-    "name": "Pearlescent Froglight"
-  },
   { "id": 692, "tag": "peony", "name": "Peony" },
   { "id": 693, "tag": "petrified_oak_slab", "name": "Petrified Oak Slab" },
   { "id": 694, "tag": "phantom_membrane", "name": "Phantom Membrane" },
   { "id": 695, "tag": "pink_banner", "name": "Pink Banner" },
   { "id": 696, "tag": "pink_bed", "name": "Pink Bed" },
-  { "id": 697, "tag": "pink_candle", "name": "Pink Candle" },
   { "id": 698, "tag": "pink_carpet", "name": "Pink Carpet" },
   { "id": 699, "tag": "pink_concrete", "name": "Pink Concrete" },
   { "id": 700, "tag": "pink_concrete_powder", "name": "Pink Concrete Powder" },
@@ -928,53 +844,6 @@
     "id": 717,
     "tag": "polished_andesite_stairs",
     "name": "Polished Andesite Stairs"
-  },
-  { "id": 718, "tag": "polished_basalt", "name": "Polished Basalt" },
-  { "id": 719, "tag": "polished_blackstone", "name": "Polished Blackstone" },
-  {
-    "id": 720,
-    "tag": "polished_blackstone_brick_slab",
-    "name": "Polished Blackstone Brick Slab"
-  },
-  {
-    "id": 721,
-    "tag": "polished_blackstone_brick_stairs",
-    "name": "Polished Blackstone Brick Stairs"
-  },
-  {
-    "id": 722,
-    "tag": "polished_blackstone_brick_wall",
-    "name": "Polished Blackstone Brick Wall"
-  },
-  {
-    "id": 723,
-    "tag": "polished_blackstone_bricks",
-    "name": "Polished Blackstone Bricks"
-  },
-  {
-    "id": 724,
-    "tag": "polished_blackstone_button",
-    "name": "Polished Blackstone Button"
-  },
-  {
-    "id": 725,
-    "tag": "polished_blackstone_pressure_plate",
-    "name": "Polished Blackstone Pressure Plate"
-  },
-  {
-    "id": 726,
-    "tag": "polished_blackstone_slab",
-    "name": "Polished Blackstone Slab"
-  },
-  {
-    "id": 727,
-    "tag": "polished_blackstone_stairs",
-    "name": "Polished Blackstone Stairs"
-  },
-  {
-    "id": 728,
-    "tag": "polished_blackstone_wall",
-    "name": "Polished Blackstone Wall"
   },
   { "id": 729, "tag": "polished_deepslate", "name": "Polished Deepslate" },
   {
@@ -1028,7 +897,6 @@
   { "id": 759, "tag": "pumpkin_seeds", "name": "Pumpkin Seeds" },
   { "id": 760, "tag": "purple_banner", "name": "Purple Banner" },
   { "id": 761, "tag": "purple_bed", "name": "Purple Bed" },
-  { "id": 762, "tag": "purple_candle", "name": "Purple Candle" },
   { "id": 763, "tag": "purple_carpet", "name": "Purple Carpet" },
   { "id": 764, "tag": "purple_concrete", "name": "Purple Concrete" },
   {
@@ -1073,7 +941,6 @@
   { "id": 792, "tag": "raw_iron_block", "name": "Raw Iron Block" },
   { "id": 793, "tag": "red_banner", "name": "Red Banner" },
   { "id": 794, "tag": "red_bed", "name": "Red Bed" },
-  { "id": 795, "tag": "red_candle", "name": "Red Candle" },
   { "id": 796, "tag": "red_carpet", "name": "Red Carpet" },
   { "id": 797, "tag": "red_concrete", "name": "Red Concrete" },
   { "id": 798, "tag": "red_concrete_powder", "name": "Red Concrete Powder" },
@@ -1263,13 +1130,6 @@
   { "id": 932, "tag": "stripped_oak_wood", "name": "Stripped Oak Wood" },
   { "id": 933, "tag": "stripped_spruce_log", "name": "Stripped Spruce Log" },
   { "id": 934, "tag": "stripped_spruce_wood", "name": "Stripped Spruce Wood" },
-  {
-    "id": 935,
-    "tag": "stripped_warped_hyphae",
-    "name": "Stripped Warped Hyphae"
-  },
-  { "id": 936, "tag": "stripped_warped_stem", "name": "Stripped Warped Stem" },
-  { "id": 937, "tag": "sugar", "name": "Sugar" },
   { "id": 938, "tag": "sugar_cane", "name": "Sugar Cane" },
   { "id": 939, "tag": "sunflower", "name": "Sunflower" },
   { "id": 940, "tag": "suspicious_stew", "name": "Suspicious Stew" },
@@ -1287,128 +1147,15 @@
   { "id": 952, "tag": "torchflower_seeds", "name": "Torchflower Seeds" },
   { "id": 953, "tag": "trapped_chest", "name": "Trapped Chest" },
   { "id": 954, "tag": "tripwire_hook", "name": "Tripwire Hook" },
-  { "id": 955, "tag": "tropical_fish", "name": "Tropical Fish" },
-  { "id": 956, "tag": "tropical_fish_bucket", "name": "Tropical Fish Bucket" },
   { "id": 960, "tag": "tuff", "name": "Tuff" },
-  { "id": 961, "tag": "turtle_egg", "name": "Turtle Egg" },
-  { "id": 962, "tag": "turtle_helmet", "name": "Turtle Helmet" },
   { "id": 963, "tag": "twisting_vines", "name": "Twisting Vines" },
-  { "id": 964, "tag": "verdant_froglight", "name": "Verdant Froglight" },
   { "id": 965, "tag": "vine", "name": "Vine" },
-  { "id": 966, "tag": "warped_button", "name": "Warped Button" },
-  { "id": 967, "tag": "warped_door", "name": "Warped Door" },
-  { "id": 968, "tag": "warped_fence", "name": "Warped Fence" },
-  { "id": 969, "tag": "warped_fence_gate", "name": "Warped Fence Gate" },
-  { "id": 970, "tag": "warped_fungus", "name": "Warped Fungus" },
-  {
-    "id": 971,
-    "tag": "warped_fungus_on_a_stick",
-    "name": "Warped Fungus on a Stick"
-  },
-  { "id": 972, "tag": "warped_hanging_sign", "name": "Warped Hanging Sign" },
-  { "id": 973, "tag": "warped_hyphae", "name": "Warped Hyphae" },
-  { "id": 974, "tag": "warped_nylium", "name": "Warped Nylium" },
-  { "id": 975, "tag": "warped_planks", "name": "Warped Planks" },
-  {
-    "id": 976,
-    "tag": "warped_pressure_plate",
-    "name": "Warped Pressure Plate"
-  },
-  { "id": 977, "tag": "warped_roots", "name": "Warped Roots" },
-  { "id": 978, "tag": "warped_sign", "name": "Warped Sign" },
-  { "id": 979, "tag": "warped_slab", "name": "Warped Slab" },
-  { "id": 980, "tag": "warped_stairs", "name": "Warped Stairs" },
-  { "id": 981, "tag": "warped_stem", "name": "Warped Stem" },
-  { "id": 982, "tag": "warped_trapdoor", "name": "Warped Trapdoor" },
-  { "id": 983, "tag": "warped_wart_block", "name": "Warped Wart Block" },
   { "id": 984, "tag": "water_bucket", "name": "Water Bucket" },
-  { "id": 985, "tag": "waxed_copper_block", "name": "Waxed Copper Block" },
-  { "id": 986, "tag": "waxed_cut_copper", "name": "Waxed Cut Copper" },
-  {
-    "id": 987,
-    "tag": "waxed_cut_copper_slab",
-    "name": "Waxed Cut Copper Slab"
-  },
-  {
-    "id": 988,
-    "tag": "waxed_cut_copper_stairs",
-    "name": "Waxed Cut Copper Stairs"
-  },
-  { "id": 989, "tag": "waxed_exposed_copper", "name": "Waxed Exposed Copper" },
-  {
-    "id": 990,
-    "tag": "waxed_exposed_cut_copper",
-    "name": "Waxed Exposed Cut Copper"
-  },
-  {
-    "id": 991,
-    "tag": "waxed_exposed_cut_copper_slab",
-    "name": "Waxed Exposed Cut Copper Slab"
-  },
-  {
-    "id": 992,
-    "tag": "waxed_exposed_cut_copper_stairs",
-    "name": "Waxed Exposed Cut Copper Stairs"
-  },
-  {
-    "id": 993,
-    "tag": "waxed_oxidized_copper",
-    "name": "Waxed Oxidized Copper"
-  },
-  {
-    "id": 994,
-    "tag": "waxed_oxidized_cut_copper",
-    "name": "Waxed Oxidized Cut Copper"
-  },
-  {
-    "id": 995,
-    "tag": "waxed_oxidized_cut_copper_slab",
-    "name": "Waxed Oxidized Cut Copper Slab"
-  },
-  {
-    "id": 996,
-    "tag": "waxed_oxidized_cut_copper_stairs",
-    "name": "Waxed Oxidized Cut Copper Stairs"
-  },
-  {
-    "id": 997,
-    "tag": "waxed_weathered_copper",
-    "name": "Waxed Weathered Copper"
-  },
-  {
-    "id": 998,
-    "tag": "waxed_weathered_cut_copper",
-    "name": "Waxed Weathered Cut Copper"
-  },
-  {
-    "id": 999,
-    "tag": "waxed_weathered_cut_copper_slab",
-    "name": "Waxed Weathered Cut Copper Slab"
-  },
-  {
-    "id": 1000,
-    "tag": "waxed_weathered_cut_copper_stairs",
-    "name": "Waxed Weathered Cut Copper Stairs"
-  },
-  { "id": 1001, "tag": "weathered_copper", "name": "Weathered Copper" },
-  { "id": 1002, "tag": "weathered_cut_copper", "name": "Weathered Cut Copper" },
-  {
-    "id": 1003,
-    "tag": "weathered_cut_copper_slab",
-    "name": "Weathered Cut Copper Slab"
-  },
-  {
-    "id": 1004,
-    "tag": "weathered_cut_copper_stairs",
-    "name": "Weathered Cut Copper Stairs"
-  },
-  { "id": 1005, "tag": "weeping_vines", "name": "Weeping Vines" },
   { "id": 1006, "tag": "wet_sponge", "name": "Wet Sponge" },
   { "id": 1007, "tag": "wheat", "name": "Wheat" },
   { "id": 1008, "tag": "wheat_seeds", "name": "Wheat Seeds" },
   { "id": 1009, "tag": "white_banner", "name": "White Banner" },
   { "id": 1010, "tag": "white_bed", "name": "White Bed" },
-  { "id": 1011, "tag": "white_candle", "name": "White Candle" },
   { "id": 1012, "tag": "white_carpet", "name": "White Carpet" },
   { "id": 1013, "tag": "white_concrete", "name": "White Concrete" },
   {
@@ -1445,7 +1192,6 @@
   { "id": 1029, "tag": "written_book", "name": "Written Book" },
   { "id": 1030, "tag": "yellow_banner", "name": "Yellow Banner" },
   { "id": 1031, "tag": "yellow_bed", "name": "Yellow Bed" },
-  { "id": 1032, "tag": "yellow_candle", "name": "Yellow Candle" },
   { "id": 1033, "tag": "yellow_carpet", "name": "Yellow Carpet" },
   { "id": 1034, "tag": "yellow_concrete", "name": "Yellow Concrete" },
   {
