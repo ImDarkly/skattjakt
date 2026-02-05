@@ -1,4 +1,4 @@
-import getItems from '@/lib/domain/items/item';
+import { getItems } from '@/lib/domain/items/item';
 import {
   Table,
   TableBody,
@@ -9,9 +9,14 @@ import {
   TableRow,
 } from '../ui/table';
 import { Item } from '@/lib/domain/items/types';
+import { useEffect, useState } from 'react';
 
 export default function ItemsList() {
-  const items = getItems();
+  const [items, setItems] = useState<Item[]>([]);
+
+  useEffect(() => {
+    setItems(getItems());
+  }, []);
 
   return (
     <Table>
@@ -20,6 +25,7 @@ export default function ItemsList() {
         <TableRow>
           <TableHead>Id</TableHead>
           <TableHead>Name</TableHead>
+          <TableHead>Selectable</TableHead>
         </TableRow>
       </TableHeader>
       <TableBody>
@@ -27,6 +33,7 @@ export default function ItemsList() {
           <TableRow key={item.id}>
             <TableCell>{item.id}</TableCell>
             <TableCell>{item.name}</TableCell>
+            <TableCell>{String(item.isSelectable)}</TableCell>
           </TableRow>
         ))}
       </TableBody>

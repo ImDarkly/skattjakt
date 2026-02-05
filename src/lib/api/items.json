@@ -1,27 +1,127 @@
 [
-  { "id": "acacia_boat", "name": "Acacia Boat" },
-  { "id": "acacia_button", "name": "Acacia Button" },
-  { "id": "acacia_chest_boat", "name": "Acacia Chest Boat" },
-  { "id": "acacia_door", "name": "Acacia Door" },
-  { "id": "acacia_fence", "name": "Acacia Fence" },
-  { "id": "acacia_fence_gate", "name": "Acacia Fence Gate" },
-  { "id": "acacia_hanging_sign", "name": "Acacia Hanging Sign" },
-  { "id": "acacia_leaves", "name": "Acacia Leaves" },
-  { "id": "acacia_log", "name": "Acacia Log" },
-  { "id": "acacia_planks", "name": "Acacia Planks" },
-  { "id": "acacia_pressure_plate", "name": "Acacia Pressure Plate" },
-  { "id": "acacia_sapling", "name": "Acacia Sapling" },
-  { "id": "acacia_sign", "name": "Acacia Sign" },
-  { "id": "acacia_slab", "name": "Acacia Slab" },
-  { "id": "acacia_stairs", "name": "Acacia Stairs" },
-  { "id": "acacia_trapdoor", "name": "Acacia Trapdoor" },
-  { "id": "acacia_wood", "name": "Acacia Wood" },
-  { "id": "allium", "name": "Allium" },
-  { "id": "andesite", "name": "Andesite" },
-  { "id": "andesite_slab", "name": "Andesite Slab" },
-  { "id": "andesite_stairs", "name": "Andesite Stairs" },
-  { "id": "andesite_wall", "name": "Andesite Wall" },
-  { "id": "anvil", "name": "Anvil" },
-  { "id": "apple", "name": "Apple" },
-  { "id": "armor_stand", "name": "Armor Stand" }
+  {
+    "id": "acacia_boat",
+    "name": "Acacia Boat",
+    "isSelectable": true
+  },
+  {
+    "id": "acacia_button",
+    "name": "Acacia Button",
+    "isSelectable": true
+  },
+  {
+    "id": "acacia_chest_boat",
+    "name": "Acacia Chest Boat",
+    "isSelectable": true
+  },
+  {
+    "id": "acacia_door",
+    "name": "Acacia Door",
+    "isSelectable": true
+  },
+  {
+    "id": "acacia_fence",
+    "name": "Acacia Fence",
+    "isSelectable": true
+  },
+  {
+    "id": "acacia_fence_gate",
+    "name": "Acacia Fence Gate",
+    "isSelectable": true
+  },
+  {
+    "id": "acacia_hanging_sign",
+    "name": "Acacia Hanging Sign",
+    "isSelectable": true
+  },
+  {
+    "id": "acacia_leaves",
+    "name": "Acacia Leaves",
+    "isSelectable": true
+  },
+  {
+    "id": "acacia_log",
+    "name": "Acacia Log",
+    "isSelectable": true
+  },
+  {
+    "id": "acacia_planks",
+    "name": "Acacia Planks",
+    "isSelectable": true
+  },
+  {
+    "id": "acacia_pressure_plate",
+    "name": "Acacia Pressure Plate",
+    "isSelectable": true
+  },
+  {
+    "id": "acacia_sapling",
+    "name": "Acacia Sapling",
+    "isSelectable": true
+  },
+  {
+    "id": "acacia_sign",
+    "name": "Acacia Sign",
+    "isSelectable": true
+  },
+  {
+    "id": "acacia_slab",
+    "name": "Acacia Slab",
+    "isSelectable": true
+  },
+  {
+    "id": "acacia_stairs",
+    "name": "Acacia Stairs",
+    "isSelectable": true
+  },
+  {
+    "id": "acacia_trapdoor",
+    "name": "Acacia Trapdoor",
+    "isSelectable": true
+  },
+  {
+    "id": "acacia_wood",
+    "name": "Acacia Wood",
+    "isSelectable": true
+  },
+  {
+    "id": "allium",
+    "name": "Allium",
+    "isSelectable": true
+  },
+  {
+    "id": "andesite",
+    "name": "Andesite",
+    "isSelectable": true
+  },
+  {
+    "id": "andesite_slab",
+    "name": "Andesite Slab",
+    "isSelectable": true
+  },
+  {
+    "id": "andesite_stairs",
+    "name": "Andesite Stairs",
+    "isSelectable": true
+  },
+  {
+    "id": "andesite_wall",
+    "name": "Andesite Wall",
+    "isSelectable": true
+  },
+  {
+    "id": "anvil",
+    "name": "Anvil",
+    "isSelectable": true
+  },
+  {
+    "id": "apple",
+    "name": "Apple",
+    "isSelectable": true
+  },
+  {
+    "id": "armor_stand",
+    "name": "Armor Stand",
+    "isSelectable": true
+  }
 ]

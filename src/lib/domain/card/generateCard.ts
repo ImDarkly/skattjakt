@@ -1,4 +1,4 @@
-import getItems from '../items/item';
+import { getItems } from '../items/item';
 import type { Item } from '../items/types';
 
 export const BINGO_GRID_SIZE = 25;

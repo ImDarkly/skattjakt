@@ -1,6 +1,6 @@
 import data from '@/lib/api/items.json';
 
-export default function getItems() {
+export function getItems() {
   const raw = localStorage.getItem('items');
 
   if (raw === null) {
@@ -14,4 +14,8 @@ export default function getItems() {
     localStorage.setItem('items', JSON.stringify(data));
     return data;
   }
+}
+
+export function removeItems() {
+  localStorage.removeItem('items');
 }
