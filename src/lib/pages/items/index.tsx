@@ -11,7 +11,7 @@ export default function ItemsPage() {
         title="Items"
         right={<ClearItemsButton />}
       />
-      <ItemsList />;
+      <ItemsList />
     </div>
   );
 }

@@ -2,126 +2,126 @@
   {
     "id": "acacia_boat",
     "name": "Acacia Boat",
-    "isSelectable": true
+    "isEligible": true
   },
   {
     "id": "acacia_button",
     "name": "Acacia Button",
-    "isSelectable": true
+    "isEligible": true
   },
   {
     "id": "acacia_chest_boat",
     "name": "Acacia Chest Boat",
-    "isSelectable": true
+    "isEligible": true
   },
   {
     "id": "acacia_door",
     "name": "Acacia Door",
-    "isSelectable": true
+    "isEligible": true
   },
   {
     "id": "acacia_fence",
     "name": "Acacia Fence",
-    "isSelectable": true
+    "isEligible": true
   },
   {
     "id": "acacia_fence_gate",
     "name": "Acacia Fence Gate",
-    "isSelectable": true
+    "isEligible": true
   },
   {
     "id": "acacia_hanging_sign",
     "name": "Acacia Hanging Sign",
-    "isSelectable": true
+    "isEligible": true
   },
   {
     "id": "acacia_leaves",
     "name": "Acacia Leaves",
-    "isSelectable": true
+    "isEligible": true
   },
   {
     "id": "acacia_log",
     "name": "Acacia Log",
-    "isSelectable": true
+    "isEligible": true
   },
   {
     "id": "acacia_planks",
     "name": "Acacia Planks",
-    "isSelectable": true
+    "isEligible": true
   },
   {
     "id": "acacia_pressure_plate",
     "name": "Acacia Pressure Plate",
-    "isSelectable": true
+    "isEligible": true
   },
   {
     "id": "acacia_sapling",
     "name": "Acacia Sapling",
-    "isSelectable": true
+    "isEligible": true
   },
   {
     "id": "acacia_sign",
     "name": "Acacia Sign",
-    "isSelectable": true
+    "isEligible": true
   },
   {
     "id": "acacia_slab",
     "name": "Acacia Slab",
-    "isSelectable": true
+    "isEligible": true
   },
   {
     "id": "acacia_stairs",
     "name": "Acacia Stairs",
-    "isSelectable": true
+    "isEligible": true
   },
   {
     "id": "acacia_trapdoor",
     "name": "Acacia Trapdoor",
-    "isSelectable": true
+    "isEligible": true
   },
   {
     "id": "acacia_wood",
     "name": "Acacia Wood",
-    "isSelectable": true
+    "isEligible": true
   },
   {
     "id": "allium",
     "name": "Allium",
-    "isSelectable": true
+    "isEligible": true
   },
   {
     "id": "andesite",
     "name": "Andesite",
-    "isSelectable": true
+    "isEligible": true
   },
   {
     "id": "andesite_slab",
     "name": "Andesite Slab",
-    "isSelectable": true
+    "isEligible": true
   },
   {
     "id": "andesite_stairs",
     "name": "Andesite Stairs",
-    "isSelectable": true
+    "isEligible": true
   },
   {
     "id": "andesite_wall",
     "name": "Andesite Wall",
-    "isSelectable": true
+    "isEligible": true
   },
   {
     "id": "anvil",
     "name": "Anvil",
-    "isSelectable": true
+    "isEligible": true
   },
   {
     "id": "apple",
     "name": "Apple",
-    "isSelectable": true
+    "isEligible": true
   },
   {
     "id": "armor_stand",
     "name": "Armor Stand",
-    "isSelectable": true
+    "isEligible": true
   }
 ]

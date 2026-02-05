@@ -1,5 +1,11 @@
 export type Item = {
   id: string;
   name: string;
-  isSelectable: boolean;
+  isEligible: boolean;
+};
+
+export type ItemsSlice = {
+  items: Item[];
+  setItems: (items: Item[]) => void;
+  resetItems: () => void;
 };

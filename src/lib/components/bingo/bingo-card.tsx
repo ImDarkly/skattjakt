@@ -6,14 +6,13 @@ import { useBoundStore } from '@/lib/zustand/store';
 import { Cell } from '../ui/cell';
 import { Item } from '@/lib/domain/items/types';
 import { BINGO_GRID_SIZE } from '@/lib/domain/card/generateCard';
-import { getItems } from '@/lib/domain/items/item';
 
 type BingoCardProps = {
   disabled?: boolean;
 };
 
 export const BingoCard = ({ disabled }: BingoCardProps) => {
-  const items = getItems();
+  const items = useBoundStore((state) => state.items);
   const { card, setCard } = useBoundStore();
   const [selectedCell, setSelectedCell] = useState<string[]>([]);
   const [searchParams] = useSearchParams();

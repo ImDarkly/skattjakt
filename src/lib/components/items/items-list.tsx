@@ -1,4 +1,3 @@
-import { getItems } from '@/lib/domain/items/item';
 import {
   Table,
   TableBody,
@@ -9,14 +8,11 @@ import {
   TableRow,
 } from '../ui/table';
 import { Item } from '@/lib/domain/items/types';
-import { useEffect, useState } from 'react';
+import { Switch } from '../ui/switch';
+import { useBoundStore } from '@/lib/zustand/store';
 
 export default function ItemsList() {
-  const [items, setItems] = useState<Item[]>([]);
-
-  useEffect(() => {
-    setItems(getItems());
-  }, []);
+  const items = useBoundStore((state) => state.items);
 
   return (
     <Table>
@@ -33,7 +29,9 @@ export default function ItemsList() {
           <TableRow key={item.id}>
             <TableCell>{item.id}</TableCell>
             <TableCell>{item.name}</TableCell>
-            <TableCell>{String(item.isSelectable)}</TableCell>
+            <TableCell>
+              <Switch checked={item.isEligible} />
+            </TableCell>
           </TableRow>
         ))}
       </TableBody>
