@@ -1,22 +1,16 @@
+import { Item } from '@/lib/domain/items/types';
 import { Icon } from '@iconify/react';
 
 type CellProps = {
-  id: number;
-  tag: string;
-  name: string;
+  item: Item;
   checked?: boolean;
   onClick: () => void;
   disabled?: boolean;
 };
 
-export const Cell = ({
-  id,
-  tag,
-  name,
-  checked,
-  onClick,
-  disabled,
-}: CellProps) => {
+export const Cell = ({ item, checked, onClick, disabled }: CellProps) => {
+  const { id, name } = item;
+
   return (
     <button
       type="button"
@@ -31,10 +25,10 @@ export const Cell = ({
       } style-preserve translate-3d flex items-center justify-center break-words transition-all active:translate-y-1 ${checked ? 'translate-y-1' : 'after after:absolute after:h-full after:w-full after:rounded-2xl after:bg-stone-200 after:transition-transform after:dark:bg-stone-800 '}`}
     >
       <div
-        className={`hover: h-full w-full rounded-2xl bg-card p-3 ${checked ? 'opacity-30' : ''} ${disabled ? '' : 'ring-2 ring-inset ring-stone-300 dark:ring-stone-700'}`}
+        className={`h-full w-full rounded-2xl bg-card p-3 ${checked ? 'opacity-30' : ''} ${disabled ? '' : 'ring-2 ring-inset ring-stone-300 dark:ring-stone-700'}`}
       >
         <img
-          src={`./items/${tag}.png`}
+          src={`./items/${id}.png`}
           alt={name}
           width={16}
           height={16}

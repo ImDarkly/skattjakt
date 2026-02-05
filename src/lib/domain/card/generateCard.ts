@@ -1,7 +1,7 @@
 import getItems from '../items/item';
 import type { Item } from '../items/types';
 
-const BINGO_GRID_SIZE = 25;
+export const BINGO_GRID_SIZE = 25;
 
 const items = getItems();
 

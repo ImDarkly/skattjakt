@@ -8,6 +8,7 @@ import {
   TableHeader,
   TableRow,
 } from '../ui/table';
+import { Item } from '@/lib/domain/items/types';
 
 export default function ItemsList() {
   const items = getItems();
@@ -18,15 +19,13 @@ export default function ItemsList() {
       <TableHeader>
         <TableRow>
           <TableHead>Id</TableHead>
-          <TableHead>Tag</TableHead>
           <TableHead>Name</TableHead>
         </TableRow>
       </TableHeader>
       <TableBody>
-        {items.map((item) => (
+        {items.map((item: Item) => (
           <TableRow key={item.id}>
             <TableCell>{item.id}</TableCell>
-            <TableCell>{item.tag}</TableCell>
             <TableCell>{item.name}</TableCell>
           </TableRow>
         ))}

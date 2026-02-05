@@ -1,71 +1,56 @@
 import { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 
-import items from '@/lib/api/items.json';
 import { useBoundStore } from '@/lib/zustand/store';
 
 import { Cell } from '../ui/cell';
+import { Item } from '@/lib/domain/items/types';
+import { BINGO_GRID_SIZE } from '@/lib/domain/card/generateCard';
+import getItems from '@/lib/domain/items/item';
 
 type BingoCardProps = {
   disabled?: boolean;
 };
 
 export const BingoCard = ({ disabled }: BingoCardProps) => {
+  const items = getItems();
   const { card, setCard } = useBoundStore();
-  const [selectedCell, setSelectedCell] = useState<number[]>([]);
+  const [selectedCell, setSelectedCell] = useState<string[]>([]);
   const [searchParams] = useSearchParams();
 
-  const handleCellClick = (cellId: number) => {
-    if (disabled) {
-      return;
-    }
+  const handleCellClick = (cellId: string) => {
+    if (disabled) return;
 
-    if (selectedCell.includes(cellId)) {
-      setSelectedCell((prevSelectedCell) =>
-        prevSelectedCell.filter((id) => id !== cellId)
-      );
-    } else {
-      setSelectedCell((prevSelectedCell) => [...prevSelectedCell, cellId]);
-    }
+    setSelectedCell((prev) =>
+      prev.includes(cellId)
+        ? prev.filter((id) => id !== cellId)
+        : [...prev, cellId]
+    );
   };
 
   useEffect(() => {
     if (card.length === 0) {
-      const newCard = [];
+      const newCard = Array.from(
+        { length: BINGO_GRID_SIZE },
+        (_, index) => index + 1
+      ).map((index) =>
+        items.find((item: Item) => item.id === searchParams.get(`b${index}`))
+      );
 
-      for (let i = 1; i < 26; i += 1) {
-        const item = searchParams.get(`b${i}`);
-        if (item) {
-          // Find the corresponding item in your data source (items array)
-          const selectedItem = items.find((dataItem) => dataItem.tag === item);
-
-          if (selectedItem) {
-            // Include id and name properties from the data source
-            newCard.push({
-              id: selectedItem.id,
-              tag: selectedItem.tag,
-              name: selectedItem.name,
-            });
-          }
-        }
-      }
-
-      if (newCard.length === 25) {
+      if (newCard.length === BINGO_GRID_SIZE) {
         setCard(newCard);
       }
     }
-  }, [searchParams, card, setCard]);
+  }, [searchParams]);
 
   return (
     <div className="grid aspect-square w-full grid-cols-5 grid-rows-5 gap-2">
-      {card.map(({ id, tag, name }) => (
+      {card.map((item: Item) => (
         <Cell
-          key={id}
-          id={id}
-          tag={tag}
-          name={name}
-          checked={selectedCell.includes(id)}
-          onClick={() => handleCellClick(id)}
+          key={item.id}
+          item={item}
+          checked={selectedCell.includes(item.id)}
+          onClick={() => handleCellClick(item.id)}
           disabled={disabled}
         />
       ))}

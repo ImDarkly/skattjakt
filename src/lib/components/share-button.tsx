@@ -18,7 +18,7 @@ import { Input } from './ui/input';
 import { Label } from './ui/label';
 import { Switch } from './ui/switch';
 
-export const Share = () => {
+export const ShareButton = () => {
   const [showControls, setShowControls] = useState(false);
   const pageUrl = window.location.href;
   const [shareUrl, setShareUrl] = useState(`${pageUrl}`);

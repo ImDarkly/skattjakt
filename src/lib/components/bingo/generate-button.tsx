@@ -7,9 +7,9 @@ import { Button } from '../ui/button';
 import generateItems from '@/lib/domain/card/generateCard';
 import { Item } from '@/lib/domain/items/types';
 
-export const Generator = () => {
+export const GenerateButton = () => {
   const [spinning, setSpinning] = useState(false);
-  const { card, setCard } = useBoundStore();
+  const { setCard } = useBoundStore();
   const [searchParams, setSearchParams] = useSearchParams();
 
   const handleGenerateAndSetCard = () => {
@@ -17,7 +17,7 @@ export const Generator = () => {
     const items = generateItems();
     setCard(items);
     const link = items
-      .map((item: Item, index: number) => `b${index + 1}=${item.tag}`)
+      .map((item: Item, index: number) => `b${index + 1}=${item.id}`)
       .join('&');
     setSearchParams(link);
   };
