@@ -7,6 +7,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from './ui/tooltip';
+import { ModeToggle } from './ui/mode-toggle';
 
 const isProduction = process.env.NODE_ENV === 'production';
 
@@ -53,6 +54,7 @@ export const Footer = () => {
           </TooltipContent>
         </Tooltip>
       </TooltipProvider>
+      <ModeToggle />
     </footer>
   );
 };

@@ -1,16 +1,15 @@
-// This is Demo page for testing some features
-
 /// <reference types="vite-plugin-svgr/client" />;
 import { Helmet } from 'react-helmet';
 import { Link, useSearchParams } from 'react-router-dom';
+import { Icon } from '@iconify/react';
 
 import SkattjaktLogo from '@/lib/components/assets/skattjakt-logo.svg?react';
-import { BingoCard } from '@/lib/components/bingo-card';
+import { BingoCard } from '@/lib/components/bingo/bingo-card';
 import { Footer } from '@/lib/components/footer';
-import { Generator } from '@/lib/components/generator';
+import { Generator } from '@/lib/components/bingo/generator';
 import { Share } from '@/lib/components/share';
 import { Topbar } from '@/lib/components/topbar';
-import { ModeToggle } from '@/lib/components/ui/mode-toggle';
+import { Button } from '@/lib/components/ui/button';
 
 export default function Home() {
   const [searchParams] = useSearchParams();
@@ -35,7 +34,11 @@ export default function Home() {
           </h1>
         </div>
         <div>
-          <ModeToggle />
+          <Button size="icon" variant="secondary" asChild>
+            <Link to={'/items'}>
+              <Icon width={24} icon="heroicons:list-bullet-16-solid" />
+            </Link>
+          </Button>
         </div>
       </Topbar>
       <div className="z-0 flex h-full w-full flex-1 flex-col items-center justify-center px-4">

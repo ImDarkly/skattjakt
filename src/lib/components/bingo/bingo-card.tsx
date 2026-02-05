@@ -4,7 +4,7 @@ import { useSearchParams } from 'react-router-dom';
 import items from '@/lib/api/items.json';
 import { useBoundStore } from '@/lib/zustand/store';
 
-import { Cell } from './ui/cell';
+import { Cell } from '../ui/cell';
 
 type BingoCardProps = {
   disabled?: boolean;
