@@ -12,7 +12,7 @@ import { Switch } from '../ui/switch';
 import { useBoundStore } from '@/lib/zustand/store';
 
 export default function ItemsList() {
-  const items = useBoundStore((state) => state.items);
+  const { items, toggleEligibility } = useBoundStore();
 
   return (
     <Table>
@@ -30,7 +30,10 @@ export default function ItemsList() {
             <TableCell>{item.id}</TableCell>
             <TableCell>{item.name}</TableCell>
             <TableCell>
-              <Switch checked={item.isEligible} />
+              <Switch
+                onCheckedChange={() => toggleEligibility(item.id)}
+                checked={item.isEligible}
+              />
             </TableCell>
           </TableRow>
         ))}

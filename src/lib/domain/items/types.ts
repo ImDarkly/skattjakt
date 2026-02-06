@@ -6,6 +6,6 @@ export type Item = {
 
 export type ItemsSlice = {
   items: Item[];
-  setItems: (items: Item[]) => void;
+  toggleEligibility: (id: string) => void;
   resetItems: () => void;
 };

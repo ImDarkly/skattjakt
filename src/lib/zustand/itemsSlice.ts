@@ -20,7 +20,15 @@ function save(items: Item[]) {
 
 export const createItemsSlice: StateCreator<ItemsSlice> = (set) => ({
   items: load(),
-  setItems: (items: Item[]) => set({ items: items }),
+  toggleEligibility: (id: string) =>
+    set((state) => {
+      const next = state.items.map((item) =>
+        item.id === id ? { ...item, isEligible: !item.isEligible } : item
+      );
+
+      save(next);
+      return { items: next };
+    }),
   resetItems: () => {
     localStorage.removeItem(KEY);
     save(data);
