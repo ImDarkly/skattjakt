@@ -15,7 +15,9 @@ export const GenerateButton = () => {
 
   const handleGenerateAndSetCard = () => {
     setSpinning(true);
-    const generatedItems = generateItems(items);
+    const generatedItems = generateItems(
+      items.filter((item) => item.isEligible === true)
+    );
     setCard(generatedItems);
     const link = generatedItems
       .map((item: Item, index: number) => `b${index + 1}=${item.id}`)
@@ -23,14 +25,12 @@ export const GenerateButton = () => {
     setSearchParams(link);
   };
 
-  // useEffect to generate an initial Bingo card on component mount
   useEffect(() => {
     if (!searchParams.has('b1')) {
       handleGenerateAndSetCard();
     }
   }, [searchParams]);
 
-  // useEffect to handle the spinning animation of the Generate button icon
   useEffect(() => {
     if (!spinning) return;
     const timeoutId = setTimeout(() => {

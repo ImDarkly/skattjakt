@@ -14,7 +14,7 @@ const isProduction = process.env.NODE_ENV === 'production';
 const version = APP_VERSION;
 export const Footer = () => {
   return (
-    <footer className="flex h-24 items-center justify-center gap-1 bg-background">
+    <footer className="flex h-24 w-full items-center justify-center grow gap-1 bg-background">
       <p>Made with</p>
       <TooltipProvider>
         <Tooltip delayDuration={5000}>

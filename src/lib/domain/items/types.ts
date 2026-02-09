@@ -2,6 +2,7 @@ export type Item = {
   id: string;
   name: string;
   isEligible: boolean;
+  category: string;
 };
 
 export type ItemsSlice = {

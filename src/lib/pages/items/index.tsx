@@ -5,7 +5,7 @@ import GoBackButton from '@/lib/components/ui/go-back-button';
 
 export default function ItemsPage() {
   return (
-    <div>
+    <div className="flex flex-col items-center">
       <Header
         left={<GoBackButton />}
         title="Items"

@@ -1,43 +1,37 @@
-import {
-  Table,
-  TableBody,
-  TableCaption,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from '../ui/table';
-import { Item } from '@/lib/domain/items/types';
-import { Switch } from '../ui/switch';
 import { useBoundStore } from '@/lib/zustand/store';
+import {
+  Item,
+  ItemActions,
+  ItemContent,
+  ItemGroup,
+  ItemMedia,
+  ItemTitle,
+} from '../ui/item';
+import { Switch } from '../ui/switch';
 
 export default function ItemsList() {
   const { items, toggleEligibility } = useBoundStore();
 
   return (
-    <Table>
-      <TableCaption>List of all items in app</TableCaption>
-      <TableHeader>
-        <TableRow>
-          <TableHead>Id</TableHead>
-          <TableHead>Name</TableHead>
-          <TableHead>Selectable</TableHead>
-        </TableRow>
-      </TableHeader>
-      <TableBody>
-        {items.map((item: Item) => (
-          <TableRow key={item.id}>
-            <TableCell>{item.id}</TableCell>
-            <TableCell>{item.name}</TableCell>
-            <TableCell>
+    <ItemGroup className="gap-4 max-w-xl w-full">
+      {items.map((item) => {
+        return (
+          <Item key={item.id} variant="outline">
+            <ItemMedia variant="image">
+              <img src={`./items/${item.id}.png`} alt={item.name} />
+            </ItemMedia>
+            <ItemContent>
+              <ItemTitle>{item.name}</ItemTitle>
+            </ItemContent>
+            <ItemActions>
               <Switch
                 onCheckedChange={() => toggleEligibility(item.id)}
                 checked={item.isEligible}
               />
-            </TableCell>
-          </TableRow>
-        ))}
-      </TableBody>
-    </Table>
+            </ItemActions>
+          </Item>
+        );
+      })}
+    </ItemGroup>
   );
 }
