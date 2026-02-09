@@ -34,4 +34,18 @@ export const createItemsSlice: StateCreator<ItemsSlice> = (set) => ({
     save(data);
     set({ items: data });
   },
+  addItem: (item: Item) => {
+    set((state) => {
+      const next = [...state.items, item];
+      save(next);
+      return { items: next };
+    });
+  },
+  removeItem: (id: string) => {
+    set((state) => {
+      const next = state.items.filter((item) => item.id !== id);
+      save(next);
+      return { items: next };
+    });
+  },
 });

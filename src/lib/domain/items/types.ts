@@ -9,4 +9,5 @@ export type ItemsSlice = {
   items: Item[];
   toggleEligibility: (id: string) => void;
   resetItems: () => void;
+  addItem: (item: Item) => void;
 };
