@@ -1,6 +1,7 @@
 import { StateCreator } from 'zustand';
 import data from '@/lib/api/items.json';
-import { Item, ItemsSlice } from '../domain/items/types';
+import { Item, ItemsSlice, NewItem } from '../domain/items/types';
+import generateItemId from '../domain/items/generateItemId';
 
 const KEY = 'items';
 
@@ -18,7 +19,7 @@ function save(items: Item[]) {
   localStorage.setItem(KEY, JSON.stringify(items));
 }
 
-export const createItemsSlice: StateCreator<ItemsSlice> = (set) => ({
+export const createItemsSlice: StateCreator<ItemsSlice> = (set, get) => ({
   items: load(),
   toggleEligibility: (id: string) =>
     set((state) => {
@@ -34,9 +35,17 @@ export const createItemsSlice: StateCreator<ItemsSlice> = (set) => ({
     save(data);
     set({ items: data });
   },
-  addItem: (item: Item) => {
+  addItem: (item: NewItem) => {
+    const name = item.name.trim();
+    if (!name) throw Error('Item name required!');
+
+    const id = generateItemId(name);
+
+    const exists = get().items.some((item) => item.id === id);
+    if (exists) throw Error('Item already exists!');
+
     set((state) => {
-      const next = [...state.items, item];
+      const next = [...state.items, { ...item, name, id }];
       save(next);
       return { items: next };
     });

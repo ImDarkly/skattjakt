@@ -5,6 +5,12 @@ export type Item = {
   category: string;
 };
 
+export type NewItem = {
+  name: string;
+  isEligible: boolean;
+  category: string;
+};
+
 export type ItemsSlice = {
   items: Item[];
   toggleEligibility: (id: string) => void;

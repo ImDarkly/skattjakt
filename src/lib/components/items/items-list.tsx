@@ -8,10 +8,18 @@ import {
   ItemTitle,
 } from '../ui/item';
 import { Switch } from '../ui/switch';
+import { useQueryState } from 'nuqs';
+import { Item as ItemType } from '@/lib/domain/items/types';
 
-export default function ItemsList() {
-  const { items, toggleEligibility } = useBoundStore();
+interface ItemsListProps {
+  items: ItemType[];
+  toggleEligibility: (id: string) => void;
+}
 
+export default function ItemsList({
+  items,
+  toggleEligibility,
+}: ItemsListProps) {
   return (
     <ItemGroup className="gap-4 max-w-xl w-full">
       {items.map((item) => {

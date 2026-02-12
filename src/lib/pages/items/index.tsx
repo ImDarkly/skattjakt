@@ -3,8 +3,15 @@ import ClearItemsButton from '@/lib/components/items/clear-items-button';
 import ItemsControl from '@/lib/components/items/items-control';
 import ItemsList from '@/lib/components/items/items-list';
 import GoBackButton from '@/lib/components/ui/go-back-button';
+import useFilteredItems from '@/lib/domain/items/useFilteredItems';
+import { useBoundStore } from '@/lib/zustand/store';
+import { useQueryState } from 'nuqs';
 
 export default function ItemsPage() {
+  const [category] = useQueryState('category');
+  const { items, toggleEligibility } = useBoundStore();
+  const filteredItems = useFilteredItems(items, category);
+
   return (
     <div className="flex flex-col items-center gap-4">
       <Header
@@ -13,7 +20,7 @@ export default function ItemsPage() {
         right={<ClearItemsButton />}
       />
       <ItemsControl />
-      <ItemsList />
+      <ItemsList items={filteredItems} toggleEligibility={toggleEligibility} />
     </div>
   );
 }

@@ -14,13 +14,12 @@ import { Field, FieldGroup } from '../ui/field';
 import { Input } from '../ui/input';
 import { Label } from '../ui/label';
 import { useBoundStore } from '@/lib/zustand/store';
-import generateItemId from '@/lib/domain/items/generateItemId';
 import { toast } from '../ui/use-toast';
 
 export default function AddItemButton() {
   const [itemName, setItemName] = useState('');
   const [itemCategory, setItemCategory] = useState('Custom');
-  const { items, addItem } = useBoundStore();
+  const addItem = useBoundStore((state) => state.addItem);
 
   function handleNameInput(e: FormEvent<HTMLInputElement>) {
     setItemName(e.currentTarget.value);
@@ -31,29 +30,18 @@ export default function AddItemButton() {
   }
 
   function handleAddItemClick() {
-    const name = itemName.trim();
-    if (!name) {
+    try {
+      addItem({
+        name: itemName,
+        isEligible: true,
+        category: itemCategory.toLowerCase(),
+      });
+    } catch (error: any) {
       return toast({
-        description: 'Item name required!',
+        description: error.message,
         variant: 'destructive',
       });
     }
-
-    const id = generateItemId(name);
-
-    if (items.some((item) => item.id === id)) {
-      return toast({
-        description: 'Item already exists!',
-        variant: 'destructive',
-      });
-    }
-
-    addItem({
-      id,
-      name,
-      isEligible: true,
-      category: itemCategory.toLowerCase(),
-    });
 
     setItemName('');
   }
