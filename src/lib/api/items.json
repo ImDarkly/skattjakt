@@ -1,27 +1,7430 @@
 [
-  { "id": "acacia_boat", "name": "Acacia Boat" },
-  { "id": "acacia_button", "name": "Acacia Button" },
-  { "id": "acacia_chest_boat", "name": "Acacia Chest Boat" },
-  { "id": "acacia_door", "name": "Acacia Door" },
-  { "id": "acacia_fence", "name": "Acacia Fence" },
-  { "id": "acacia_fence_gate", "name": "Acacia Fence Gate" },
-  { "id": "acacia_hanging_sign", "name": "Acacia Hanging Sign" },
-  { "id": "acacia_leaves", "name": "Acacia Leaves" },
-  { "id": "acacia_log", "name": "Acacia Log" },
-  { "id": "acacia_planks", "name": "Acacia Planks" },
-  { "id": "acacia_pressure_plate", "name": "Acacia Pressure Plate" },
-  { "id": "acacia_sapling", "name": "Acacia Sapling" },
-  { "id": "acacia_sign", "name": "Acacia Sign" },
-  { "id": "acacia_slab", "name": "Acacia Slab" },
-  { "id": "acacia_stairs", "name": "Acacia Stairs" },
-  { "id": "acacia_trapdoor", "name": "Acacia Trapdoor" },
-  { "id": "acacia_wood", "name": "Acacia Wood" },
-  { "id": "allium", "name": "Allium" },
-  { "id": "andesite", "name": "Andesite" },
-  { "id": "andesite_slab", "name": "Andesite Slab" },
-  { "id": "andesite_stairs", "name": "Andesite Stairs" },
-  { "id": "andesite_wall", "name": "Andesite Wall" },
-  { "id": "anvil", "name": "Anvil" },
-  { "id": "apple", "name": "Apple" },
-  { "id": "armor_stand", "name": "Armor Stand" }
+  {
+    "id": "acacia_boat",
+    "name": "Acacia Boat",
+    "isEligible": false,
+    "category": "savanna"
+  },
+  {
+    "id": "acacia_button",
+    "name": "Acacia Button",
+    "isEligible": false,
+    "category": "savanna"
+  },
+  {
+    "id": "acacia_chest_boat",
+    "name": "Acacia Chest Boat",
+    "isEligible": false,
+    "category": "savanna"
+  },
+  {
+    "id": "acacia_door",
+    "name": "Acacia Door",
+    "isEligible": false,
+    "category": "savanna"
+  },
+  {
+    "id": "acacia_fence",
+    "name": "Acacia Fence",
+    "isEligible": false,
+    "category": "savanna"
+  },
+  {
+    "id": "acacia_fence_gate",
+    "name": "Acacia Fence Gate",
+    "isEligible": false,
+    "category": "savanna"
+  },
+  {
+    "id": "acacia_hanging_sign",
+    "name": "Acacia Hanging Sign",
+    "isEligible": false,
+    "category": "savanna"
+  },
+  {
+    "id": "acacia_leaves",
+    "name": "Acacia Leaves",
+    "isEligible": false,
+    "category": "savanna"
+  },
+  {
+    "id": "acacia_log",
+    "name": "Acacia Log",
+    "isEligible": false,
+    "category": "savanna"
+  },
+  {
+    "id": "acacia_planks",
+    "name": "Acacia Planks",
+    "isEligible": false,
+    "category": "savanna"
+  },
+  {
+    "id": "acacia_pressure_plate",
+    "name": "Acacia Pressure Plate",
+    "isEligible": false,
+    "category": "savanna"
+  },
+  {
+    "id": "acacia_sapling",
+    "name": "Acacia Sapling",
+    "isEligible": false,
+    "category": "savanna"
+  },
+  {
+    "id": "acacia_sign",
+    "name": "Acacia Sign",
+    "isEligible": false,
+    "category": "savanna"
+  },
+  {
+    "id": "acacia_slab",
+    "name": "Acacia Slab",
+    "isEligible": false,
+    "category": "savanna"
+  },
+  {
+    "id": "acacia_stairs",
+    "name": "Acacia Stairs",
+    "isEligible": false,
+    "category": "savanna"
+  },
+  {
+    "id": "acacia_trapdoor",
+    "name": "Acacia Trapdoor",
+    "isEligible": false,
+    "category": "savanna"
+  },
+  {
+    "id": "acacia_wood",
+    "name": "Acacia Wood",
+    "isEligible": false,
+    "category": "savanna"
+  },
+  {
+    "id": "activator_rail",
+    "name": "Activator Rail",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "air",
+    "name": "Air",
+    "isEligible": false,
+    "category": "unobtainable"
+  },
+  {
+    "id": "allay_spawn_egg",
+    "name": "Allay Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "allium",
+    "name": "Allium",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "amethyst_block",
+    "name": "Amethyst Block",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "amethyst_cluster",
+    "name": "Amethyst Cluster",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "amethyst_shard",
+    "name": "Amethyst Shard",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "ancient_debris",
+    "name": "Ancient Debris",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "andesite",
+    "name": "Andesite",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "andesite_slab",
+    "name": "Andesite Slab",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "andesite_stairs",
+    "name": "Andesite Stairs",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "andesite_wall",
+    "name": "Andesite Wall",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "angler_pottery_sherd",
+    "name": "Angler Pottery Sherd",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "anvil",
+    "name": "Anvil",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "apple",
+    "name": "Apple",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "archer_pottery_sherd",
+    "name": "Archer Pottery Sherd",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "armor_stand",
+    "name": "Armor Stand",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "arms_up_pottery_sherd",
+    "name": "Arms Up Pottery Sherd",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "arrow",
+    "name": "Arrow",
+    "isEligible": false,
+    "category": "enemy_loot"
+  },
+  {
+    "id": "axolotl_bucket",
+    "name": "Axolotl Bucket",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "axolotl_spawn_egg",
+    "name": "Axolotl Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "azalea",
+    "name": "Azalea",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "azalea_leaves",
+    "name": "Azalea Leaves",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "azure_bluet",
+    "name": "Azure Bluet",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "baked_potato",
+    "name": "Baked Potato",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "bamboo",
+    "name": "Bamboo",
+    "isEligible": false,
+    "category": "jungle"
+  },
+  {
+    "id": "bamboo_block",
+    "name": "Bamboo Block",
+    "isEligible": false,
+    "category": "jungle"
+  },
+  {
+    "id": "bamboo_button",
+    "name": "Bamboo Button",
+    "isEligible": false,
+    "category": "jungle"
+  },
+  {
+    "id": "bamboo_chest_raft",
+    "name": "Bamboo Chest Raft",
+    "isEligible": false,
+    "category": "jungle"
+  },
+  {
+    "id": "bamboo_door",
+    "name": "Bamboo Door",
+    "isEligible": false,
+    "category": "jungle"
+  },
+  {
+    "id": "bamboo_fence",
+    "name": "Bamboo Fence",
+    "isEligible": false,
+    "category": "jungle"
+  },
+  {
+    "id": "bamboo_fence_gate",
+    "name": "Bamboo Fence Gate",
+    "isEligible": false,
+    "category": "jungle"
+  },
+  {
+    "id": "bamboo_hanging_sign",
+    "name": "Bamboo Hanging Sign",
+    "isEligible": false,
+    "category": "jungle"
+  },
+  {
+    "id": "bamboo_mosaic",
+    "name": "Bamboo Mosaic",
+    "isEligible": false,
+    "category": "jungle"
+  },
+  {
+    "id": "bamboo_mosaic_slab",
+    "name": "Bamboo Mosaic Slab",
+    "isEligible": false,
+    "category": "jungle"
+  },
+  {
+    "id": "bamboo_mosaic_stairs",
+    "name": "Bamboo Mosaic Stairs",
+    "isEligible": false,
+    "category": "jungle"
+  },
+  {
+    "id": "bamboo_planks",
+    "name": "Bamboo Planks",
+    "isEligible": false,
+    "category": "jungle"
+  },
+  {
+    "id": "bamboo_pressure_plate",
+    "name": "Bamboo Pressure Plate",
+    "isEligible": false,
+    "category": "jungle"
+  },
+  {
+    "id": "bamboo_raft",
+    "name": "Bamboo Raft",
+    "isEligible": false,
+    "category": "jungle"
+  },
+  {
+    "id": "bamboo_sign",
+    "name": "Bamboo Sign",
+    "isEligible": false,
+    "category": "jungle"
+  },
+  {
+    "id": "bamboo_slab",
+    "name": "Bamboo Slab",
+    "isEligible": false,
+    "category": "jungle"
+  },
+  {
+    "id": "bamboo_stairs",
+    "name": "Bamboo Stairs",
+    "isEligible": false,
+    "category": "jungle"
+  },
+  {
+    "id": "bamboo_trapdoor",
+    "name": "Bamboo Trapdoor",
+    "isEligible": false,
+    "category": "jungle"
+  },
+  {
+    "id": "barrel",
+    "name": "Barrel",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "barrier",
+    "name": "Barrier",
+    "isEligible": false,
+    "category": "unobtainable"
+  },
+  {
+    "id": "basalt",
+    "name": "Basalt",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "bat_spawn_egg",
+    "name": "Bat Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "beacon",
+    "name": "Beacon",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "bedrock",
+    "name": "Bedrock",
+    "isEligible": false,
+    "category": "unobtainable"
+  },
+  {
+    "id": "bee_nest",
+    "name": "Bee Nest",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "bee_spawn_egg",
+    "name": "Bee Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "beef",
+    "name": "Beef",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "beehive",
+    "name": "Beehive",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "beetroot",
+    "name": "Beetroot",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "beetroot_seeds",
+    "name": "Beetroot Seeds",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "beetroot_soup",
+    "name": "Beetroot Soup",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "bell",
+    "name": "Bell",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "big_dripleaf",
+    "name": "Big Dripleaf",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "birch_boat",
+    "name": "Birch Boat",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "birch_button",
+    "name": "Birch Button",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "birch_chest_boat",
+    "name": "Birch Chest Boat",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "birch_door",
+    "name": "Birch Door",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "birch_fence",
+    "name": "Birch Fence",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "birch_fence_gate",
+    "name": "Birch Fence Gate",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "birch_hanging_sign",
+    "name": "Birch Hanging Sign",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "birch_leaves",
+    "name": "Birch Leaves",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "birch_log",
+    "name": "Birch Log",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "birch_planks",
+    "name": "Birch Planks",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "birch_pressure_plate",
+    "name": "Birch Pressure Plate",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "birch_sapling",
+    "name": "Birch Sapling",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "birch_sign",
+    "name": "Birch Sign",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "birch_slab",
+    "name": "Birch Slab",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "birch_stairs",
+    "name": "Birch Stairs",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "birch_trapdoor",
+    "name": "Birch Trapdoor",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "birch_wood",
+    "name": "Birch Wood",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "black_banner",
+    "name": "Black Banner",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "black_bed",
+    "name": "Black Bed",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "black_candle",
+    "name": "Black Candle",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "black_carpet",
+    "name": "Black Carpet",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "black_concrete",
+    "name": "Black Concrete",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "black_concrete_powder",
+    "name": "Black Concrete Powder",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "black_dye",
+    "name": "Black Dye",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "black_glazed_terracotta",
+    "name": "Black Glazed Terracotta",
+    "isEligible": false,
+    "category": "messa"
+  },
+  {
+    "id": "black_shulker_box",
+    "name": "Black Shulker Box",
+    "isEligible": false,
+    "category": "end"
+  },
+  {
+    "id": "black_stained_glass",
+    "name": "Black Stained Glass",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "black_stained_glass_pane",
+    "name": "Black Stained Glass Pane",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "black_terracotta",
+    "name": "Black Terracotta",
+    "isEligible": false,
+    "category": "messa"
+  },
+  {
+    "id": "black_wool",
+    "name": "Black Wool",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "blackstone",
+    "name": "Blackstone",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "blackstone_slab",
+    "name": "Blackstone Slab",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "blackstone_stairs",
+    "name": "Blackstone Stairs",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "blackstone_wall",
+    "name": "Blackstone Wall",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "blade_pottery_sherd",
+    "name": "Blade Pottery Sherd",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "blast_furnace",
+    "name": "Blast Furnace",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "blaze_powder",
+    "name": "Blaze Powder",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "blaze_rod",
+    "name": "Blaze Rod",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "blaze_spawn_egg",
+    "name": "Blaze Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "blue_banner",
+    "name": "Blue Banner",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "blue_bed",
+    "name": "Blue Bed",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "blue_candle",
+    "name": "Blue Candle",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "blue_carpet",
+    "name": "Blue Carpet",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "blue_concrete",
+    "name": "Blue Concrete",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "blue_concrete_powder",
+    "name": "Blue Concrete Powder",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "blue_dye",
+    "name": "Blue Dye",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "blue_glazed_terracotta",
+    "name": "Blue Glazed Terracotta",
+    "isEligible": false,
+    "category": "messa"
+  },
+  {
+    "id": "blue_ice",
+    "name": "Blue Ice",
+    "isEligible": false,
+    "category": "cold"
+  },
+  {
+    "id": "blue_orchid",
+    "name": "Blue Orchid",
+    "isEligible": false,
+    "category": "swamp"
+  },
+  {
+    "id": "blue_shulker_box",
+    "name": "Blue Shulker Box",
+    "isEligible": false,
+    "category": "end"
+  },
+  {
+    "id": "blue_stained_glass",
+    "name": "Blue Stained Glass",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "blue_stained_glass_pane",
+    "name": "Blue Stained Glass Pane",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "blue_terracotta",
+    "name": "Blue Terracotta",
+    "isEligible": false,
+    "category": "messa"
+  },
+  {
+    "id": "blue_wool",
+    "name": "Blue Wool",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "bone",
+    "name": "Bone",
+    "isEligible": false,
+    "category": "enemy_loot"
+  },
+  {
+    "id": "bone_block",
+    "name": "Bone Block",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "bone_meal",
+    "name": "Bone Meal",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "book",
+    "name": "Book",
+    "isEligible": false,
+    "category": "animals_loot"
+  },
+  {
+    "id": "bookshelf",
+    "name": "Bookshelf",
+    "isEligible": false,
+    "category": "animals_loot"
+  },
+  {
+    "id": "bow",
+    "name": "Bow",
+    "isEligible": false,
+    "category": "enemy_loot"
+  },
+  {
+    "id": "bowl",
+    "name": "Bowl",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "brain_coral",
+    "name": "Brain Coral",
+    "isEligible": false,
+    "category": "silk_touch"
+  },
+  {
+    "id": "brain_coral_block",
+    "name": "Brain Coral Block",
+    "isEligible": false,
+    "category": "silk_touch"
+  },
+  {
+    "id": "brain_coral_fan",
+    "name": "Brain Coral Fan",
+    "isEligible": false,
+    "category": "silk_touch"
+  },
+  {
+    "id": "bread",
+    "name": "Bread",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "brewer_pottery_sherd",
+    "name": "Brewer Pottery Sherd",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "brewing_stand",
+    "name": "Brewing Stand",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "brick",
+    "name": "Brick",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "brick_slab",
+    "name": "Brick Slab",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "brick_stairs",
+    "name": "Brick Stairs",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "brick_wall",
+    "name": "Brick Wall",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "bricks",
+    "name": "Bricks",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "brown_banner",
+    "name": "Brown Banner",
+    "isEligible": false,
+    "category": "jungle"
+  },
+  {
+    "id": "brown_bed",
+    "name": "Brown Bed",
+    "isEligible": false,
+    "category": "jungle"
+  },
+  {
+    "id": "brown_candle",
+    "name": "Brown Candle",
+    "isEligible": false,
+    "category": "jungle"
+  },
+  {
+    "id": "brown_carpet",
+    "name": "Brown Carpet",
+    "isEligible": false,
+    "category": "jungle"
+  },
+  {
+    "id": "brown_concrete",
+    "name": "Brown Concrete",
+    "isEligible": false,
+    "category": "jungle"
+  },
+  {
+    "id": "brown_concrete_powder",
+    "name": "Brown Concrete Powder",
+    "isEligible": false,
+    "category": "jungle"
+  },
+  {
+    "id": "brown_dye",
+    "name": "Brown Dye",
+    "isEligible": false,
+    "category": "jungle"
+  },
+  {
+    "id": "brown_glazed_terracotta",
+    "name": "Brown Glazed Terracotta",
+    "isEligible": false,
+    "category": "messa"
+  },
+  {
+    "id": "brown_mushroom",
+    "name": "Brown Mushroom",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "brown_mushroom_block",
+    "name": "Brown Mushroom Block",
+    "isEligible": false,
+    "category": "dark_forest"
+  },
+  {
+    "id": "brown_shulker_box",
+    "name": "Brown Shulker Box",
+    "isEligible": false,
+    "category": "end"
+  },
+  {
+    "id": "brown_stained_glass",
+    "name": "Brown Stained Glass",
+    "isEligible": false,
+    "category": "jungle"
+  },
+  {
+    "id": "brown_stained_glass_pane",
+    "name": "Brown Stained Glass Pane",
+    "isEligible": false,
+    "category": "jungle"
+  },
+  {
+    "id": "brown_terracotta",
+    "name": "Brown Terracotta",
+    "isEligible": false,
+    "category": "messa"
+  },
+  {
+    "id": "brown_wool",
+    "name": "Brown Wool",
+    "isEligible": false,
+    "category": "jungle"
+  },
+  {
+    "id": "brush",
+    "name": "Brush",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "bubble_coral",
+    "name": "Bubble Coral",
+    "isEligible": false,
+    "category": "silk_touch"
+  },
+  {
+    "id": "bubble_coral_block",
+    "name": "Bubble Coral Block",
+    "isEligible": false,
+    "category": "silk_touch"
+  },
+  {
+    "id": "bubble_coral_fan",
+    "name": "Bubble Coral Fan",
+    "isEligible": false,
+    "category": "silk_touch"
+  },
+  {
+    "id": "bucket",
+    "name": "Bucket",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "budding_amethyst",
+    "name": "Budding Amethyst",
+    "isEligible": false,
+    "category": "unobtainable"
+  },
+  {
+    "id": "bundle",
+    "name": "Bundle",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "burn_pottery_sherd",
+    "name": "Burn Pottery Sherd",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "cactus",
+    "name": "Cactus",
+    "isEligible": false,
+    "category": "desert"
+  },
+  {
+    "id": "cake",
+    "name": "Cake",
+    "isEligible": false,
+    "category": "animals_loot"
+  },
+  {
+    "id": "calcite",
+    "name": "Calcite",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "calibrated_sculk_sensor",
+    "name": "Calibrated Sculk Sensor",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "camel_spawn_egg",
+    "name": "Camel Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "campfire",
+    "name": "Campfire",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "candle",
+    "name": "Candle",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "carrot",
+    "name": "Carrot",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "carrot_on_a_stick",
+    "name": "Carrot On A Stick",
+    "isEligible": false,
+    "category": "enemy_loot"
+  },
+  {
+    "id": "cartography_table",
+    "name": "Cartography Table",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "carved_pumpkin",
+    "name": "Carved Pumpkin",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "cat_spawn_egg",
+    "name": "Cat Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "cauldron",
+    "name": "Cauldron",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "cave_spider_spawn_egg",
+    "name": "Cave Spider Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "chain",
+    "name": "Chain",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "chain_command_block",
+    "name": "Chain Command Block",
+    "isEligible": false,
+    "category": "unobtainable"
+  },
+  {
+    "id": "chainmail_boots",
+    "name": "Chainmail Boots",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "chainmail_chestplate",
+    "name": "Chainmail Chestplate",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "chainmail_helmet",
+    "name": "Chainmail Helmet",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "chainmail_leggings",
+    "name": "Chainmail Leggings",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "charcoal",
+    "name": "Charcoal",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "cherry_boat",
+    "name": "Cherry Boat",
+    "isEligible": false,
+    "category": "cherry_grove"
+  },
+  {
+    "id": "cherry_button",
+    "name": "Cherry Button",
+    "isEligible": false,
+    "category": "cherry_grove"
+  },
+  {
+    "id": "cherry_chest_boat",
+    "name": "Cherry Chest Boat",
+    "isEligible": false,
+    "category": "cherry_grove"
+  },
+  {
+    "id": "cherry_door",
+    "name": "Cherry Door",
+    "isEligible": false,
+    "category": "cherry_grove"
+  },
+  {
+    "id": "cherry_fence",
+    "name": "Cherry Fence",
+    "isEligible": false,
+    "category": "cherry_grove"
+  },
+  {
+    "id": "cherry_fence_gate",
+    "name": "Cherry Fence Gate",
+    "isEligible": false,
+    "category": "cherry_grove"
+  },
+  {
+    "id": "cherry_hanging_sign",
+    "name": "Cherry Hanging Sign",
+    "isEligible": false,
+    "category": "cherry_grove"
+  },
+  {
+    "id": "cherry_leaves",
+    "name": "Cherry Leaves",
+    "isEligible": false,
+    "category": "cherry_grove"
+  },
+  {
+    "id": "cherry_log",
+    "name": "Cherry Log",
+    "isEligible": false,
+    "category": "cherry_grove"
+  },
+  {
+    "id": "cherry_planks",
+    "name": "Cherry Planks",
+    "isEligible": false,
+    "category": "cherry_grove"
+  },
+  {
+    "id": "cherry_pressure_plate",
+    "name": "Cherry Pressure Plate",
+    "isEligible": false,
+    "category": "cherry_grove"
+  },
+  {
+    "id": "cherry_sapling",
+    "name": "Cherry Sapling",
+    "isEligible": false,
+    "category": "cherry_grove"
+  },
+  {
+    "id": "cherry_sign",
+    "name": "Cherry Sign",
+    "isEligible": false,
+    "category": "cherry_grove"
+  },
+  {
+    "id": "cherry_slab",
+    "name": "Cherry Slab",
+    "isEligible": false,
+    "category": "cherry_grove"
+  },
+  {
+    "id": "cherry_stairs",
+    "name": "Cherry Stairs",
+    "isEligible": false,
+    "category": "cherry_grove"
+  },
+  {
+    "id": "cherry_trapdoor",
+    "name": "Cherry Trapdoor",
+    "isEligible": false,
+    "category": "cherry_grove"
+  },
+  {
+    "id": "cherry_wood",
+    "name": "Cherry Wood",
+    "isEligible": false,
+    "category": "cherry_grove"
+  },
+  {
+    "id": "chest",
+    "name": "Chest",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "chest_minecart",
+    "name": "Chest Minecart",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "chicken",
+    "name": "Chicken",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "chicken_spawn_egg",
+    "name": "Chicken Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "chipped_anvil",
+    "name": "Chipped Anvil",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "chiseled_bookshelf",
+    "name": "Chiseled Bookshelf",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "chiseled_deepslate",
+    "name": "Chiseled Deepslate",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "chiseled_nether_bricks",
+    "name": "Chiseled Nether Bricks",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "chiseled_polished_blackstone",
+    "name": "Chiseled Polished Blackstone",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "chiseled_quartz_block",
+    "name": "Chiseled Quartz Block",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "chiseled_red_sandstone",
+    "name": "Chiseled Red Sandstone",
+    "isEligible": false,
+    "category": "messa"
+  },
+  {
+    "id": "chiseled_sandstone",
+    "name": "Chiseled Sandstone",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "chiseled_stone_bricks",
+    "name": "Chiseled Stone Bricks",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "chorus_flower",
+    "name": "Chorus Flower",
+    "isEligible": false,
+    "category": "end"
+  },
+  {
+    "id": "chorus_fruit",
+    "name": "Chorus Fruit",
+    "isEligible": false,
+    "category": "end"
+  },
+  {
+    "id": "chorus_plant",
+    "name": "Chorus Plant",
+    "isEligible": false,
+    "category": "end"
+  },
+  {
+    "id": "clay",
+    "name": "Clay",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "clay_ball",
+    "name": "Clay Ball",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "clock",
+    "name": "Clock",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "coal",
+    "name": "Coal",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "coal_block",
+    "name": "Coal Block",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "coal_ore",
+    "name": "Coal Ore",
+    "isEligible": false,
+    "category": "silk_touch"
+  },
+  {
+    "id": "coarse_dirt",
+    "name": "Coarse Dirt",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "coast_armor_trim_smithing_template",
+    "name": "Coast Armor Trim Smithing Template",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "cobbled_deepslate",
+    "name": "Cobbled Deepslate",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "cobbled_deepslate_slab",
+    "name": "Cobbled Deepslate Slab",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "cobbled_deepslate_stairs",
+    "name": "Cobbled Deepslate Stairs",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "cobbled_deepslate_wall",
+    "name": "Cobbled Deepslate Wall",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "cobblestone",
+    "name": "Cobblestone",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "cobblestone_slab",
+    "name": "Cobblestone Slab",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "cobblestone_stairs",
+    "name": "Cobblestone Stairs",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "cobblestone_wall",
+    "name": "Cobblestone Wall",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "cobweb",
+    "name": "Cobweb",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "cocoa_beans",
+    "name": "Cocoa Beans",
+    "isEligible": false,
+    "category": "jungle"
+  },
+  {
+    "id": "cod",
+    "name": "Cod",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "cod_bucket",
+    "name": "Cod Bucket",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "cod_spawn_egg",
+    "name": "Cod Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "command_block",
+    "name": "Command Block",
+    "isEligible": false,
+    "category": "unobtainable"
+  },
+  {
+    "id": "command_block_minecart",
+    "name": "Command Block Minecart",
+    "isEligible": false,
+    "category": "unobtainable"
+  },
+  {
+    "id": "comparator",
+    "name": "Comparator",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "compass",
+    "name": "Compass",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "composter",
+    "name": "Composter",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "conduit",
+    "name": "Conduit",
+    "isEligible": false,
+    "category": "ocean"
+  },
+  {
+    "id": "cooked_beef",
+    "name": "Cooked Beef",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "cooked_chicken",
+    "name": "Cooked Chicken",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "cooked_cod",
+    "name": "Cooked Cod",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "cooked_mutton",
+    "name": "Cooked Mutton",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "cooked_porkchop",
+    "name": "Cooked Porkchop",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "cooked_rabbit",
+    "name": "Cooked Rabbit",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "cooked_salmon",
+    "name": "Cooked Salmon",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "cookie",
+    "name": "Cookie",
+    "isEligible": false,
+    "category": "jungle"
+  },
+  {
+    "id": "copper_block",
+    "name": "Copper Block",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "copper_ingot",
+    "name": "Copper Ingot",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "copper_ore",
+    "name": "Copper Ore",
+    "isEligible": false,
+    "category": "silk_touch"
+  },
+  {
+    "id": "cornflower",
+    "name": "Cornflower",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "cow_spawn_egg",
+    "name": "Cow Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "cracked_deepslate_bricks",
+    "name": "Cracked Deepslate Bricks",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "cracked_deepslate_tiles",
+    "name": "Cracked Deepslate Tiles",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "cracked_nether_bricks",
+    "name": "Cracked Nether Bricks",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "cracked_polished_blackstone_bricks",
+    "name": "Cracked Polished Blackstone Bricks",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "cracked_stone_bricks",
+    "name": "Cracked Stone Bricks",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "crafting_table",
+    "name": "Crafting Table",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "creeper_banner_pattern",
+    "name": "Creeper Banner Pattern",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "creeper_head",
+    "name": "Creeper Head",
+    "isEligible": false,
+    "category": "unobtainable"
+  },
+  {
+    "id": "creeper_spawn_egg",
+    "name": "Creeper Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "crimson_button",
+    "name": "Crimson Button",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "crimson_door",
+    "name": "Crimson Door",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "crimson_fence",
+    "name": "Crimson Fence",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "crimson_fence_gate",
+    "name": "Crimson Fence Gate",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "crimson_fungus",
+    "name": "Crimson Fungus",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "crimson_hanging_sign",
+    "name": "Crimson Hanging Sign",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "crimson_hyphae",
+    "name": "Crimson Hyphae",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "crimson_nylium",
+    "name": "Crimson Nylium",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "crimson_planks",
+    "name": "Crimson Planks",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "crimson_pressure_plate",
+    "name": "Crimson Pressure Plate",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "crimson_roots",
+    "name": "Crimson Roots",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "crimson_sign",
+    "name": "Crimson Sign",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "crimson_slab",
+    "name": "Crimson Slab",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "crimson_stairs",
+    "name": "Crimson Stairs",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "crimson_stem",
+    "name": "Crimson Stem",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "crimson_trapdoor",
+    "name": "Crimson Trapdoor",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "crossbow",
+    "name": "Crossbow",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "crying_obsidian",
+    "name": "Crying Obsidian",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "cut_copper",
+    "name": "Cut Copper",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "cut_copper_slab",
+    "name": "Cut Copper Slab",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "cut_copper_stairs",
+    "name": "Cut Copper Stairs",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "cut_red_sandstone",
+    "name": "Cut Red Sandstone",
+    "isEligible": false,
+    "category": "messa"
+  },
+  {
+    "id": "cut_red_sandstone_slab",
+    "name": "Cut Red Sandstone Slab",
+    "isEligible": false,
+    "category": "messa"
+  },
+  {
+    "id": "cut_sandstone",
+    "name": "Cut Sandstone",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "cut_sandstone_slab",
+    "name": "Cut Sandstone Slab",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "cyan_banner",
+    "name": "Cyan Banner",
+    "isEligible": false,
+    "category": "desert"
+  },
+  {
+    "id": "cyan_bed",
+    "name": "Cyan Bed",
+    "isEligible": false,
+    "category": "desert"
+  },
+  {
+    "id": "cyan_candle",
+    "name": "Cyan Candle",
+    "isEligible": false,
+    "category": "desert"
+  },
+  {
+    "id": "cyan_carpet",
+    "name": "Cyan Carpet",
+    "isEligible": false,
+    "category": "desert"
+  },
+  {
+    "id": "cyan_concrete",
+    "name": "Cyan Concrete",
+    "isEligible": false,
+    "category": "desert"
+  },
+  {
+    "id": "cyan_concrete_powder",
+    "name": "Cyan Concrete Powder",
+    "isEligible": false,
+    "category": "desert"
+  },
+  {
+    "id": "cyan_dye",
+    "name": "Cyan Dye",
+    "isEligible": false,
+    "category": "desert"
+  },
+  {
+    "id": "cyan_glazed_terracotta",
+    "name": "Cyan Glazed Terracotta",
+    "isEligible": false,
+    "category": "messa"
+  },
+  {
+    "id": "cyan_shulker_box",
+    "name": "Cyan Shulker Box",
+    "isEligible": false,
+    "category": "end"
+  },
+  {
+    "id": "cyan_stained_glass",
+    "name": "Cyan Stained Glass",
+    "isEligible": false,
+    "category": "desert"
+  },
+  {
+    "id": "cyan_stained_glass_pane",
+    "name": "Cyan Stained Glass Pane",
+    "isEligible": false,
+    "category": "desert"
+  },
+  {
+    "id": "cyan_terracotta",
+    "name": "Cyan Terracotta",
+    "isEligible": false,
+    "category": "messa"
+  },
+  {
+    "id": "cyan_wool",
+    "name": "Cyan Wool",
+    "isEligible": false,
+    "category": "desert"
+  },
+  {
+    "id": "damaged_anvil",
+    "name": "Damaged Anvil",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "dandelion",
+    "name": "Dandelion",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "danger_pottery_sherd",
+    "name": "Danger Pottery Sherd",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "dark_oak_boat",
+    "name": "Dark Oak Boat",
+    "isEligible": false,
+    "category": "dark_forest"
+  },
+  {
+    "id": "dark_oak_button",
+    "name": "Dark Oak Button",
+    "isEligible": false,
+    "category": "dark_forest"
+  },
+  {
+    "id": "dark_oak_chest_boat",
+    "name": "Dark Oak Chest Boat",
+    "isEligible": false,
+    "category": "dark_forest"
+  },
+  {
+    "id": "dark_oak_door",
+    "name": "Dark Oak Door",
+    "isEligible": false,
+    "category": "dark_forest"
+  },
+  {
+    "id": "dark_oak_fence",
+    "name": "Dark Oak Fence",
+    "isEligible": false,
+    "category": "dark_forest"
+  },
+  {
+    "id": "dark_oak_fence_gate",
+    "name": "Dark Oak Fence Gate",
+    "isEligible": false,
+    "category": "dark_forest"
+  },
+  {
+    "id": "dark_oak_hanging_sign",
+    "name": "Dark Oak Hanging Sign",
+    "isEligible": false,
+    "category": "dark_forest"
+  },
+  {
+    "id": "dark_oak_leaves",
+    "name": "Dark Oak Leaves",
+    "isEligible": false,
+    "category": "dark_forest"
+  },
+  {
+    "id": "dark_oak_log",
+    "name": "Dark Oak Log",
+    "isEligible": false,
+    "category": "dark_forest"
+  },
+  {
+    "id": "dark_oak_planks",
+    "name": "Dark Oak Planks",
+    "isEligible": false,
+    "category": "dark_forest"
+  },
+  {
+    "id": "dark_oak_pressure_plate",
+    "name": "Dark Oak Pressure Plate",
+    "isEligible": false,
+    "category": "dark_forest"
+  },
+  {
+    "id": "dark_oak_sapling",
+    "name": "Dark Oak Sapling",
+    "isEligible": false,
+    "category": "dark_forest"
+  },
+  {
+    "id": "dark_oak_sign",
+    "name": "Dark Oak Sign",
+    "isEligible": false,
+    "category": "dark_forest"
+  },
+  {
+    "id": "dark_oak_slab",
+    "name": "Dark Oak Slab",
+    "isEligible": false,
+    "category": "dark_forest"
+  },
+  {
+    "id": "dark_oak_stairs",
+    "name": "Dark Oak Stairs",
+    "isEligible": false,
+    "category": "dark_forest"
+  },
+  {
+    "id": "dark_oak_trapdoor",
+    "name": "Dark Oak Trapdoor",
+    "isEligible": false,
+    "category": "dark_forest"
+  },
+  {
+    "id": "dark_oak_wood",
+    "name": "Dark Oak Wood",
+    "isEligible": false,
+    "category": "dark_forest"
+  },
+  {
+    "id": "dark_prismarine",
+    "name": "Dark Prismarine",
+    "isEligible": false,
+    "category": "ocean"
+  },
+  {
+    "id": "dark_prismarine_slab",
+    "name": "Dark Prismarine Slab",
+    "isEligible": false,
+    "category": "ocean"
+  },
+  {
+    "id": "dark_prismarine_stairs",
+    "name": "Dark Prismarine Stairs",
+    "isEligible": false,
+    "category": "ocean"
+  },
+  {
+    "id": "daylight_detector",
+    "name": "Daylight Detector",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "dead_brain_coral",
+    "name": "Dead Brain Coral",
+    "isEligible": false,
+    "category": "ocean"
+  },
+  {
+    "id": "dead_brain_coral_block",
+    "name": "Dead Brain Coral Block",
+    "isEligible": false,
+    "category": "ocean"
+  },
+  {
+    "id": "dead_brain_coral_fan",
+    "name": "Dead Brain Coral Fan",
+    "isEligible": false,
+    "category": "ocean"
+  },
+  {
+    "id": "dead_bubble_coral",
+    "name": "Dead Bubble Coral",
+    "isEligible": false,
+    "category": "ocean"
+  },
+  {
+    "id": "dead_bubble_coral_block",
+    "name": "Dead Bubble Coral Block",
+    "isEligible": false,
+    "category": "ocean"
+  },
+  {
+    "id": "dead_bubble_coral_fan",
+    "name": "Dead Bubble Coral Fan",
+    "isEligible": false,
+    "category": "ocean"
+  },
+  {
+    "id": "dead_bush",
+    "name": "Dead Bush",
+    "isEligible": false,
+    "category": "desert"
+  },
+  {
+    "id": "dead_fire_coral",
+    "name": "Dead Fire Coral",
+    "isEligible": false,
+    "category": "ocean"
+  },
+  {
+    "id": "dead_fire_coral_block",
+    "name": "Dead Fire Coral Block",
+    "isEligible": false,
+    "category": "ocean"
+  },
+  {
+    "id": "dead_fire_coral_fan",
+    "name": "Dead Fire Coral Fan",
+    "isEligible": false,
+    "category": "ocean"
+  },
+  {
+    "id": "dead_horn_coral",
+    "name": "Dead Horn Coral",
+    "isEligible": false,
+    "category": "ocean"
+  },
+  {
+    "id": "dead_horn_coral_block",
+    "name": "Dead Horn Coral Block",
+    "isEligible": false,
+    "category": "ocean"
+  },
+  {
+    "id": "dead_horn_coral_fan",
+    "name": "Dead Horn Coral Fan",
+    "isEligible": false,
+    "category": "ocean"
+  },
+  {
+    "id": "dead_tube_coral",
+    "name": "Dead Tube Coral",
+    "isEligible": false,
+    "category": "ocean"
+  },
+  {
+    "id": "dead_tube_coral_block",
+    "name": "Dead Tube Coral Block",
+    "isEligible": false,
+    "category": "ocean"
+  },
+  {
+    "id": "dead_tube_coral_fan",
+    "name": "Dead Tube Coral Fan",
+    "isEligible": false,
+    "category": "ocean"
+  },
+  {
+    "id": "debug_stick",
+    "name": "Debug Stick",
+    "isEligible": false,
+    "category": "unobtainable"
+  },
+  {
+    "id": "decorated_pot",
+    "name": "Decorated Pot",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "deepslate",
+    "name": "Deepslate",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "deepslate_brick_slab",
+    "name": "Deepslate Brick Slab",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "deepslate_brick_stairs",
+    "name": "Deepslate Brick Stairs",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "deepslate_brick_wall",
+    "name": "Deepslate Brick Wall",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "deepslate_bricks",
+    "name": "Deepslate Bricks",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "deepslate_coal_ore",
+    "name": "Deepslate Coal Ore",
+    "isEligible": false,
+    "category": "silk_touch"
+  },
+  {
+    "id": "deepslate_copper_ore",
+    "name": "Deepslate Copper Ore",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "deepslate_diamond_ore",
+    "name": "Deepslate Diamond Ore",
+    "isEligible": false,
+    "category": "silk_touch"
+  },
+  {
+    "id": "deepslate_emerald_ore",
+    "name": "Deepslate Emerald Ore",
+    "isEligible": false,
+    "category": "silk_touch"
+  },
+  {
+    "id": "deepslate_gold_ore",
+    "name": "Deepslate Gold Ore",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "deepslate_iron_ore",
+    "name": "Deepslate Iron Ore",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "deepslate_lapis_ore",
+    "name": "Deepslate Lapis Ore",
+    "isEligible": false,
+    "category": "silk_touch"
+  },
+  {
+    "id": "deepslate_redstone_ore",
+    "name": "Deepslate Redstone Ore",
+    "isEligible": false,
+    "category": "silk_touch"
+  },
+  {
+    "id": "deepslate_tile_slab",
+    "name": "Deepslate Tile Slab",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "deepslate_tile_stairs",
+    "name": "Deepslate Tile Stairs",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "deepslate_tile_wall",
+    "name": "Deepslate Tile Wall",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "deepslate_tiles",
+    "name": "Deepslate Tiles",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "detector_rail",
+    "name": "Detector Rail",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "diamond",
+    "name": "Diamond",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "diamond_axe",
+    "name": "Diamond Axe",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "diamond_block",
+    "name": "Diamond Block",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "diamond_boots",
+    "name": "Diamond Boots",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "diamond_chestplate",
+    "name": "Diamond Chestplate",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "diamond_helmet",
+    "name": "Diamond Helmet",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "diamond_hoe",
+    "name": "Diamond Hoe",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "diamond_horse_armor",
+    "name": "Diamond Horse Armor",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "diamond_leggings",
+    "name": "Diamond Leggings",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "diamond_ore",
+    "name": "Diamond Ore",
+    "isEligible": false,
+    "category": "silk_touch"
+  },
+  {
+    "id": "diamond_pickaxe",
+    "name": "Diamond Pickaxe",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "diamond_shovel",
+    "name": "Diamond Shovel",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "diamond_sword",
+    "name": "Diamond Sword",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "diorite",
+    "name": "Diorite",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "diorite_slab",
+    "name": "Diorite Slab",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "diorite_stairs",
+    "name": "Diorite Stairs",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "diorite_wall",
+    "name": "Diorite Wall",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "dirt",
+    "name": "Dirt",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "dirt_path",
+    "name": "Dirt Path",
+    "isEligible": false,
+    "category": "unobtainable"
+  },
+  {
+    "id": "disc_fragment_5",
+    "name": "Disc Fragment 5",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "dispenser",
+    "name": "Dispenser",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "dolphin_spawn_egg",
+    "name": "Dolphin Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "donkey_spawn_egg",
+    "name": "Donkey Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "dragon_breath",
+    "name": "Dragon Breath",
+    "isEligible": false,
+    "category": "end"
+  },
+  {
+    "id": "dragon_egg",
+    "name": "Dragon Egg",
+    "isEligible": false,
+    "category": "end"
+  },
+  {
+    "id": "dragon_head",
+    "name": "Dragon Head",
+    "isEligible": false,
+    "category": "end"
+  },
+  {
+    "id": "dried_kelp",
+    "name": "Dried Kelp",
+    "isEligible": false,
+    "category": "ocean"
+  },
+  {
+    "id": "dried_kelp_block",
+    "name": "Dried Kelp Block",
+    "isEligible": false,
+    "category": "ocean"
+  },
+  {
+    "id": "dripstone_block",
+    "name": "Dripstone Block",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "dropper",
+    "name": "Dropper",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "drowned_spawn_egg",
+    "name": "Drowned Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "dune_armor_trim_smithing_template",
+    "name": "Dune Armor Trim Smithing Template",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "echo_shard",
+    "name": "Echo Shard",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "egg",
+    "name": "Egg",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "elder_guardian_spawn_egg",
+    "name": "Elder Guardian Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "elytra",
+    "name": "Elytra",
+    "isEligible": false,
+    "category": "end"
+  },
+  {
+    "id": "emerald",
+    "name": "Emerald",
+    "isEligible": false,
+    "category": "mountain"
+  },
+  {
+    "id": "emerald_block",
+    "name": "Emerald Block",
+    "isEligible": false,
+    "category": "mountain"
+  },
+  {
+    "id": "emerald_ore",
+    "name": "Emerald Ore",
+    "isEligible": false,
+    "category": "silk_touch"
+  },
+  {
+    "id": "enchanted_book",
+    "name": "Enchanted Book",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "enchanted_golden_apple",
+    "name": "Enchanted Golden Apple",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "enchanting_table",
+    "name": "Enchanting Table",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "end_crystal",
+    "name": "End Crystal",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "end_portal_frame",
+    "name": "End Portal Frame",
+    "isEligible": false,
+    "category": "unobtainable"
+  },
+  {
+    "id": "end_rod",
+    "name": "End Rod",
+    "isEligible": false,
+    "category": "end"
+  },
+  {
+    "id": "end_stone",
+    "name": "End Stone",
+    "isEligible": false,
+    "category": "end"
+  },
+  {
+    "id": "end_stone_brick_slab",
+    "name": "End Stone Brick Slab",
+    "isEligible": false,
+    "category": "end"
+  },
+  {
+    "id": "end_stone_brick_stairs",
+    "name": "End Stone Brick Stairs",
+    "isEligible": false,
+    "category": "end"
+  },
+  {
+    "id": "end_stone_brick_wall",
+    "name": "End Stone Brick Wall",
+    "isEligible": false,
+    "category": "end"
+  },
+  {
+    "id": "end_stone_bricks",
+    "name": "End Stone Bricks",
+    "isEligible": false,
+    "category": "end"
+  },
+  {
+    "id": "ender_chest",
+    "name": "Ender Chest",
+    "isEligible": false,
+    "category": "end"
+  },
+  {
+    "id": "ender_dragon_spawn_egg",
+    "name": "Ender Dragon Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "ender_eye",
+    "name": "Ender Eye",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "ender_pearl",
+    "name": "Ender Pearl",
+    "isEligible": false,
+    "category": "end"
+  },
+  {
+    "id": "enderman_spawn_egg",
+    "name": "Enderman Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "endermite_spawn_egg",
+    "name": "Endermite Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "evoker_spawn_egg",
+    "name": "Evoker Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "experience_bottle",
+    "name": "Experience Bottle",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "explorer_pottery_sherd",
+    "name": "Explorer Pottery Sherd",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "exposed_copper",
+    "name": "Exposed Copper",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "exposed_cut_copper",
+    "name": "Exposed Cut Copper",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "exposed_cut_copper_slab",
+    "name": "Exposed Cut Copper Slab",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "exposed_cut_copper_stairs",
+    "name": "Exposed Cut Copper Stairs",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "eye_armor_trim_smithing_template",
+    "name": "Eye Armor Trim Smithing Template",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "farmland",
+    "name": "Farmland",
+    "isEligible": false,
+    "category": "unobtainable"
+  },
+  {
+    "id": "feather",
+    "name": "Feather",
+    "isEligible": false,
+    "category": "animals_loot"
+  },
+  {
+    "id": "fermented_spider_eye",
+    "name": "Fermented Spider Eye",
+    "isEligible": false,
+    "category": "enemy_loot"
+  },
+  {
+    "id": "fern",
+    "name": "Fern",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "filled_map",
+    "name": "Filled Map",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "fire_charge",
+    "name": "Fire Charge",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "fire_coral",
+    "name": "Fire Coral",
+    "isEligible": false,
+    "category": "silk_touch"
+  },
+  {
+    "id": "fire_coral_block",
+    "name": "Fire Coral Block",
+    "isEligible": false,
+    "category": "silk_touch"
+  },
+  {
+    "id": "fire_coral_fan",
+    "name": "Fire Coral Fan",
+    "isEligible": false,
+    "category": "silk_touch"
+  },
+  {
+    "id": "firework_rocket",
+    "name": "Firework Rocket",
+    "isEligible": false,
+    "category": "enemy_loot"
+  },
+  {
+    "id": "firework_star",
+    "name": "Firework Star",
+    "isEligible": false,
+    "category": "enemy_loot"
+  },
+  {
+    "id": "fishing_rod",
+    "name": "Fishing Rod",
+    "isEligible": false,
+    "category": "enemy_loot"
+  },
+  {
+    "id": "fletching_table",
+    "name": "Fletching Table",
+    "isEligible": false,
+    "category": "enemy_loot"
+  },
+  {
+    "id": "flint",
+    "name": "Flint",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "flint_and_steel",
+    "name": "Flint And Steel",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "flower_banner_pattern",
+    "name": "Flower Banner Pattern",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "flower_pot",
+    "name": "Flower Pot",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "flowering_azalea",
+    "name": "Flowering Azalea",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "flowering_azalea_leaves",
+    "name": "Flowering Azalea Leaves",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "fox_spawn_egg",
+    "name": "Fox Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "friend_pottery_sherd",
+    "name": "Friend Pottery Sherd",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "frog_spawn_egg",
+    "name": "Frog Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "frogspawn",
+    "name": "Frogspawn",
+    "isEligible": false,
+    "category": "unobtainable"
+  },
+  {
+    "id": "furnace",
+    "name": "Furnace",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "furnace_minecart",
+    "name": "Furnace Minecart",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "ghast_spawn_egg",
+    "name": "Ghast Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "ghast_tear",
+    "name": "Ghast Tear",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "gilded_blackstone",
+    "name": "Gilded Blackstone",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "glass",
+    "name": "Glass",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "glass_bottle",
+    "name": "Glass Bottle",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "glass_pane",
+    "name": "Glass Pane",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "glistering_melon_slice",
+    "name": "Glistering Melon Slice",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "globe_banner_pattern",
+    "name": "Globe Banner Pattern",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "glow_berries",
+    "name": "Glow Berries",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "glow_ink_sac",
+    "name": "Glow Ink Sac",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "glow_item_frame",
+    "name": "Glow Item Frame",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "glow_lichen",
+    "name": "Glow Lichen",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "glow_squid_spawn_egg",
+    "name": "Glow Squid Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "glowstone",
+    "name": "Glowstone",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "glowstone_dust",
+    "name": "Glowstone Dust",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "goat_horn",
+    "name": "Goat Horn",
+    "isEligible": false,
+    "category": "mountain"
+  },
+  {
+    "id": "goat_spawn_egg",
+    "name": "Goat Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "gold_block",
+    "name": "Gold Block",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "gold_ingot",
+    "name": "Gold Ingot",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "gold_nugget",
+    "name": "Gold Nugget",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "gold_ore",
+    "name": "Gold Ore",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "golden_apple",
+    "name": "Golden Apple",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "golden_axe",
+    "name": "Golden Axe",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "golden_boots",
+    "name": "Golden Boots",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "golden_carrot",
+    "name": "Golden Carrot",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "golden_chestplate",
+    "name": "Golden Chestplate",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "golden_helmet",
+    "name": "Golden Helmet",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "golden_hoe",
+    "name": "Golden Hoe",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "golden_horse_armor",
+    "name": "Golden Horse Armor",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "golden_leggings",
+    "name": "Golden Leggings",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "golden_pickaxe",
+    "name": "Golden Pickaxe",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "golden_shovel",
+    "name": "Golden Shovel",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "golden_sword",
+    "name": "Golden Sword",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "granite",
+    "name": "Granite",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "granite_slab",
+    "name": "Granite Slab",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "granite_stairs",
+    "name": "Granite Stairs",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "granite_wall",
+    "name": "Granite Wall",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "grass",
+    "name": "Grass",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "grass_block",
+    "name": "Grass Block",
+    "isEligible": false,
+    "category": "silk_touch"
+  },
+  {
+    "id": "gravel",
+    "name": "Gravel",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "gray_banner",
+    "name": "Gray Banner",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "gray_bed",
+    "name": "Gray Bed",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "gray_candle",
+    "name": "Gray Candle",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "gray_carpet",
+    "name": "Gray Carpet",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "gray_concrete",
+    "name": "Gray Concrete",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "gray_concrete_powder",
+    "name": "Gray Concrete Powder",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "gray_dye",
+    "name": "Gray Dye",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "gray_glazed_terracotta",
+    "name": "Gray Glazed Terracotta",
+    "isEligible": false,
+    "category": "messa"
+  },
+  {
+    "id": "gray_shulker_box",
+    "name": "Gray Shulker Box",
+    "isEligible": false,
+    "category": "end"
+  },
+  {
+    "id": "gray_stained_glass",
+    "name": "Gray Stained Glass",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "gray_stained_glass_pane",
+    "name": "Gray Stained Glass Pane",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "gray_terracotta",
+    "name": "Gray Terracotta",
+    "isEligible": false,
+    "category": "messa"
+  },
+  {
+    "id": "gray_wool",
+    "name": "Gray Wool",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "green_banner",
+    "name": "Green Banner",
+    "isEligible": false,
+    "category": "desert"
+  },
+  {
+    "id": "green_bed",
+    "name": "Green Bed",
+    "isEligible": false,
+    "category": "desert"
+  },
+  {
+    "id": "green_candle",
+    "name": "Green Candle",
+    "isEligible": false,
+    "category": "desert"
+  },
+  {
+    "id": "green_carpet",
+    "name": "Green Carpet",
+    "isEligible": false,
+    "category": "desert"
+  },
+  {
+    "id": "green_concrete",
+    "name": "Green Concrete",
+    "isEligible": false,
+    "category": "desert"
+  },
+  {
+    "id": "green_concrete_powder",
+    "name": "Green Concrete Powder",
+    "isEligible": false,
+    "category": "desert"
+  },
+  {
+    "id": "green_dye",
+    "name": "Green Dye",
+    "isEligible": false,
+    "category": "desert"
+  },
+  {
+    "id": "green_glazed_terracotta",
+    "name": "Green Glazed Terracotta",
+    "isEligible": false,
+    "category": "messa"
+  },
+  {
+    "id": "green_shulker_box",
+    "name": "Green Shulker Box",
+    "isEligible": false,
+    "category": "end"
+  },
+  {
+    "id": "green_stained_glass",
+    "name": "Green Stained Glass",
+    "isEligible": false,
+    "category": "desert"
+  },
+  {
+    "id": "green_stained_glass_pane",
+    "name": "Green Stained Glass Pane",
+    "isEligible": false,
+    "category": "desert"
+  },
+  {
+    "id": "green_terracotta",
+    "name": "Green Terracotta",
+    "isEligible": false,
+    "category": "messa"
+  },
+  {
+    "id": "green_wool",
+    "name": "Green Wool",
+    "isEligible": false,
+    "category": "desert"
+  },
+  {
+    "id": "grindstone",
+    "name": "Grindstone",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "guardian_spawn_egg",
+    "name": "Guardian Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "gunpowder",
+    "name": "Gunpowder",
+    "isEligible": false,
+    "category": "enemy_loot"
+  },
+  {
+    "id": "hanging_roots",
+    "name": "Hanging Roots",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "hay_block",
+    "name": "Hay Block",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "heart_of_the_sea",
+    "name": "Heart Of The Sea",
+    "isEligible": false,
+    "category": "ocean"
+  },
+  {
+    "id": "heart_pottery_sherd",
+    "name": "Heart Pottery Sherd",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "heartbreak_pottery_sherd",
+    "name": "Heartbreak Pottery Sherd",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "heavy_weighted_pressure_plate",
+    "name": "Heavy Weighted Pressure Plate",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "hoglin_spawn_egg",
+    "name": "Hoglin Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "honey_block",
+    "name": "Honey Block",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "honey_bottle",
+    "name": "Honey Bottle",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "honeycomb",
+    "name": "Honeycomb",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "honeycomb_block",
+    "name": "Honeycomb Block",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "hopper",
+    "name": "Hopper",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "hopper_minecart",
+    "name": "Hopper Minecart",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "horn_coral",
+    "name": "Horn Coral",
+    "isEligible": false,
+    "category": "silk_touch"
+  },
+  {
+    "id": "horn_coral_block",
+    "name": "Horn Coral Block",
+    "isEligible": false,
+    "category": "silk_touch"
+  },
+  {
+    "id": "horn_coral_fan",
+    "name": "Horn Coral Fan",
+    "isEligible": false,
+    "category": "silk_touch"
+  },
+  {
+    "id": "horse_spawn_egg",
+    "name": "Horse Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "host_armor_trim_smithing_template",
+    "name": "Host Armor Trim Smithing Template",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "howl_pottery_sherd",
+    "name": "Howl Pottery Sherd",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "husk_spawn_egg",
+    "name": "Husk Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "ice",
+    "name": "Ice",
+    "isEligible": false,
+    "category": "cold"
+  },
+  {
+    "id": "infested_chiseled_stone_bricks",
+    "name": "Infested Chiseled Stone Bricks",
+    "isEligible": false,
+    "category": "unobtainable"
+  },
+  {
+    "id": "infested_cobblestone",
+    "name": "Infested Cobblestone",
+    "isEligible": false,
+    "category": "unobtainable"
+  },
+  {
+    "id": "infested_cracked_stone_bricks",
+    "name": "Infested Cracked Stone Bricks",
+    "isEligible": false,
+    "category": "unobtainable"
+  },
+  {
+    "id": "infested_deepslate",
+    "name": "Infested Deepslate",
+    "isEligible": false,
+    "category": "unobtainable"
+  },
+  {
+    "id": "infested_mossy_stone_bricks",
+    "name": "Infested Mossy Stone Bricks",
+    "isEligible": false,
+    "category": "unobtainable"
+  },
+  {
+    "id": "infested_stone",
+    "name": "Infested Stone",
+    "isEligible": false,
+    "category": "unobtainable"
+  },
+  {
+    "id": "infested_stone_bricks",
+    "name": "Infested Stone Bricks",
+    "isEligible": false,
+    "category": "unobtainable"
+  },
+  {
+    "id": "ink_sac",
+    "name": "Ink Sac",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "iron_axe",
+    "name": "Iron Axe",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "iron_bars",
+    "name": "Iron Bars",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "iron_block",
+    "name": "Iron Block",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "iron_boots",
+    "name": "Iron Boots",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "iron_chestplate",
+    "name": "Iron Chestplate",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "iron_door",
+    "name": "Iron Door",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "iron_golem_spawn_egg",
+    "name": "Iron Golem Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "iron_helmet",
+    "name": "Iron Helmet",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "iron_hoe",
+    "name": "Iron Hoe",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "iron_horse_armor",
+    "name": "Iron Horse Armor",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "iron_ingot",
+    "name": "Iron Ingot",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "iron_leggings",
+    "name": "Iron Leggings",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "iron_nugget",
+    "name": "Iron Nugget",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "iron_ore",
+    "name": "Iron Ore",
+    "isEligible": false,
+    "category": "silk_touch"
+  },
+  {
+    "id": "iron_pickaxe",
+    "name": "Iron Pickaxe",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "iron_shovel",
+    "name": "Iron Shovel",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "iron_sword",
+    "name": "Iron Sword",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "iron_trapdoor",
+    "name": "Iron Trapdoor",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "item_frame",
+    "name": "Item Frame",
+    "isEligible": false,
+    "category": "animals_loot"
+  },
+  {
+    "id": "jack_o_lantern",
+    "name": "Jack O Lantern",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "jigsaw",
+    "name": "Jigsaw",
+    "isEligible": false,
+    "category": "unobtainable"
+  },
+  {
+    "id": "jukebox",
+    "name": "Jukebox",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "jungle_boat",
+    "name": "Jungle Boat",
+    "isEligible": false,
+    "category": "jungle"
+  },
+  {
+    "id": "jungle_button",
+    "name": "Jungle Button",
+    "isEligible": false,
+    "category": "jungle"
+  },
+  {
+    "id": "jungle_chest_boat",
+    "name": "Jungle Chest Boat",
+    "isEligible": false,
+    "category": "jungle"
+  },
+  {
+    "id": "jungle_door",
+    "name": "Jungle Door",
+    "isEligible": false,
+    "category": "jungle"
+  },
+  {
+    "id": "jungle_fence",
+    "name": "Jungle Fence",
+    "isEligible": false,
+    "category": "jungle"
+  },
+  {
+    "id": "jungle_fence_gate",
+    "name": "Jungle Fence Gate",
+    "isEligible": false,
+    "category": "jungle"
+  },
+  {
+    "id": "jungle_hanging_sign",
+    "name": "Jungle Hanging Sign",
+    "isEligible": false,
+    "category": "jungle"
+  },
+  {
+    "id": "jungle_leaves",
+    "name": "Jungle Leaves",
+    "isEligible": false,
+    "category": "jungle"
+  },
+  {
+    "id": "jungle_log",
+    "name": "Jungle Log",
+    "isEligible": false,
+    "category": "jungle"
+  },
+  {
+    "id": "jungle_planks",
+    "name": "Jungle Planks",
+    "isEligible": false,
+    "category": "jungle"
+  },
+  {
+    "id": "jungle_pressure_plate",
+    "name": "Jungle Pressure Plate",
+    "isEligible": false,
+    "category": "jungle"
+  },
+  {
+    "id": "jungle_sapling",
+    "name": "Jungle Sapling",
+    "isEligible": false,
+    "category": "jungle"
+  },
+  {
+    "id": "jungle_sign",
+    "name": "Jungle Sign",
+    "isEligible": false,
+    "category": "jungle"
+  },
+  {
+    "id": "jungle_slab",
+    "name": "Jungle Slab",
+    "isEligible": false,
+    "category": "jungle"
+  },
+  {
+    "id": "jungle_stairs",
+    "name": "Jungle Stairs",
+    "isEligible": false,
+    "category": "jungle"
+  },
+  {
+    "id": "jungle_trapdoor",
+    "name": "Jungle Trapdoor",
+    "isEligible": false,
+    "category": "jungle"
+  },
+  {
+    "id": "jungle_wood",
+    "name": "Jungle Wood",
+    "isEligible": false,
+    "category": "jungle"
+  },
+  {
+    "id": "kelp",
+    "name": "Kelp",
+    "isEligible": false,
+    "category": "ocean"
+  },
+  {
+    "id": "knowledge_book",
+    "name": "Knowledge Book",
+    "isEligible": false,
+    "category": "unobtainable"
+  },
+  {
+    "id": "ladder",
+    "name": "Ladder",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "lantern",
+    "name": "Lantern",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "lapis_block",
+    "name": "Lapis Block",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "lapis_lazuli",
+    "name": "Lapis Lazuli",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "lapis_ore",
+    "name": "Lapis Ore",
+    "isEligible": false,
+    "category": "silk_touch"
+  },
+  {
+    "id": "large_amethyst_bud",
+    "name": "Large Amethyst Bud",
+    "isEligible": false,
+    "category": "silk_touch"
+  },
+  {
+    "id": "large_fern",
+    "name": "Large Fern",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "lava_bucket",
+    "name": "Lava Bucket",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "lead",
+    "name": "Lead",
+    "isEligible": false,
+    "category": "animals_loot"
+  },
+  {
+    "id": "leather",
+    "name": "Leather",
+    "isEligible": false,
+    "category": "animals_loot"
+  },
+  {
+    "id": "leather_boots",
+    "name": "Leather Boots",
+    "isEligible": false,
+    "category": "animals_loot"
+  },
+  {
+    "id": "leather_chestplate",
+    "name": "Leather Chestplate",
+    "isEligible": false,
+    "category": "animals_loot"
+  },
+  {
+    "id": "leather_helmet",
+    "name": "Leather Helmet",
+    "isEligible": false,
+    "category": "animals_loot"
+  },
+  {
+    "id": "leather_horse_armor",
+    "name": "Leather Horse Armor",
+    "isEligible": false,
+    "category": "animals_loot"
+  },
+  {
+    "id": "leather_leggings",
+    "name": "Leather Leggings",
+    "isEligible": false,
+    "category": "animals_loot"
+  },
+  {
+    "id": "lectern",
+    "name": "Lectern",
+    "isEligible": false,
+    "category": "animals_loot"
+  },
+  {
+    "id": "lever",
+    "name": "Lever",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "light",
+    "name": "Light",
+    "isEligible": false,
+    "category": "unobtainable"
+  },
+  {
+    "id": "light_blue_banner",
+    "name": "Light Blue Banner",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "light_blue_bed",
+    "name": "Light Blue Bed",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "light_blue_candle",
+    "name": "Light Blue Candle",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "light_blue_carpet",
+    "name": "Light Blue Carpet",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "light_blue_concrete",
+    "name": "Light Blue Concrete",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "light_blue_concrete_powder",
+    "name": "Light Blue Concrete Powder",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "light_blue_dye",
+    "name": "Light Blue Dye",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "light_blue_glazed_terracotta",
+    "name": "Light Blue Glazed Terracotta",
+    "isEligible": false,
+    "category": "messa"
+  },
+  {
+    "id": "light_blue_shulker_box",
+    "name": "Light Blue Shulker Box",
+    "isEligible": false,
+    "category": "end"
+  },
+  {
+    "id": "light_blue_stained_glass",
+    "name": "Light Blue Stained Glass",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "light_blue_stained_glass_pane",
+    "name": "Light Blue Stained Glass Pane",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "light_blue_terracotta",
+    "name": "Light Blue Terracotta",
+    "isEligible": false,
+    "category": "messa"
+  },
+  {
+    "id": "light_blue_wool",
+    "name": "Light Blue Wool",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "light_gray_banner",
+    "name": "Light Gray Banner",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "light_gray_bed",
+    "name": "Light Gray Bed",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "light_gray_candle",
+    "name": "Light Gray Candle",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "light_gray_carpet",
+    "name": "Light Gray Carpet",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "light_gray_concrete",
+    "name": "Light Gray Concrete",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "light_gray_concrete_powder",
+    "name": "Light Gray Concrete Powder",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "light_gray_dye",
+    "name": "Light Gray Dye",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "light_gray_glazed_terracotta",
+    "name": "Light Gray Glazed Terracotta",
+    "isEligible": false,
+    "category": "messa"
+  },
+  {
+    "id": "light_gray_shulker_box",
+    "name": "Light Gray Shulker Box",
+    "isEligible": false,
+    "category": "end"
+  },
+  {
+    "id": "light_gray_stained_glass",
+    "name": "Light Gray Stained Glass",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "light_gray_stained_glass_pane",
+    "name": "Light Gray Stained Glass Pane",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "light_gray_terracotta",
+    "name": "Light Gray Terracotta",
+    "isEligible": false,
+    "category": "messa"
+  },
+  {
+    "id": "light_gray_wool",
+    "name": "Light Gray Wool",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "light_weighted_pressure_plate",
+    "name": "Light Weighted Pressure Plate",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "lightning_rod",
+    "name": "Lightning Rod",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "lilac",
+    "name": "Lilac",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "lily_of_the_valley",
+    "name": "Lily Of The Valley",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "lily_pad",
+    "name": "Lily Pad",
+    "isEligible": false,
+    "category": "swamp"
+  },
+  {
+    "id": "lime_banner",
+    "name": "Lime Banner",
+    "isEligible": false,
+    "category": "desert"
+  },
+  {
+    "id": "lime_bed",
+    "name": "Lime Bed",
+    "isEligible": false,
+    "category": "desert"
+  },
+  {
+    "id": "lime_candle",
+    "name": "Lime Candle",
+    "isEligible": false,
+    "category": "desert"
+  },
+  {
+    "id": "lime_carpet",
+    "name": "Lime Carpet",
+    "isEligible": false,
+    "category": "desert"
+  },
+  {
+    "id": "lime_concrete",
+    "name": "Lime Concrete",
+    "isEligible": false,
+    "category": "desert"
+  },
+  {
+    "id": "lime_concrete_powder",
+    "name": "Lime Concrete Powder",
+    "isEligible": false,
+    "category": "desert"
+  },
+  {
+    "id": "lime_dye",
+    "name": "Lime Dye",
+    "isEligible": false,
+    "category": "desert"
+  },
+  {
+    "id": "lime_glazed_terracotta",
+    "name": "Lime Glazed Terracotta",
+    "isEligible": false,
+    "category": "messa"
+  },
+  {
+    "id": "lime_shulker_box",
+    "name": "Lime Shulker Box",
+    "isEligible": false,
+    "category": "end"
+  },
+  {
+    "id": "lime_stained_glass",
+    "name": "Lime Stained Glass",
+    "isEligible": false,
+    "category": "desert"
+  },
+  {
+    "id": "lime_stained_glass_pane",
+    "name": "Lime Stained Glass Pane",
+    "isEligible": false,
+    "category": "desert"
+  },
+  {
+    "id": "lime_terracotta",
+    "name": "Lime Terracotta",
+    "isEligible": false,
+    "category": "messa"
+  },
+  {
+    "id": "lime_wool",
+    "name": "Lime Wool",
+    "isEligible": false,
+    "category": "desert"
+  },
+  {
+    "id": "lingering_potion",
+    "name": "Lingering Potion",
+    "isEligible": false,
+    "category": "end"
+  },
+  {
+    "id": "llama_spawn_egg",
+    "name": "Llama Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "lodestone",
+    "name": "Lodestone",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "loom",
+    "name": "Loom",
+    "isEligible": false,
+    "category": "enemy_loot"
+  },
+  {
+    "id": "magenta_banner",
+    "name": "Magenta Banner",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "magenta_bed",
+    "name": "Magenta Bed",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "magenta_candle",
+    "name": "Magenta Candle",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "magenta_carpet",
+    "name": "Magenta Carpet",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "magenta_concrete",
+    "name": "Magenta Concrete",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "magenta_concrete_powder",
+    "name": "Magenta Concrete Powder",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "magenta_dye",
+    "name": "Magenta Dye",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "magenta_glazed_terracotta",
+    "name": "Magenta Glazed Terracotta",
+    "isEligible": false,
+    "category": "messa"
+  },
+  {
+    "id": "magenta_shulker_box",
+    "name": "Magenta Shulker Box",
+    "isEligible": false,
+    "category": "end"
+  },
+  {
+    "id": "magenta_stained_glass",
+    "name": "Magenta Stained Glass",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "magenta_stained_glass_pane",
+    "name": "Magenta Stained Glass Pane",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "magenta_terracotta",
+    "name": "Magenta Terracotta",
+    "isEligible": false,
+    "category": "messa"
+  },
+  {
+    "id": "magenta_wool",
+    "name": "Magenta Wool",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "magma_block",
+    "name": "Magma Block",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "magma_cream",
+    "name": "Magma Cream",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "magma_cube_spawn_egg",
+    "name": "Magma Cube Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "mangrove_boat",
+    "name": "Mangrove Boat",
+    "isEligible": false,
+    "category": "swamp"
+  },
+  {
+    "id": "mangrove_button",
+    "name": "Mangrove Button",
+    "isEligible": false,
+    "category": "swamp"
+  },
+  {
+    "id": "mangrove_chest_boat",
+    "name": "Mangrove Chest Boat",
+    "isEligible": false,
+    "category": "swamp"
+  },
+  {
+    "id": "mangrove_door",
+    "name": "Mangrove Door",
+    "isEligible": false,
+    "category": "swamp"
+  },
+  {
+    "id": "mangrove_fence",
+    "name": "Mangrove Fence",
+    "isEligible": false,
+    "category": "swamp"
+  },
+  {
+    "id": "mangrove_fence_gate",
+    "name": "Mangrove Fence Gate",
+    "isEligible": false,
+    "category": "swamp"
+  },
+  {
+    "id": "mangrove_hanging_sign",
+    "name": "Mangrove Hanging Sign",
+    "isEligible": false,
+    "category": "swamp"
+  },
+  {
+    "id": "mangrove_leaves",
+    "name": "Mangrove Leaves",
+    "isEligible": false,
+    "category": "swamp"
+  },
+  {
+    "id": "mangrove_log",
+    "name": "Mangrove Log",
+    "isEligible": false,
+    "category": "swamp"
+  },
+  {
+    "id": "mangrove_planks",
+    "name": "Mangrove Planks",
+    "isEligible": false,
+    "category": "swamp"
+  },
+  {
+    "id": "mangrove_pressure_plate",
+    "name": "Mangrove Pressure Plate",
+    "isEligible": false,
+    "category": "swamp"
+  },
+  {
+    "id": "mangrove_propagule",
+    "name": "Mangrove Propagule",
+    "isEligible": false,
+    "category": "swamp"
+  },
+  {
+    "id": "mangrove_roots",
+    "name": "Mangrove Roots",
+    "isEligible": false,
+    "category": "swamp"
+  },
+  {
+    "id": "mangrove_sign",
+    "name": "Mangrove Sign",
+    "isEligible": false,
+    "category": "swamp"
+  },
+  {
+    "id": "mangrove_slab",
+    "name": "Mangrove Slab",
+    "isEligible": false,
+    "category": "swamp"
+  },
+  {
+    "id": "mangrove_stairs",
+    "name": "Mangrove Stairs",
+    "isEligible": false,
+    "category": "swamp"
+  },
+  {
+    "id": "mangrove_trapdoor",
+    "name": "Mangrove Trapdoor",
+    "isEligible": false,
+    "category": "swamp"
+  },
+  {
+    "id": "mangrove_wood",
+    "name": "Mangrove Wood",
+    "isEligible": false,
+    "category": "swamp"
+  },
+  {
+    "id": "map",
+    "name": "Map",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "medium_amethyst_bud",
+    "name": "Medium Amethyst Bud",
+    "isEligible": false,
+    "category": "silk_touch"
+  },
+  {
+    "id": "melon",
+    "name": "Melon",
+    "isEligible": false,
+    "category": "jungle"
+  },
+  {
+    "id": "melon_seeds",
+    "name": "Melon Seeds",
+    "isEligible": false,
+    "category": "jungle"
+  },
+  {
+    "id": "melon_slice",
+    "name": "Melon Slice",
+    "isEligible": false,
+    "category": "jungle"
+  },
+  {
+    "id": "milk_bucket",
+    "name": "Milk Bucket",
+    "isEligible": false,
+    "category": "animals_loot"
+  },
+  {
+    "id": "minecart",
+    "name": "Minecart",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "miner_pottery_sherd",
+    "name": "Miner Pottery Sherd",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "mojang_banner_pattern",
+    "name": "Mojang Banner Pattern",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "mooshroom_spawn_egg",
+    "name": "Mooshroom Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "moss_block",
+    "name": "Moss Block",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "moss_carpet",
+    "name": "Moss Carpet",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "mossy_cobblestone",
+    "name": "Mossy Cobblestone",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "mossy_cobblestone_slab",
+    "name": "Mossy Cobblestone Slab",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "mossy_cobblestone_stairs",
+    "name": "Mossy Cobblestone Stairs",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "mossy_cobblestone_wall",
+    "name": "Mossy Cobblestone Wall",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "mossy_stone_brick_slab",
+    "name": "Mossy Stone Brick Slab",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "mossy_stone_brick_stairs",
+    "name": "Mossy Stone Brick Stairs",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "mossy_stone_brick_wall",
+    "name": "Mossy Stone Brick Wall",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "mossy_stone_bricks",
+    "name": "Mossy Stone Bricks",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "mourner_pottery_sherd",
+    "name": "Mourner Pottery Sherd",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "mud",
+    "name": "Mud",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "mud_brick_slab",
+    "name": "Mud Brick Slab",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "mud_brick_stairs",
+    "name": "Mud Brick Stairs",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "mud_brick_wall",
+    "name": "Mud Brick Wall",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "mud_bricks",
+    "name": "Mud Bricks",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "muddy_mangrove_roots",
+    "name": "Muddy Mangrove Roots",
+    "isEligible": false,
+    "category": "swamp"
+  },
+  {
+    "id": "mule_spawn_egg",
+    "name": "Mule Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "mushroom_stem",
+    "name": "Mushroom Stem",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "music_disc_5",
+    "name": "Music Disc 5",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "music_disc_11",
+    "name": "Music Disc 11",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "music_disc_13",
+    "name": "Music Disc 13",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "music_disc_blocks",
+    "name": "Music Disc Blocks",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "music_disc_cat",
+    "name": "Music Disc Cat",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "music_disc_chirp",
+    "name": "Music Disc Chirp",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "music_disc_far",
+    "name": "Music Disc Far",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "music_disc_mall",
+    "name": "Music Disc Mall",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "music_disc_mellohi",
+    "name": "Music Disc Mellohi",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "music_disc_otherside",
+    "name": "Music Disc Otherside",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "music_disc_pigstep",
+    "name": "Music Disc Pigstep",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "music_disc_relic",
+    "name": "Music Disc Relic",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "music_disc_stal",
+    "name": "Music Disc Stal",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "music_disc_strad",
+    "name": "Music Disc Strad",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "music_disc_wait",
+    "name": "Music Disc Wait",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "music_disc_ward",
+    "name": "Music Disc Ward",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "mutton",
+    "name": "Mutton",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "mycelium",
+    "name": "Mycelium",
+    "isEligible": false,
+    "category": "mushroom"
+  },
+  {
+    "id": "name_tag",
+    "name": "Name Tag",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "nautilus_shell",
+    "name": "Nautilus Shell",
+    "isEligible": false,
+    "category": "ocean"
+  },
+  {
+    "id": "nether_brick",
+    "name": "Nether Brick",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "nether_brick_fence",
+    "name": "Nether Brick Fence",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "nether_brick_slab",
+    "name": "Nether Brick Slab",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "nether_brick_stairs",
+    "name": "Nether Brick Stairs",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "nether_brick_wall",
+    "name": "Nether Brick Wall",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "nether_bricks",
+    "name": "Nether Bricks",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "nether_gold_ore",
+    "name": "Nether Gold Ore",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "nether_quartz_ore",
+    "name": "Nether Quartz Ore",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "nether_sprouts",
+    "name": "Nether Sprouts",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "nether_star",
+    "name": "Nether Star",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "nether_wart",
+    "name": "Nether Wart",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "nether_wart_block",
+    "name": "Nether Wart Block",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "netherite_axe",
+    "name": "Netherite Axe",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "netherite_block",
+    "name": "Netherite Block",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "netherite_boots",
+    "name": "Netherite Boots",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "netherite_chestplate",
+    "name": "Netherite Chestplate",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "netherite_helmet",
+    "name": "Netherite Helmet",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "netherite_hoe",
+    "name": "Netherite Hoe",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "netherite_ingot",
+    "name": "Netherite Ingot",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "netherite_leggings",
+    "name": "Netherite Leggings",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "netherite_pickaxe",
+    "name": "Netherite Pickaxe",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "netherite_scrap",
+    "name": "Netherite Scrap",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "netherite_shovel",
+    "name": "Netherite Shovel",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "netherite_sword",
+    "name": "Netherite Sword",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "netherite_upgrade_smithing_template",
+    "name": "Netherite Upgrade Smithing Template",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "netherrack",
+    "name": "Netherrack",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "note_block",
+    "name": "Note Block",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "oak_boat",
+    "name": "Oak Boat",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "oak_button",
+    "name": "Oak Button",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "oak_chest_boat",
+    "name": "Oak Chest Boat",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "oak_door",
+    "name": "Oak Door",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "oak_fence",
+    "name": "Oak Fence",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "oak_fence_gate",
+    "name": "Oak Fence Gate",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "oak_hanging_sign",
+    "name": "Oak Hanging Sign",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "oak_leaves",
+    "name": "Oak Leaves",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "oak_log",
+    "name": "Oak Log",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "oak_planks",
+    "name": "Oak Planks",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "oak_pressure_plate",
+    "name": "Oak Pressure Plate",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "oak_sapling",
+    "name": "Oak Sapling",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "oak_sign",
+    "name": "Oak Sign",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "oak_slab",
+    "name": "Oak Slab",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "oak_stairs",
+    "name": "Oak Stairs",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "oak_trapdoor",
+    "name": "Oak Trapdoor",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "oak_wood",
+    "name": "Oak Wood",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "observer",
+    "name": "Observer",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "obsidian",
+    "name": "Obsidian",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "ocelot_spawn_egg",
+    "name": "Ocelot Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "ochre_froglight",
+    "name": "Ochre Froglight",
+    "isEligible": false,
+    "category": "swamp"
+  },
+  {
+    "id": "orange_banner",
+    "name": "Orange Banner",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "orange_bed",
+    "name": "Orange Bed",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "orange_candle",
+    "name": "Orange Candle",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "orange_carpet",
+    "name": "Orange Carpet",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "orange_concrete",
+    "name": "Orange Concrete",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "orange_concrete_powder",
+    "name": "Orange Concrete Powder",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "orange_dye",
+    "name": "Orange Dye",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "orange_glazed_terracotta",
+    "name": "Orange Glazed Terracotta",
+    "isEligible": false,
+    "category": "messa"
+  },
+  {
+    "id": "orange_shulker_box",
+    "name": "Orange Shulker Box",
+    "isEligible": false,
+    "category": "end"
+  },
+  {
+    "id": "orange_stained_glass",
+    "name": "Orange Stained Glass",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "orange_stained_glass_pane",
+    "name": "Orange Stained Glass Pane",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "orange_terracotta",
+    "name": "Orange Terracotta",
+    "isEligible": false,
+    "category": "messa"
+  },
+  {
+    "id": "orange_tulip",
+    "name": "Orange Tulip",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "orange_wool",
+    "name": "Orange Wool",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "oxeye_daisy",
+    "name": "Oxeye Daisy",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "oxidized_copper",
+    "name": "Oxidized Copper",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "oxidized_cut_copper",
+    "name": "Oxidized Cut Copper",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "oxidized_cut_copper_slab",
+    "name": "Oxidized Cut Copper Slab",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "oxidized_cut_copper_stairs",
+    "name": "Oxidized Cut Copper Stairs",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "packed_ice",
+    "name": "Packed Ice",
+    "isEligible": false,
+    "category": "cold"
+  },
+  {
+    "id": "packed_mud",
+    "name": "Packed Mud",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "painting",
+    "name": "Painting",
+    "isEligible": false,
+    "category": "animals_loot"
+  },
+  {
+    "id": "panda_spawn_egg",
+    "name": "Panda Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "paper",
+    "name": "Paper",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "parrot_spawn_egg",
+    "name": "Parrot Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "pearlescent_froglight",
+    "name": "Pearlescent Froglight",
+    "isEligible": false,
+    "category": "swamp"
+  },
+  {
+    "id": "peony",
+    "name": "Peony",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "petrified_oak_slab",
+    "name": "Petrified Oak Slab",
+    "isEligible": false,
+    "category": "unobtainable"
+  },
+  {
+    "id": "phantom_membrane",
+    "name": "Phantom Membrane",
+    "isEligible": false,
+    "category": "enemy_loot"
+  },
+  {
+    "id": "phantom_spawn_egg",
+    "name": "Phantom Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "pig_spawn_egg",
+    "name": "Pig Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "piglin_banner_pattern",
+    "name": "Piglin Banner Pattern",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "piglin_brute_spawn_egg",
+    "name": "Piglin Brute Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "piglin_head",
+    "name": "Piglin Head",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "piglin_spawn_egg",
+    "name": "Piglin Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "pillager_spawn_egg",
+    "name": "Pillager Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "pink_banner",
+    "name": "Pink Banner",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "pink_bed",
+    "name": "Pink Bed",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "pink_candle",
+    "name": "Pink Candle",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "pink_carpet",
+    "name": "Pink Carpet",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "pink_concrete",
+    "name": "Pink Concrete",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "pink_concrete_powder",
+    "name": "Pink Concrete Powder",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "pink_dye",
+    "name": "Pink Dye",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "pink_glazed_terracotta",
+    "name": "Pink Glazed Terracotta",
+    "isEligible": false,
+    "category": "messa"
+  },
+  {
+    "id": "pink_petals",
+    "name": "Pink Petals",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "pink_shulker_box",
+    "name": "Pink Shulker Box",
+    "isEligible": false,
+    "category": "end"
+  },
+  {
+    "id": "pink_stained_glass",
+    "name": "Pink Stained Glass",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "pink_stained_glass_pane",
+    "name": "Pink Stained Glass Pane",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "pink_terracotta",
+    "name": "Pink Terracotta",
+    "isEligible": false,
+    "category": "messa"
+  },
+  {
+    "id": "pink_tulip",
+    "name": "Pink Tulip",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "pink_wool",
+    "name": "Pink Wool",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "piston",
+    "name": "Piston",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "pitcher_plant",
+    "name": "Pitcher Plant",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "pitcher_pod",
+    "name": "Pitcher Pod",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "player_head",
+    "name": "Player Head",
+    "isEligible": false,
+    "category": "unobtainable"
+  },
+  {
+    "id": "plenty_pottery_sherd",
+    "name": "Plenty Pottery Sherd",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "podzol",
+    "name": "Podzol",
+    "isEligible": false,
+    "category": "taiga"
+  },
+  {
+    "id": "pointed_dripstone",
+    "name": "Pointed Dripstone",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "poisonous_potato",
+    "name": "Poisonous Potato",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "polar_bear_spawn_egg",
+    "name": "Polar Bear Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "polished_andesite",
+    "name": "Polished Andesite",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "polished_andesite_slab",
+    "name": "Polished Andesite Slab",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "polished_andesite_stairs",
+    "name": "Polished Andesite Stairs",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "polished_basalt",
+    "name": "Polished Basalt",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "polished_blackstone",
+    "name": "Polished Blackstone",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "polished_blackstone_brick_slab",
+    "name": "Polished Blackstone Brick Slab",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "polished_blackstone_brick_stairs",
+    "name": "Polished Blackstone Brick Stairs",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "polished_blackstone_brick_wall",
+    "name": "Polished Blackstone Brick Wall",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "polished_blackstone_bricks",
+    "name": "Polished Blackstone Bricks",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "polished_blackstone_button",
+    "name": "Polished Blackstone Button",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "polished_blackstone_pressure_plate",
+    "name": "Polished Blackstone Pressure Plate",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "polished_blackstone_slab",
+    "name": "Polished Blackstone Slab",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "polished_blackstone_stairs",
+    "name": "Polished Blackstone Stairs",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "polished_blackstone_wall",
+    "name": "Polished Blackstone Wall",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "polished_deepslate",
+    "name": "Polished Deepslate",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "polished_deepslate_slab",
+    "name": "Polished Deepslate Slab",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "polished_deepslate_stairs",
+    "name": "Polished Deepslate Stairs",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "polished_deepslate_wall",
+    "name": "Polished Deepslate Wall",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "polished_diorite",
+    "name": "Polished Diorite",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "polished_diorite_slab",
+    "name": "Polished Diorite Slab",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "polished_diorite_stairs",
+    "name": "Polished Diorite Stairs",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "polished_granite",
+    "name": "Polished Granite",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "polished_granite_slab",
+    "name": "Polished Granite Slab",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "polished_granite_stairs",
+    "name": "Polished Granite Stairs",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "popped_chorus_fruit",
+    "name": "Popped Chorus Fruit",
+    "isEligible": false,
+    "category": "end"
+  },
+  {
+    "id": "poppy",
+    "name": "Poppy",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "porkchop",
+    "name": "Porkchop",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "potato",
+    "name": "Potato",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "potion",
+    "name": "Potion",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "powder_snow_bucket",
+    "name": "Powder Snow Bucket",
+    "isEligible": false,
+    "category": "cold"
+  },
+  {
+    "id": "powered_rail",
+    "name": "Powered Rail",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "prismarine",
+    "name": "Prismarine",
+    "isEligible": false,
+    "category": "ocean"
+  },
+  {
+    "id": "prismarine_brick_slab",
+    "name": "Prismarine Brick Slab",
+    "isEligible": false,
+    "category": "ocean"
+  },
+  {
+    "id": "prismarine_brick_stairs",
+    "name": "Prismarine Brick Stairs",
+    "isEligible": false,
+    "category": "ocean"
+  },
+  {
+    "id": "prismarine_bricks",
+    "name": "Prismarine Bricks",
+    "isEligible": false,
+    "category": "ocean"
+  },
+  {
+    "id": "prismarine_crystals",
+    "name": "Prismarine Crystals",
+    "isEligible": false,
+    "category": "ocean"
+  },
+  {
+    "id": "prismarine_shard",
+    "name": "Prismarine Shard",
+    "isEligible": false,
+    "category": "ocean"
+  },
+  {
+    "id": "prismarine_slab",
+    "name": "Prismarine Slab",
+    "isEligible": false,
+    "category": "ocean"
+  },
+  {
+    "id": "prismarine_stairs",
+    "name": "Prismarine Stairs",
+    "isEligible": false,
+    "category": "ocean"
+  },
+  {
+    "id": "prismarine_wall",
+    "name": "Prismarine Wall",
+    "isEligible": false,
+    "category": "ocean"
+  },
+  {
+    "id": "prize_pottery_sherd",
+    "name": "Prize Pottery Sherd",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "pufferfish",
+    "name": "Pufferfish",
+    "isEligible": false,
+    "category": "ocean"
+  },
+  {
+    "id": "pufferfish_bucket",
+    "name": "Pufferfish Bucket",
+    "isEligible": false,
+    "category": "ocean"
+  },
+  {
+    "id": "pufferfish_spawn_egg",
+    "name": "Pufferfish Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "pumpkin",
+    "name": "Pumpkin",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "pumpkin_pie",
+    "name": "Pumpkin Pie",
+    "isEligible": false,
+    "category": "animals_loot"
+  },
+  {
+    "id": "pumpkin_seeds",
+    "name": "Pumpkin Seeds",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "purple_banner",
+    "name": "Purple Banner",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "purple_bed",
+    "name": "Purple Bed",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "purple_candle",
+    "name": "Purple Candle",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "purple_carpet",
+    "name": "Purple Carpet",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "purple_concrete",
+    "name": "Purple Concrete",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "purple_concrete_powder",
+    "name": "Purple Concrete Powder",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "purple_dye",
+    "name": "Purple Dye",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "purple_glazed_terracotta",
+    "name": "Purple Glazed Terracotta",
+    "isEligible": false,
+    "category": "messa"
+  },
+  {
+    "id": "purple_shulker_box",
+    "name": "Purple Shulker Box",
+    "isEligible": false,
+    "category": "end"
+  },
+  {
+    "id": "purple_stained_glass",
+    "name": "Purple Stained Glass",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "purple_stained_glass_pane",
+    "name": "Purple Stained Glass Pane",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "purple_terracotta",
+    "name": "Purple Terracotta",
+    "isEligible": false,
+    "category": "messa"
+  },
+  {
+    "id": "purple_wool",
+    "name": "Purple Wool",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "purpur_block",
+    "name": "Purpur Block",
+    "isEligible": false,
+    "category": "end"
+  },
+  {
+    "id": "purpur_pillar",
+    "name": "Purpur Pillar",
+    "isEligible": false,
+    "category": "end"
+  },
+  {
+    "id": "purpur_slab",
+    "name": "Purpur Slab",
+    "isEligible": false,
+    "category": "end"
+  },
+  {
+    "id": "purpur_stairs",
+    "name": "Purpur Stairs",
+    "isEligible": false,
+    "category": "end"
+  },
+  {
+    "id": "quartz",
+    "name": "Quartz",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "quartz_block",
+    "name": "Quartz Block",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "quartz_bricks",
+    "name": "Quartz Bricks",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "quartz_pillar",
+    "name": "Quartz Pillar",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "quartz_slab",
+    "name": "Quartz Slab",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "quartz_stairs",
+    "name": "Quartz Stairs",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "rabbit",
+    "name": "Rabbit",
+    "isEligible": false,
+    "category": "animals_loot"
+  },
+  {
+    "id": "rabbit_foot",
+    "name": "Rabbit Foot",
+    "isEligible": false,
+    "category": "animals_loot"
+  },
+  {
+    "id": "rabbit_hide",
+    "name": "Rabbit Hide",
+    "isEligible": false,
+    "category": "animals_loot"
+  },
+  {
+    "id": "rabbit_spawn_egg",
+    "name": "Rabbit Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "rabbit_stew",
+    "name": "Rabbit Stew",
+    "isEligible": false,
+    "category": "animals_loot"
+  },
+  {
+    "id": "rail",
+    "name": "Rail",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "raiser_armor_trim_smithing_template",
+    "name": "Raiser Armor Trim Smithing Template",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "ravager_spawn_egg",
+    "name": "Ravager Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "raw_copper",
+    "name": "Raw Copper",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "raw_copper_block",
+    "name": "Raw Copper Block",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "raw_gold",
+    "name": "Raw Gold",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "raw_gold_block",
+    "name": "Raw Gold Block",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "raw_iron",
+    "name": "Raw Iron",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "raw_iron_block",
+    "name": "Raw Iron Block",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "recovery_compass",
+    "name": "Recovery Compass",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "red_banner",
+    "name": "Red Banner",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "red_bed",
+    "name": "Red Bed",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "red_candle",
+    "name": "Red Candle",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "red_carpet",
+    "name": "Red Carpet",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "red_concrete",
+    "name": "Red Concrete",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "red_concrete_powder",
+    "name": "Red Concrete Powder",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "red_dye",
+    "name": "Red Dye",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "red_glazed_terracotta",
+    "name": "Red Glazed Terracotta",
+    "isEligible": false,
+    "category": "messa"
+  },
+  {
+    "id": "red_mushroom",
+    "name": "Red Mushroom",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "red_mushroom_block",
+    "name": "Red Mushroom Block",
+    "isEligible": false,
+    "category": "dark_forest"
+  },
+  {
+    "id": "red_nether_brick_slab",
+    "name": "Red Nether Brick Slab",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "red_nether_brick_stairs",
+    "name": "Red Nether Brick Stairs",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "red_nether_brick_wall",
+    "name": "Red Nether Brick Wall",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "red_nether_bricks",
+    "name": "Red Nether Bricks",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "red_sand",
+    "name": "Red Sand",
+    "isEligible": false,
+    "category": "messa"
+  },
+  {
+    "id": "red_sandstone",
+    "name": "Red Sandstone",
+    "isEligible": false,
+    "category": "messa"
+  },
+  {
+    "id": "red_sandstone_slab",
+    "name": "Red Sandstone Slab",
+    "isEligible": false,
+    "category": "messa"
+  },
+  {
+    "id": "red_sandstone_stairs",
+    "name": "Red Sandstone Stairs",
+    "isEligible": false,
+    "category": "messa"
+  },
+  {
+    "id": "red_sandstone_wall",
+    "name": "Red Sandstone Wall",
+    "isEligible": false,
+    "category": "messa"
+  },
+  {
+    "id": "red_shulker_box",
+    "name": "Red Shulker Box",
+    "isEligible": false,
+    "category": "end"
+  },
+  {
+    "id": "red_stained_glass",
+    "name": "Red Stained Glass",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "red_stained_glass_pane",
+    "name": "Red Stained Glass Pane",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "red_terracotta",
+    "name": "Red Terracotta",
+    "isEligible": false,
+    "category": "messa"
+  },
+  {
+    "id": "red_tulip",
+    "name": "Red Tulip",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "red_wool",
+    "name": "Red Wool",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "redstone",
+    "name": "Redstone",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "redstone_block",
+    "name": "Redstone Block",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "redstone_lamp",
+    "name": "Redstone Lamp",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "redstone_ore",
+    "name": "Redstone Ore",
+    "isEligible": false,
+    "category": "silk_touch"
+  },
+  {
+    "id": "redstone_torch",
+    "name": "Redstone Torch",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "reinforced_deepslate",
+    "name": "Reinforced Deepslate",
+    "isEligible": false,
+    "category": "unobtainable"
+  },
+  {
+    "id": "repeater",
+    "name": "Repeater",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "repeating_command_block",
+    "name": "Repeating Command Block",
+    "isEligible": false,
+    "category": "unobtainable"
+  },
+  {
+    "id": "respawn_anchor",
+    "name": "Respawn Anchor",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "rib_armor_trim_smithing_template",
+    "name": "Rib Armor Trim Smithing Template",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "rooted_dirt",
+    "name": "Rooted Dirt",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "rose_bush",
+    "name": "Rose Bush",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "rotten_flesh",
+    "name": "Rotten Flesh",
+    "isEligible": false,
+    "category": "enemy_loot"
+  },
+  {
+    "id": "saddle",
+    "name": "Saddle",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "salmon",
+    "name": "Salmon",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "salmon_bucket",
+    "name": "Salmon Bucket",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "salmon_spawn_egg",
+    "name": "Salmon Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "sand",
+    "name": "Sand",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "sandstone",
+    "name": "Sandstone",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "sandstone_slab",
+    "name": "Sandstone Slab",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "sandstone_stairs",
+    "name": "Sandstone Stairs",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "sandstone_wall",
+    "name": "Sandstone Wall",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "scaffolding",
+    "name": "Scaffolding",
+    "isEligible": false,
+    "category": "jungle"
+  },
+  {
+    "id": "sculk",
+    "name": "Sculk",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "sculk_catalyst",
+    "name": "Sculk Catalyst",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "sculk_sensor",
+    "name": "Sculk Sensor",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "sculk_shrieker",
+    "name": "Sculk Shrieker",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "sculk_vein",
+    "name": "Sculk Vein",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "scute",
+    "name": "Scute",
+    "isEligible": false,
+    "category": "animals_loot"
+  },
+  {
+    "id": "sea_lantern",
+    "name": "Sea Lantern",
+    "isEligible": false,
+    "category": "ocean"
+  },
+  {
+    "id": "sea_pickle",
+    "name": "Sea Pickle",
+    "isEligible": false,
+    "category": "ocean"
+  },
+  {
+    "id": "seagrass",
+    "name": "Seagrass",
+    "isEligible": false,
+    "category": "ocean"
+  },
+  {
+    "id": "sentry_armor_trim_smithing_template",
+    "name": "Sentry Armor Trim Smithing Template",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "shaper_armor_trim_smithing_template",
+    "name": "Shaper Armor Trim Smithing Template",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "sheaf_pottery_sherd",
+    "name": "Sheaf Pottery Sherd",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "shears",
+    "name": "Shears",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "sheep_spawn_egg",
+    "name": "Sheep Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "shelter_pottery_sherd",
+    "name": "Shelter Pottery Sherd",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "shield",
+    "name": "Shield",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "shroomlight",
+    "name": "Shroomlight",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "shulker_box",
+    "name": "Shulker Box",
+    "isEligible": false,
+    "category": "end"
+  },
+  {
+    "id": "shulker_shell",
+    "name": "Shulker Shell",
+    "isEligible": false,
+    "category": "end"
+  },
+  {
+    "id": "shulker_spawn_egg",
+    "name": "Shulker Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "silence_armor_trim_smithing_template",
+    "name": "Silence Armor Trim Smithing Template",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "silverfish_spawn_egg",
+    "name": "Silverfish Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "skeleton_horse_spawn_egg",
+    "name": "Skeleton Horse Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "skeleton_skull",
+    "name": "Skeleton Skull",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "skeleton_spawn_egg",
+    "name": "Skeleton Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "skull_banner_pattern",
+    "name": "Skull Banner Pattern",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "skull_pottery_sherd",
+    "name": "Skull Pottery Sherd",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "slime_ball",
+    "name": "Slime Ball",
+    "isEligible": false,
+    "category": "swamp"
+  },
+  {
+    "id": "slime_block",
+    "name": "Slime Block",
+    "isEligible": false,
+    "category": "swamp"
+  },
+  {
+    "id": "slime_spawn_egg",
+    "name": "Slime Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "small_amethyst_bud",
+    "name": "Small Amethyst Bud",
+    "isEligible": false,
+    "category": "silk_touch"
+  },
+  {
+    "id": "small_dripleaf",
+    "name": "Small Dripleaf",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "smithing_table",
+    "name": "Smithing Table",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "smoker",
+    "name": "Smoker",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "smooth_basalt",
+    "name": "Smooth Basalt",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "smooth_quartz",
+    "name": "Smooth Quartz",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "smooth_quartz_slab",
+    "name": "Smooth Quartz Slab",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "smooth_quartz_stairs",
+    "name": "Smooth Quartz Stairs",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "smooth_red_sandstone",
+    "name": "Smooth Red Sandstone",
+    "isEligible": false,
+    "category": "messa"
+  },
+  {
+    "id": "smooth_red_sandstone_slab",
+    "name": "Smooth Red Sandstone Slab",
+    "isEligible": false,
+    "category": "messa"
+  },
+  {
+    "id": "smooth_red_sandstone_stairs",
+    "name": "Smooth Red Sandstone Stairs",
+    "isEligible": false,
+    "category": "messa"
+  },
+  {
+    "id": "smooth_sandstone",
+    "name": "Smooth Sandstone",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "smooth_sandstone_slab",
+    "name": "Smooth Sandstone Slab",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "smooth_sandstone_stairs",
+    "name": "Smooth Sandstone Stairs",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "smooth_stone",
+    "name": "Smooth Stone",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "smooth_stone_slab",
+    "name": "Smooth Stone Slab",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "sniffer_egg",
+    "name": "Sniffer Egg",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "sniffer_spawn_egg",
+    "name": "Sniffer Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "snort_pottery_sherd",
+    "name": "Snort Pottery Sherd",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "snout_armor_trim_smithing_template",
+    "name": "Snout Armor Trim Smithing Template",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "snow",
+    "name": "Snow",
+    "isEligible": false,
+    "category": "cold"
+  },
+  {
+    "id": "snow_block",
+    "name": "Snow Block",
+    "isEligible": false,
+    "category": "cold"
+  },
+  {
+    "id": "snow_golem_spawn_egg",
+    "name": "Snow Golem Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "snowball",
+    "name": "Snowball",
+    "isEligible": false,
+    "category": "cold"
+  },
+  {
+    "id": "soul_campfire",
+    "name": "Soul Campfire",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "soul_lantern",
+    "name": "Soul Lantern",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "soul_sand",
+    "name": "Soul Sand",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "soul_soil",
+    "name": "Soul Soil",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "soul_torch",
+    "name": "Soul Torch",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "spawner",
+    "name": "Spawner",
+    "isEligible": false,
+    "category": "unobtainable"
+  },
+  {
+    "id": "spectral_arrow",
+    "name": "Spectral Arrow",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "spider_eye",
+    "name": "Spider Eye",
+    "isEligible": false,
+    "category": "enemy_loot"
+  },
+  {
+    "id": "spider_spawn_egg",
+    "name": "Spider Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "spire_armor_trim_smithing_template",
+    "name": "Spire Armor Trim Smithing Template",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "splash_potion",
+    "name": "Splash Potion",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "sponge",
+    "name": "Sponge",
+    "isEligible": false,
+    "category": "ocean"
+  },
+  {
+    "id": "spore_blossom",
+    "name": "Spore Blossom",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "spruce_boat",
+    "name": "Spruce Boat",
+    "isEligible": false,
+    "category": "taiga"
+  },
+  {
+    "id": "spruce_button",
+    "name": "Spruce Button",
+    "isEligible": false,
+    "category": "taiga"
+  },
+  {
+    "id": "spruce_chest_boat",
+    "name": "Spruce Chest Boat",
+    "isEligible": false,
+    "category": "taiga"
+  },
+  {
+    "id": "spruce_door",
+    "name": "Spruce Door",
+    "isEligible": false,
+    "category": "taiga"
+  },
+  {
+    "id": "spruce_fence",
+    "name": "Spruce Fence",
+    "isEligible": false,
+    "category": "taiga"
+  },
+  {
+    "id": "spruce_fence_gate",
+    "name": "Spruce Fence Gate",
+    "isEligible": false,
+    "category": "taiga"
+  },
+  {
+    "id": "spruce_hanging_sign",
+    "name": "Spruce Hanging Sign",
+    "isEligible": false,
+    "category": "taiga"
+  },
+  {
+    "id": "spruce_leaves",
+    "name": "Spruce Leaves",
+    "isEligible": false,
+    "category": "taiga"
+  },
+  {
+    "id": "spruce_log",
+    "name": "Spruce Log",
+    "isEligible": false,
+    "category": "taiga"
+  },
+  {
+    "id": "spruce_planks",
+    "name": "Spruce Planks",
+    "isEligible": false,
+    "category": "taiga"
+  },
+  {
+    "id": "spruce_pressure_plate",
+    "name": "Spruce Pressure Plate",
+    "isEligible": false,
+    "category": "taiga"
+  },
+  {
+    "id": "spruce_sapling",
+    "name": "Spruce Sapling",
+    "isEligible": false,
+    "category": "taiga"
+  },
+  {
+    "id": "spruce_sign",
+    "name": "Spruce Sign",
+    "isEligible": false,
+    "category": "taiga"
+  },
+  {
+    "id": "spruce_slab",
+    "name": "Spruce Slab",
+    "isEligible": false,
+    "category": "taiga"
+  },
+  {
+    "id": "spruce_stairs",
+    "name": "Spruce Stairs",
+    "isEligible": false,
+    "category": "taiga"
+  },
+  {
+    "id": "spruce_trapdoor",
+    "name": "Spruce Trapdoor",
+    "isEligible": false,
+    "category": "taiga"
+  },
+  {
+    "id": "spruce_wood",
+    "name": "Spruce Wood",
+    "isEligible": false,
+    "category": "taiga"
+  },
+  {
+    "id": "spyglass",
+    "name": "Spyglass",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "squid_spawn_egg",
+    "name": "Squid Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "stick",
+    "name": "Stick",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "sticky_piston",
+    "name": "Sticky Piston",
+    "isEligible": false,
+    "category": "swamp"
+  },
+  {
+    "id": "stone",
+    "name": "Stone",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "stone_axe",
+    "name": "Stone Axe",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "stone_brick_slab",
+    "name": "Stone Brick Slab",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "stone_brick_stairs",
+    "name": "Stone Brick Stairs",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "stone_brick_wall",
+    "name": "Stone Brick Wall",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "stone_bricks",
+    "name": "Stone Bricks",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "stone_button",
+    "name": "Stone Button",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "stone_hoe",
+    "name": "Stone Hoe",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "stone_pickaxe",
+    "name": "Stone Pickaxe",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "stone_pressure_plate",
+    "name": "Stone Pressure Plate",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "stone_shovel",
+    "name": "Stone Shovel",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "stone_slab",
+    "name": "Stone Slab",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "stone_stairs",
+    "name": "Stone Stairs",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "stone_sword",
+    "name": "Stone Sword",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "stonecutter",
+    "name": "Stonecutter",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "stray_spawn_egg",
+    "name": "Stray Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "strider_spawn_egg",
+    "name": "Strider Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "string",
+    "name": "String",
+    "isEligible": false,
+    "category": "enemy_loot"
+  },
+  {
+    "id": "stripped_acacia_log",
+    "name": "Stripped Acacia Log",
+    "isEligible": false,
+    "category": "savanna"
+  },
+  {
+    "id": "stripped_acacia_wood",
+    "name": "Stripped Acacia Wood",
+    "isEligible": false,
+    "category": "savanna"
+  },
+  {
+    "id": "stripped_bamboo_block",
+    "name": "Stripped Bamboo Block",
+    "isEligible": false,
+    "category": "jungle"
+  },
+  {
+    "id": "stripped_birch_log",
+    "name": "Stripped Birch Log",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "stripped_birch_wood",
+    "name": "Stripped Birch Wood",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "stripped_cherry_log",
+    "name": "Stripped Cherry Log",
+    "isEligible": false,
+    "category": "cherry_grove"
+  },
+  {
+    "id": "stripped_cherry_wood",
+    "name": "Stripped Cherry Wood",
+    "isEligible": false,
+    "category": "cherry_grove"
+  },
+  {
+    "id": "stripped_crimson_hyphae",
+    "name": "Stripped Crimson Hyphae",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "stripped_crimson_stem",
+    "name": "Stripped Crimson Stem",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "stripped_dark_oak_log",
+    "name": "Stripped Dark Oak Log",
+    "isEligible": false,
+    "category": "dark_forest"
+  },
+  {
+    "id": "stripped_dark_oak_wood",
+    "name": "Stripped Dark Oak Wood",
+    "isEligible": false,
+    "category": "dark_forest"
+  },
+  {
+    "id": "stripped_jungle_log",
+    "name": "Stripped Jungle Log",
+    "isEligible": false,
+    "category": "jungle"
+  },
+  {
+    "id": "stripped_jungle_wood",
+    "name": "Stripped Jungle Wood",
+    "isEligible": false,
+    "category": "jungle"
+  },
+  {
+    "id": "stripped_mangrove_log",
+    "name": "Stripped Mangrove Log",
+    "isEligible": false,
+    "category": "swamp"
+  },
+  {
+    "id": "stripped_mangrove_wood",
+    "name": "Stripped Mangrove Wood",
+    "isEligible": false,
+    "category": "swamp"
+  },
+  {
+    "id": "stripped_oak_log",
+    "name": "Stripped Oak Log",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "stripped_oak_wood",
+    "name": "Stripped Oak Wood",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "stripped_spruce_log",
+    "name": "Stripped Spruce Log",
+    "isEligible": false,
+    "category": "taiga"
+  },
+  {
+    "id": "stripped_spruce_wood",
+    "name": "Stripped Spruce Wood",
+    "isEligible": false,
+    "category": "taiga"
+  },
+  {
+    "id": "stripped_warped_hyphae",
+    "name": "Stripped Warped Hyphae",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "stripped_warped_stem",
+    "name": "Stripped Warped Stem",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "structure_block",
+    "name": "Structure Block",
+    "isEligible": false,
+    "category": "unobtainable"
+  },
+  {
+    "id": "structure_void",
+    "name": "Structure Void",
+    "isEligible": false,
+    "category": "unobtainable"
+  },
+  {
+    "id": "sugar",
+    "name": "Sugar",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "sugar_cane",
+    "name": "Sugar Cane",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "sunflower",
+    "name": "Sunflower",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "suspicious_gravel",
+    "name": "Suspicious Gravel",
+    "isEligible": false,
+    "category": "unobtainable"
+  },
+  {
+    "id": "suspicious_sand",
+    "name": "Suspicious Sand",
+    "isEligible": false,
+    "category": "unobtainable"
+  },
+  {
+    "id": "suspicious_stew",
+    "name": "Suspicious Stew",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "sweet_berries",
+    "name": "Sweet Berries",
+    "isEligible": false,
+    "category": "taiga"
+  },
+  {
+    "id": "tadpole_bucket",
+    "name": "Tadpole Bucket",
+    "isEligible": false,
+    "category": "swamp"
+  },
+  {
+    "id": "tadpole_spawn_egg",
+    "name": "Tadpole Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "tall_grass",
+    "name": "Tall Grass",
+    "isEligible": false,
+    "category": "unobtainable"
+  },
+  {
+    "id": "target",
+    "name": "Target",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "terracotta",
+    "name": "Terracotta",
+    "isEligible": false,
+    "category": "messa"
+  },
+  {
+    "id": "tide_armor_trim_smithing_template",
+    "name": "Tide Armor Trim Smithing Template",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "tinted_glass",
+    "name": "Tinted Glass",
+    "isEligible": false,
+    "category": "caves"
+  },
+  {
+    "id": "tipped_arrow",
+    "name": "Tipped Arrow",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "tnt",
+    "name": "Tnt",
+    "isEligible": false,
+    "category": "enemy_loot"
+  },
+  {
+    "id": "tnt_minecart",
+    "name": "Tnt Minecart",
+    "isEligible": false,
+    "category": "enemy_loot"
+  },
+  {
+    "id": "torch",
+    "name": "Torch",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "torchflower",
+    "name": "Torchflower",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "torchflower_seeds",
+    "name": "Torchflower Seeds",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "totem_of_undying",
+    "name": "Totem Of Undying",
+    "isEligible": false,
+    "category": "dark_forest"
+  },
+  {
+    "id": "trader_llama_spawn_egg",
+    "name": "Trader Llama Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "trapped_chest",
+    "name": "Trapped Chest",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "trident",
+    "name": "Trident",
+    "isEligible": false,
+    "category": "ocean"
+  },
+  {
+    "id": "tripwire_hook",
+    "name": "Tripwire Hook",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "tropical_fish",
+    "name": "Tropical Fish",
+    "isEligible": false,
+    "category": "ocean"
+  },
+  {
+    "id": "tropical_fish_bucket",
+    "name": "Tropical Fish Bucket",
+    "isEligible": false,
+    "category": "ocean"
+  },
+  {
+    "id": "tropical_fish_spawn_egg",
+    "name": "Tropical Fish Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "tube_coral",
+    "name": "Tube Coral",
+    "isEligible": false,
+    "category": "silk_touch"
+  },
+  {
+    "id": "tube_coral_block",
+    "name": "Tube Coral Block",
+    "isEligible": false,
+    "category": "silk_touch"
+  },
+  {
+    "id": "tube_coral_fan",
+    "name": "Tube Coral Fan",
+    "isEligible": false,
+    "category": "silk_touch"
+  },
+  {
+    "id": "tuff",
+    "name": "Tuff",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "turtle_egg",
+    "name": "Turtle Egg",
+    "isEligible": false,
+    "category": "ocean"
+  },
+  {
+    "id": "turtle_helmet",
+    "name": "Turtle Helmet",
+    "isEligible": false,
+    "category": "ocean"
+  },
+  {
+    "id": "turtle_spawn_egg",
+    "name": "Turtle Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "twisting_vines",
+    "name": "Twisting Vines",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "verdant_froglight",
+    "name": "Verdant Froglight",
+    "isEligible": false,
+    "category": "swamp"
+  },
+  {
+    "id": "vex_armor_trim_smithing_template",
+    "name": "Vex Armor Trim Smithing Template",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "vex_spawn_egg",
+    "name": "Vex Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "villager_spawn_egg",
+    "name": "Villager Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "vindicator_spawn_egg",
+    "name": "Vindicator Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "vine",
+    "name": "Vine",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "wandering_trader_spawn_egg",
+    "name": "Wandering Trader Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "ward_armor_trim_smithing_template",
+    "name": "Ward Armor Trim Smithing Template",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "warden_spawn_egg",
+    "name": "Warden Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "warped_button",
+    "name": "Warped Button",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "warped_door",
+    "name": "Warped Door",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "warped_fence",
+    "name": "Warped Fence",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "warped_fence_gate",
+    "name": "Warped Fence Gate",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "warped_fungus",
+    "name": "Warped Fungus",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "warped_fungus_on_a_stick",
+    "name": "Warped Fungus On A Stick",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "warped_hanging_sign",
+    "name": "Warped Hanging Sign",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "warped_hyphae",
+    "name": "Warped Hyphae",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "warped_nylium",
+    "name": "Warped Nylium",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "warped_planks",
+    "name": "Warped Planks",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "warped_pressure_plate",
+    "name": "Warped Pressure Plate",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "warped_roots",
+    "name": "Warped Roots",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "warped_sign",
+    "name": "Warped Sign",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "warped_slab",
+    "name": "Warped Slab",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "warped_stairs",
+    "name": "Warped Stairs",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "warped_stem",
+    "name": "Warped Stem",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "warped_trapdoor",
+    "name": "Warped Trapdoor",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "warped_wart_block",
+    "name": "Warped Wart Block",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "water_bucket",
+    "name": "Water Bucket",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "wayfinder_armor_trim_smithing_template",
+    "name": "Wayfinder Armor Trim Smithing Template",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "weathered_copper",
+    "name": "Weathered Copper",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "weathered_cut_copper",
+    "name": "Weathered Cut Copper",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "weathered_cut_copper_slab",
+    "name": "Weathered Cut Copper Slab",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "weathered_cut_copper_stairs",
+    "name": "Weathered Cut Copper Stairs",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "weeping_vines",
+    "name": "Weeping Vines",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "wet_sponge",
+    "name": "Wet Sponge",
+    "isEligible": false,
+    "category": "ocean"
+  },
+  {
+    "id": "wheat",
+    "name": "Wheat",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "wheat_seeds",
+    "name": "Wheat Seeds",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "white_banner",
+    "name": "White Banner",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "white_bed",
+    "name": "White Bed",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "white_candle",
+    "name": "White Candle",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "white_carpet",
+    "name": "White Carpet",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "white_concrete",
+    "name": "White Concrete",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "white_concrete_powder",
+    "name": "White Concrete Powder",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "white_dye",
+    "name": "White Dye",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "white_glazed_terracotta",
+    "name": "White Glazed Terracotta",
+    "isEligible": false,
+    "category": "messa"
+  },
+  {
+    "id": "white_shulker_box",
+    "name": "White Shulker Box",
+    "isEligible": false,
+    "category": "end"
+  },
+  {
+    "id": "white_stained_glass",
+    "name": "White Stained Glass",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "white_stained_glass_pane",
+    "name": "White Stained Glass Pane",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "white_terracotta",
+    "name": "White Terracotta",
+    "isEligible": false,
+    "category": "messa"
+  },
+  {
+    "id": "white_tulip",
+    "name": "White Tulip",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "white_wool",
+    "name": "White Wool",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "wild_armor_trim_smithing_template",
+    "name": "Wild Armor Trim Smithing Template",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "witch_spawn_egg",
+    "name": "Witch Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "wither_rose",
+    "name": "Wither Rose",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "wither_skeleton_skull",
+    "name": "Wither Skeleton Skull",
+    "isEligible": false,
+    "category": "nether"
+  },
+  {
+    "id": "wither_skeleton_spawn_egg",
+    "name": "Wither Skeleton Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "wither_spawn_egg",
+    "name": "Wither Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "wolf_spawn_egg",
+    "name": "Wolf Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "wooden_axe",
+    "name": "Wooden Axe",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "wooden_hoe",
+    "name": "Wooden Hoe",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "wooden_pickaxe",
+    "name": "Wooden Pickaxe",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "wooden_shovel",
+    "name": "Wooden Shovel",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "wooden_sword",
+    "name": "Wooden Sword",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "writable_book",
+    "name": "Writable Book",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "written_book",
+    "name": "Written Book",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "yellow_banner",
+    "name": "Yellow Banner",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "yellow_bed",
+    "name": "Yellow Bed",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "yellow_candle",
+    "name": "Yellow Candle",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "yellow_carpet",
+    "name": "Yellow Carpet",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "yellow_concrete",
+    "name": "Yellow Concrete",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "yellow_concrete_powder",
+    "name": "Yellow Concrete Powder",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "yellow_dye",
+    "name": "Yellow Dye",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "yellow_glazed_terracotta",
+    "name": "Yellow Glazed Terracotta",
+    "isEligible": false,
+    "category": "messa"
+  },
+  {
+    "id": "yellow_shulker_box",
+    "name": "Yellow Shulker Box",
+    "isEligible": false,
+    "category": "end"
+  },
+  {
+    "id": "yellow_stained_glass",
+    "name": "Yellow Stained Glass",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "yellow_stained_glass_pane",
+    "name": "Yellow Stained Glass Pane",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "yellow_terracotta",
+    "name": "Yellow Terracotta",
+    "isEligible": false,
+    "category": "messa"
+  },
+  {
+    "id": "yellow_wool",
+    "name": "Yellow Wool",
+    "isEligible": true,
+    "category": "universal"
+  },
+  {
+    "id": "zoglin_spawn_egg",
+    "name": "Zoglin Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "zombie_head",
+    "name": "Zombie Head",
+    "isEligible": false,
+    "category": "treasure"
+  },
+  {
+    "id": "zombie_horse_spawn_egg",
+    "name": "Zombie Horse Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "zombie_spawn_egg",
+    "name": "Zombie Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "zombie_villager_spawn_egg",
+    "name": "Zombie Villager Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  },
+  {
+    "id": "zombified_piglin_spawn_egg",
+    "name": "Zombified Piglin Spawn Egg",
+    "isEligible": false,
+    "category": "spawn_eggs"
+  }
 ]
