@@ -85,3 +85,17 @@ body {
 .translate-3d:active::after {
   transform: translate3d(0, 0em, -1em);
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  height: 128px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(var(--border));
+}
