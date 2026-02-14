@@ -1,4 +1,3 @@
-import { useBoundStore } from '@/lib/zustand/store';
 import {
   Item,
   ItemActions,
@@ -8,7 +7,6 @@ import {
   ItemTitle,
 } from '../ui/item';
 import { Switch } from '../ui/switch';
-import { useQueryState } from 'nuqs';
 import { Item as ItemType } from '@/lib/domain/items/types';
 
 interface ItemsListProps {

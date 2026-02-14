@@ -24,7 +24,11 @@ export default function FilterItems() {
       defaultValue="all"
       variant="outline"
     >
-      <ToggleGroupItem value="all" onClick={() => handleCategoryCLick(null)}>
+      <ToggleGroupItem
+        value="all"
+        key={'all'}
+        onClick={() => handleCategoryCLick(null)}
+      >
         All
       </ToggleGroupItem>
       {categories.map((category) => {
@@ -32,6 +36,7 @@ export default function FilterItems() {
           <ToggleGroupItem
             onClick={() => handleCategoryCLick(category)}
             value={category}
+            key={category}
           >
             {capitalize(category)}
           </ToggleGroupItem>
