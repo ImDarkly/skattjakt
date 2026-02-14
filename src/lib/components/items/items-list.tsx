@@ -22,7 +22,11 @@ export default function ItemsList({
     <ItemGroup className="gap-4 max-w-xl w-full">
       {items.map((item) => {
         return (
-          <Item key={item.id} variant="outline">
+          <Item
+            key={item.id}
+            variant="outline"
+            className={`${item.isEligible ? 'opacity-100' : 'opacity-50'}`}
+          >
             <ItemMedia variant="image">
               <img src={`./items/${item.id}.png`} alt={item.name} />
             </ItemMedia>
