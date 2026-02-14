@@ -6687,13 +6687,13 @@
     "id": "stripped_warped_hyphae",
     "name": "Stripped Warped Hyphae",
     "isEligible": false,
-    "category": "plains"
+    "category": "nether"
   },
   {
     "id": "stripped_warped_stem",
     "name": "Stripped Warped Stem",
     "isEligible": false,
-    "category": "plains"
+    "category": "nether"
   },
   {
     "id": "structure_block",
@@ -6981,109 +6981,109 @@
     "id": "warped_button",
     "name": "Warped Button",
     "isEligible": false,
-    "category": "plains"
+    "category": "nether"
   },
   {
     "id": "warped_door",
     "name": "Warped Door",
     "isEligible": false,
-    "category": "plains"
+    "category": "nether"
   },
   {
     "id": "warped_fence",
     "name": "Warped Fence",
     "isEligible": false,
-    "category": "plains"
+    "category": "nether"
   },
   {
     "id": "warped_fence_gate",
     "name": "Warped Fence Gate",
     "isEligible": false,
-    "category": "plains"
+    "category": "nether"
   },
   {
     "id": "warped_fungus",
     "name": "Warped Fungus",
     "isEligible": false,
-    "category": "plains"
+    "category": "nether"
   },
   {
     "id": "warped_fungus_on_a_stick",
     "name": "Warped Fungus On A Stick",
     "isEligible": false,
-    "category": "plains"
+    "category": "nether"
   },
   {
     "id": "warped_hanging_sign",
     "name": "Warped Hanging Sign",
     "isEligible": false,
-    "category": "plains"
+    "category": "nether"
   },
   {
     "id": "warped_hyphae",
     "name": "Warped Hyphae",
     "isEligible": false,
-    "category": "plains"
+    "category": "nether"
   },
   {
     "id": "warped_nylium",
     "name": "Warped Nylium",
     "isEligible": false,
-    "category": "plains"
+    "category": "nether"
   },
   {
     "id": "warped_planks",
     "name": "Warped Planks",
     "isEligible": false,
-    "category": "plains"
+    "category": "nether"
   },
   {
     "id": "warped_pressure_plate",
     "name": "Warped Pressure Plate",
     "isEligible": false,
-    "category": "plains"
+    "category": "nether"
   },
   {
     "id": "warped_roots",
     "name": "Warped Roots",
     "isEligible": false,
-    "category": "plains"
+    "category": "nether"
   },
   {
     "id": "warped_sign",
     "name": "Warped Sign",
     "isEligible": false,
-    "category": "plains"
+    "category": "nether"
   },
   {
     "id": "warped_slab",
     "name": "Warped Slab",
     "isEligible": false,
-    "category": "plains"
+    "category": "nether"
   },
   {
     "id": "warped_stairs",
     "name": "Warped Stairs",
     "isEligible": false,
-    "category": "plains"
+    "category": "nether"
   },
   {
     "id": "warped_stem",
     "name": "Warped Stem",
     "isEligible": false,
-    "category": "plains"
+    "category": "nether"
   },
   {
     "id": "warped_trapdoor",
     "name": "Warped Trapdoor",
     "isEligible": false,
-    "category": "plains"
+    "category": "nether"
   },
   {
     "id": "warped_wart_block",
     "name": "Warped Wart Block",
     "isEligible": false,
-    "category": "plains"
+    "category": "nether"
   },
   {
     "id": "water_bucket",

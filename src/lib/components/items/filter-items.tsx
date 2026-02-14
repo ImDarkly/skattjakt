@@ -8,8 +8,12 @@ export default function FilterItems() {
   const categories = Array.from(new Set(items.map((item) => item.category)));
 
   function capitalize(str: string) {
-    if (!str) return '';
-    return str.charAt(0).toUpperCase() + str.slice(1);
+    return !str
+      ? ''
+      : str
+          .split('_')
+          .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+          .join(' ');
   }
 
   function handleCategoryCLick(category: string | null) {
@@ -34,6 +38,7 @@ export default function FilterItems() {
       {categories.map((category) => {
         return (
           <ToggleGroupItem
+            className="whitespace-nowrap"
             onClick={() => handleCategoryCLick(category)}
             value={category}
             key={category}
