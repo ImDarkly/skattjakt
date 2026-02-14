@@ -16,7 +16,7 @@ export default function ItemsPage() {
   const filteredItems = useFilteredItems(searchedItems, category);
 
   return (
-    <div className="flex flex-col items-center gap-4">
+    <div className="flex h-screen flex-col items-center gap-4">
       <Header
         left={<GoBackButton />}
         title="Items"
