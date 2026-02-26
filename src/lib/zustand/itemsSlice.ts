@@ -21,20 +21,6 @@ function save(items: Item[]) {
 
 export const createItemsSlice: StateCreator<ItemsSlice> = (set, get) => ({
   items: load(),
-  toggleEligibility: (id: string) =>
-    set((state) => {
-      const next = state.items.map((item) =>
-        item.id === id ? { ...item, isEligible: !item.isEligible } : item
-      );
-
-      save(next);
-      return { items: next };
-    }),
-  resetItems: () => {
-    localStorage.removeItem(KEY);
-    save(data);
-    set({ items: data });
-  },
   addItem: (item: NewItem) => {
     const name = item.name.trim();
     if (!name) throw Error('Item name required!');
@@ -56,5 +42,26 @@ export const createItemsSlice: StateCreator<ItemsSlice> = (set, get) => ({
       save(next);
       return { items: next };
     });
+  },
+  resetItems: () => {
+    localStorage.removeItem(KEY);
+    save(data);
+    set({ items: data });
+  },
+  setEligibilityByIds: (ids: string[], value: boolean) => {
+    set((state) => {
+      const next = state.items.map((item) =>
+        ids.includes(item.id) ? { ...item, isEligible: value } : item
+      );
+
+      save(next);
+      return { items: next };
+    });
+  },
+  toggleEligibility: (id: string) => {
+    const item = get().items.find((item) => item.id === id);
+    if (!item) return;
+
+    get().setEligibilityByIds([id], !item?.isEligible);
   },
 });

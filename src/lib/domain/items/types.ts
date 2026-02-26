@@ -16,4 +16,5 @@ export type ItemsSlice = {
   toggleEligibility: (id: string) => void;
   resetItems: () => void;
   addItem: (item: Item) => void;
+  setEligibilityByIds: (ids: string[], value: boolean) => void;
 };
