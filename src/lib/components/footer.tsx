@@ -14,7 +14,7 @@ const isProduction = process.env.NODE_ENV === 'production';
 const version = APP_VERSION;
 export const Footer = () => {
   return (
-    <footer className="flex h-24 w-full items-center justify-between grow gap-1 bg-background px-4">
+    <footer className="flex max-h-24 w-full items-center justify-between grow gap-1 bg-background px-4">
       <div className="flex">
         <p>Made with</p>
         <TooltipProvider>

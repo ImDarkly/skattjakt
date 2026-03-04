@@ -29,7 +29,7 @@ export default function SetAllEligibility({ items }: SetAllEligibilityProps) {
   }, [items]);
 
   return (
-    <Field orientation="horizontal" className="p-4">
+    <Field orientation="horizontal" className="px-8">
       <FieldContent>
         <FieldLabel htmlFor="set-all-eligibility">
           Set aligibility for all

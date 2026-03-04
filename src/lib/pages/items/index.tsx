@@ -22,7 +22,7 @@ export default function ItemsPage() {
         title="Items"
         right={<ClearItemsButton />}
       />
-      <ItemsControl />
+      <ItemsControl items={filteredItems} />
       <ItemsList items={filteredItems} toggleEligibility={toggleEligibility} />
     </div>
   );

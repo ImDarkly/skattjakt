@@ -10,8 +10,6 @@ import {
 import { Switch } from '../ui/switch';
 import { Item as ItemType } from '@/lib/domain/items/types';
 import { useVirtualizer } from '@tanstack/react-virtual';
-import SetAllEligibility from './set-all-eligibility';
-
 interface ItemsListProps {
   items: ItemType[];
   toggleEligibility: (id: string) => void;
@@ -34,7 +32,6 @@ export default function ItemsList({
       ref={parentRef}
       className="h-full w-full max-w-xl flex flex-col justify-center overflow-auto"
     >
-      <SetAllEligibility items={items} />
       <ItemGroup
         className="gap-4 max-w-xl w-full relative"
         style={{
