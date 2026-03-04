@@ -1,5 +1,5 @@
 import Header from '@/lib/components/header';
-import ClearItemsButton from '@/lib/components/items/clear-items-button';
+import ResetItemsButton from '@/lib/components/items/reset-items-button';
 import ItemsControl from '@/lib/components/items/items-control';
 import ItemsList from '@/lib/components/items/items-list';
 import GoBackButton from '@/lib/components/ui/go-back-button';
@@ -20,7 +20,7 @@ export default function ItemsPage() {
       <Header
         left={<GoBackButton />}
         title="Items"
-        right={<ClearItemsButton />}
+        right={<ResetItemsButton />}
       />
       <ItemsControl items={filteredItems} />
       <ItemsList items={filteredItems} toggleEligibility={toggleEligibility} />
