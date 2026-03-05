@@ -1,28 +1,25 @@
-# Skattjakt
+## Skattjakt
 
-An open source Minecraft bingo generator.
+> Web app that generates custom Minecraft bingo cards, allowing players to create, customize, and share bingo challenges for any Minecraft world.
 
-> **Warning**
-> Skattjakt is not affiliated with Mojang.
+## Problem
 
-## About this project
+There are no tools available to create bingo cards for any Minecraft world.
 
-This project was designed to provide you with the capability to generate bingo card for every world you want without any limitations.
+## Solution
+
+An app that lets you to generate card with random Minecraft items.
 
 ## Features
 
 - Сard generating
-- Dark/light mode
 - Sharing cards to other users
-- UI Components built using **shadcn/ui**
-- Styled using **Tailwind CSS**
-- Written in **TypeScript**
-- State management with **Zustand**
-- Developed with **React**
-- Utilizes **Vite** for fast development
-- Implements **React Router** for navigation
+- View list of items
+- Add/remove items from pool
 
-## Known Issues
+## Roadmap
+
+1. Save bingo cards to favorites
 
 ## Running Locally
 
@@ -41,3 +38,6 @@ pnpm dev
 ## License
 
 Licensed under the [MIT license](https://github.com/ImDarkly/skattjakt/blob/main/LICENSE).
+
+> **Warning**
+> Skattjakt is not affiliated with Mojang.

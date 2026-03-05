@@ -32,7 +32,7 @@ export default function SetAllEligibility({ items }: SetAllEligibilityProps) {
     <Field orientation="horizontal" className="px-8">
       <FieldContent>
         <FieldLabel htmlFor="set-all-eligibility">
-          Set aligibility for all
+          Set eligibility for all
         </FieldLabel>
       </FieldContent>
       <Switch
