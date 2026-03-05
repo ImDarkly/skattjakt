@@ -8,28 +8,29 @@ import generateItems from '@/lib/domain/card/generateCard';
 import { Item } from '@/lib/domain/items/types';
 
 export const GenerateButton = () => {
+  const items = useBoundStore((state) => state.items);
   const [spinning, setSpinning] = useState(false);
   const { setCard } = useBoundStore();
   const [searchParams, setSearchParams] = useSearchParams();
 
   const handleGenerateAndSetCard = () => {
     setSpinning(true);
-    const items = generateItems();
-    setCard(items);
-    const link = items
+    const generatedItems = generateItems(
+      items.filter((item) => item.isEligible === true)
+    );
+    setCard(generatedItems);
+    const link = generatedItems
       .map((item: Item, index: number) => `b${index + 1}=${item.id}`)
       .join('&');
     setSearchParams(link);
   };
 
-  // useEffect to generate an initial Bingo card on component mount
   useEffect(() => {
     if (!searchParams.has('b1')) {
       handleGenerateAndSetCard();
     }
   }, [searchParams]);
 
-  // useEffect to handle the spinning animation of the Generate button icon
   useEffect(() => {
     if (!spinning) return;
     const timeoutId = setTimeout(() => {

@@ -5,16 +5,15 @@ import * as React from 'react';
 import { cn } from '@/lib/styles/utils';
 
 const buttonVariants = cva(
-  'style-preserve relative inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors transition-transform focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50',
+  'translate-3d ring-2 ring-inset  after:absolute after:h-full after:w-full after:rounded-md after:bg-primary after:transition-transform active:translate-y-1 style-preserve relative inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors transition-transform focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50',
   {
     variants: {
       variant: {
-        default:
-          'translate-3d bg-primary text-primary-foreground ring-2 ring-inset ring-rose-400 after:absolute after:h-full after:w-full after:rounded-md after:bg-primary after:transition-transform active:translate-y-1',
+        default: 'bg-primary text-primary-foreground ring-rose-400',
         secondary:
-          'translate-3d bg-secondary text-secondary-foreground ring-2 ring-inset ring-stone-300 after:absolute after:h-full after:w-full after:rounded-md after:bg-stone-200 after:transition-transform active:translate-y-1 dark:ring-stone-700 dark:after:bg-stone-800',
+          'bg-secondary text-secondary-foreground ring-stone-300 dark:ring-stone-700 after:bg-stone-200 dark:after:bg-stone-800',
         destructive:
-          'bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/80',
+          'bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/80 after:bg-destructive ring-red-300 dark:ring-red-700',
         outline:
           'border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground',
         ghost: 'hover:bg-accent hover:text-accent-foreground',
