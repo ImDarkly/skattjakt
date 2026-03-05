@@ -32,7 +32,7 @@ export default function ResetItemsButton() {
           </AlertDialogDescription>
         </AlertDialogHeader>
         <AlertDialogFooter>
-          <AlertDialogCancel variant>Cancel</AlertDialogCancel>
+          <AlertDialogCancel>Cancel</AlertDialogCancel>
           <AlertDialogAction onClick={resetItems}>Reset</AlertDialogAction>
         </AlertDialogFooter>
       </AlertDialogContent>
