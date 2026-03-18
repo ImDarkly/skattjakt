@@ -9,11 +9,12 @@ import generateCard from '@/lib/domain/card/generateCard';
 import { Item } from '@/lib/domain/items/types';
 
 export const GenerateButton = () => {
-  const { items, setCard, addToHistory } = useBoundStore(
+  const { items, setCard, addToHistory, history } = useBoundStore(
     useShallow((state) => ({
       items: state.items,
       setCard: state.setCard,
       addToHistory: state.addToHistory,
+      history: state.history,
     }))
   );
   const [spinning, setSpinning] = useState(false);
@@ -25,7 +26,11 @@ export const GenerateButton = () => {
       items.filter((item) => item.isEligible === true)
     );
     setCard(generatedCard);
-    addToHistory({ card: generatedCard });
+    addToHistory({
+      card: generatedCard,
+      title: `Card #${history.length + 1}`,
+      favourite: false,
+    });
     const link = generatedCard
       .map((item: Item, index: number) => `b${index + 1}=${item.id}`)
       .join('&');
