@@ -1,12 +1,25 @@
 import { create } from 'zustand';
-import { createCardSlice } from './cardSlice';
+import { persist } from 'zustand/middleware';
+import { CardSlice, createCardSlice } from './cardSlice';
 import { createItemsSlice } from './itemsSlice';
-import { BingoCard } from '../domain/card/types';
 import { ItemsSlice } from '../domain/items/types';
+import { CardHistorySlice, createCardHistorySlice } from './cardHistorySlice';
 
-type BoundStore = BingoCard & ItemsSlice;
+export type BoundStore = CardSlice & ItemsSlice & CardHistorySlice;
 
-export const useBoundStore = create<BoundStore>()((...a) => ({
-  ...createCardSlice(...a),
-  ...createItemsSlice(...a),
-}));
+export const useBoundStore = create<BoundStore>()(
+  persist(
+    (...a) => ({
+      ...createCardSlice(...a),
+      ...createItemsSlice(...a),
+      ...createCardHistorySlice(...a),
+    }),
+    {
+      name: 'skattjakt-storage',
+      partialize: (state) => ({
+        items: state.items,
+        history: state.history,
+      }),
+    }
+  )
+);

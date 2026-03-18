@@ -2,24 +2,36 @@ import { Icon } from '@iconify/react';
 import { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { useBoundStore } from '../../zustand/store';
+import { useShallow } from 'zustand/react/shallow';
 
 import { Button } from '../ui/button';
-import generateItems from '@/lib/domain/card/generateCard';
+import generateCard from '@/lib/domain/card/generateCard';
 import { Item } from '@/lib/domain/items/types';
 
 export const GenerateButton = () => {
-  const items = useBoundStore((state) => state.items);
+  const { items, setCard, addToHistory, history } = useBoundStore(
+    useShallow((state) => ({
+      items: state.items,
+      setCard: state.setCard,
+      addToHistory: state.addToHistory,
+      history: state.history,
+    }))
+  );
   const [spinning, setSpinning] = useState(false);
-  const { setCard } = useBoundStore();
   const [searchParams, setSearchParams] = useSearchParams();
 
   const handleGenerateAndSetCard = () => {
     setSpinning(true);
-    const generatedItems = generateItems(
+    const generatedCard = generateCard(
       items.filter((item) => item.isEligible === true)
     );
-    setCard(generatedItems);
-    const link = generatedItems
+    setCard(generatedCard);
+    addToHistory({
+      card: generatedCard,
+      title: `Card #${history.length + 1}`,
+      favourite: false,
+    });
+    const link = generatedCard
       .map((item: Item, index: number) => `b${index + 1}=${item.id}`)
       .join('&');
     setSearchParams(link);
