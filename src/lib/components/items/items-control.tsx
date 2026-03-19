@@ -11,7 +11,7 @@ interface ItemsControlProps {
 
 export default function ItemsControl({ items }: ItemsControlProps) {
   return (
-    <div className="flex flex-col justify-start w-full max-w-xl">
+    <div className="flex flex-col justify-start w-full max-w-xl px-4">
       <div className="flex flex-row gap-2">
         <SearchItems />
         <AddItemButton />

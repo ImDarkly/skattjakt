@@ -21,8 +21,10 @@ export const Cell = ({ item, checked, onClick, disabled }: CellProps) => {
         }
       }}
       className={`group/cell relative ${
-        disabled ? 'cursor-default' : 'cursor-pointer'
-      } style-preserve translate-3d flex items-center justify-center break-words transition-all active:translate-y-1 ${checked ? 'translate-y-1' : 'after after:absolute after:h-full after:w-full after:rounded-2xl after:bg-stone-200 after:transition-transform after:dark:bg-stone-800 '}`}
+        disabled
+          ? 'pointer-events-none'
+          : `cursor-pointer ${checked ? 'translate-y-1' : 'after after:absolute after:h-full after:w-full after:rounded-2xl after:bg-stone-200 after:transition-transform after:dark:bg-stone-800 '}`
+      } style-preserve translate-3d flex items-center justify-center break-words transition-all active:translate-y-1`}
     >
       <div
         className={`h-full w-full rounded-2xl bg-card p-3 ${checked ? 'opacity-30' : ''} ${disabled ? '' : 'ring-2 ring-inset ring-stone-300 dark:ring-stone-700'}`}

@@ -1,7 +1,7 @@
 import { Item } from '../items/types';
 
-export type BingoCard = {
-  card: Item[];
+export type BingoCardType = {
+  items: Item[];
   title: string;
   favourite: boolean;
 };
