@@ -60,6 +60,7 @@
 
 html {
   height: 100svh;
+  scrollbar-gutter: stable;
 }
 body {
   height: 100svh;
@@ -84,4 +85,22 @@ body {
 
 .translate-3d:active::after {
   transform: translate3d(0, 0em, -1em);
+}
+
+.overlay-scroll {
+  overflow: auto;
+}
+
+.overlay-scroll::-webkit-scrollbar {
+  width: 8px;
+  position: absolute;
+}
+
+.overlay-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.overlay-scroll::-webkit-scrollbar-thumb {
+  background: hsl(var(--border));
+  border-radius: 4px;
 }

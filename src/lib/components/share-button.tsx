@@ -8,7 +8,6 @@ import {
   Dialog,
   DialogClose,
   DialogContent,
-  DialogDescription,
   DialogFooter,
   DialogHeader,
   DialogTitle,
@@ -55,24 +54,22 @@ export const ShareButton = () => {
         <DialogContent>
           <DialogHeader>
             <DialogTitle>Share</DialogTitle>
-            <DialogDescription>
-              <div className="flex flex-col gap-2">
-                <Input value={shareUrl} readOnly />
-                <div className="flex h-12 items-center justify-between space-x-2">
-                  <Label htmlFor="show-controls">Show controls</Label>
-                  <Switch
-                    id="show-controls"
-                    onCheckedChange={handleControlsChange}
-                    checked={showControls}
-                  />
-                </div>
-              </div>
-            </DialogDescription>
           </DialogHeader>
+          <div className="flex flex-col gap-2">
+            <Input value={shareUrl} readOnly />
+            <div className="flex h-12 items-center justify-between space-x-2">
+              <Label htmlFor="show-controls">Show controls</Label>
+              <Switch
+                id="show-controls"
+                onCheckedChange={handleControlsChange}
+                checked={showControls}
+              />
+            </div>
+          </div>
           <DialogFooter>
             <div className="flex w-full flex-row items-center justify-end gap-2">
               <div className="w-full">
-                <DialogClose className="w-full">
+                <DialogClose className="w-full" asChild>
                   <Button variant="secondary" className="w-full">
                     <Icon width={24} icon="heroicons:x-mark-16-solid" />
                     Close
@@ -80,7 +77,7 @@ export const ShareButton = () => {
                 </DialogClose>
               </div>
               <div className="w-full">
-                <DialogClose className="w-full">
+                <DialogClose className="w-full" asChild>
                   <Button className="w-full" onClick={handleCopyClick}>
                     <Icon width={24} icon="heroicons:clipboard-16-solid" />
                     Copy
