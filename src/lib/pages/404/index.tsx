@@ -16,11 +16,10 @@ export default function Page404() {
             <p className="font-semiboldtext-2xl text-center">Page Not Found</p>
           </div>
           <p className="w-full text-center text-base font-normal text-muted-foreground">
-            Oops! Looks like the{' '}
-            <span className="text-violet-500 dark:text-violet-400">
-              Enderman
-            </span>{' '}
-            stole this page! We couldn&#39;t find what you were looking for.
+            Ssss... BOOM! A{' '}
+            <span className="text-green-500 dark:text-green-400">Creeper</span>{' '}
+            found this page before you did. The page you're looking for has been
+            blown to pieces.
           </p>
         </div>
         <div className="flex w-full flex-col items-center justify-center">
