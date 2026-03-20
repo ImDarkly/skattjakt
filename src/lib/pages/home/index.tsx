@@ -28,13 +28,9 @@ export default function Home() {
 
   useEffect(() => {
     if (card.items.length === 0) {
-      const newCard = Array.from(
-        { length: BINGO_GRID_SIZE },
-        (_, index) => index + 1
-      )
-        .map((index) =>
-          items.find((item: Item) => item.id === searchParams.get(`b${index}`))
-        )
+      const ids = searchParams.get('c')?.split(',') ?? [];
+      const newCard = ids
+        .map((id) => items.find((item: Item) => item.id === id))
         .filter((item): item is Item => item !== undefined);
 
       if (newCard.length === BINGO_GRID_SIZE) {

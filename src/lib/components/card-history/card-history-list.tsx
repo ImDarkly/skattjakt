@@ -9,12 +9,28 @@ import {
   CardTitle,
 } from '../ui/card';
 import VirtualizedList from '../ui/virtualized-list';
+import { useNavigate } from 'react-router-dom';
+import { useBoundStore } from '@/lib/zustand/store';
+import { useShallow } from 'zustand/react/shallow';
+import { encodeCardToParams } from '../bingo/generate-button';
 
 interface CardHistoryListProps {
   cards: BingoCardType[];
 }
 
 export default function CardHistoryList({ cards }: CardHistoryListProps) {
+  const { setCard } = useBoundStore(
+    useShallow((state) => ({
+      setCard: state.setCard,
+    }))
+  );
+  const navigate = useNavigate();
+  const handleNavigate = (card: BingoCardType) => {
+    setCard(card.items);
+    const params = encodeCardToParams(card.items);
+    navigate(`../?${params}&show-controls`);
+  };
+
   return (
     <div className="flex-1 flex justify-center min-h-0 w-full">
       <VirtualizedList
@@ -28,7 +44,12 @@ export default function CardHistoryList({ cards }: CardHistoryListProps) {
                 <CardHeader>
                   <CardTitle>{card.title}</CardTitle>
                   <CardAction>
-                    <Button variant="secondary">Open</Button>
+                    <Button
+                      variant="secondary"
+                      onClick={() => handleNavigate(card)}
+                    >
+                      Open
+                    </Button>
                   </CardAction>
                 </CardHeader>
                 <CardContent>

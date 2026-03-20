@@ -8,6 +8,12 @@ import { Button } from '../ui/button';
 import generateCard from '@/lib/domain/card/generateCard';
 import { Item } from '@/lib/domain/items/types';
 
+export function encodeCardToParams(card: Item[]): URLSearchParams {
+  const params = new URLSearchParams();
+  params.set('c', card.map((item) => item.id).join(','));
+  return params;
+}
+
 export const GenerateButton = () => {
   const { items, setCard, addToCardsHistory, cardsHistory } = useBoundStore(
     useShallow((state) => ({
@@ -31,14 +37,12 @@ export const GenerateButton = () => {
       title: `Card #${cardsHistory.length + 1}`,
       favourite: false,
     });
-    const link = generatedCard
-      .map((item: Item, index: number) => `b${index + 1}=${item.id}`)
-      .join('&');
+    const link = encodeCardToParams(generatedCard);
     setSearchParams(link);
   };
 
   useEffect(() => {
-    if (!searchParams.has('b1')) {
+    if (!searchParams.has('c')) {
       handleGenerateAndSetCard();
     }
   }, [searchParams]);
