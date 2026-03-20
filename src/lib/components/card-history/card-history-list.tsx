@@ -28,7 +28,7 @@ export default function CardHistoryList({ cards }: CardHistoryListProps) {
   const handleNavigate = (card: BingoCardType) => {
     setCard(card.items);
     const params = encodeCardToParams(card.items);
-    navigate(`../?${params}&show-controls`);
+    navigate(`../?${params}`);
   };
 
   return (
