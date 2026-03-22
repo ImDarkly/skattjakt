@@ -8,6 +8,7 @@ import {
   TooltipTrigger,
 } from './ui/tooltip';
 import { ModeToggle } from './ui/mode-toggle';
+import UserPreferencesButton from './user-preferences/user-preferences-button';
 
 const isProduction = process.env.NODE_ENV === 'production';
 
@@ -56,7 +57,7 @@ export const Footer = () => {
           </Tooltip>
         </TooltipProvider>
       </div>
-      <ModeToggle />
+      <UserPreferencesButton />
     </footer>
   );
 };

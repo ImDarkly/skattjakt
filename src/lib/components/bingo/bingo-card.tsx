@@ -1,21 +1,15 @@
-import { useEffect, useState } from 'react';
-import { useSearchParams } from 'react-router-dom';
-
-import { useBoundStore } from '@/lib/zustand/store';
+import { useState } from 'react';
+import { Item } from '@/lib/domain/items/types';
 
 import { Cell } from '../ui/cell';
-import { Item } from '@/lib/domain/items/types';
-import { BINGO_GRID_SIZE } from '@/lib/domain/card/generateCard';
 
 type BingoCardProps = {
   disabled?: boolean;
+  items: Item[];
 };
 
-export const BingoCard = ({ disabled }: BingoCardProps) => {
-  const items = useBoundStore((state) => state.items);
-  const { card, setCard } = useBoundStore();
+export const BingoCard = ({ disabled, items }: BingoCardProps) => {
   const [selectedCell, setSelectedCell] = useState<string[]>([]);
-  const [searchParams] = useSearchParams();
 
   const handleCellClick = (cellId: string) => {
     if (disabled) return;
@@ -27,24 +21,9 @@ export const BingoCard = ({ disabled }: BingoCardProps) => {
     );
   };
 
-  useEffect(() => {
-    if (card.length === 0) {
-      const newCard = Array.from(
-        { length: BINGO_GRID_SIZE },
-        (_, index) => index + 1
-      ).map((index) =>
-        items.find((item: Item) => item.id === searchParams.get(`b${index}`))
-      );
-
-      if (newCard.length === BINGO_GRID_SIZE) {
-        setCard(newCard);
-      }
-    }
-  }, [searchParams]);
-
   return (
     <div className="grid aspect-square w-full grid-cols-5 grid-rows-5 gap-2">
-      {card.map((item: Item) => (
+      {items.map((item: Item) => (
         <Cell
           key={item.id}
           item={item}

@@ -3,9 +3,9 @@ import { persist } from 'zustand/middleware';
 import { CardSlice, createCardSlice } from './cardSlice';
 import { createItemsSlice } from './itemsSlice';
 import { ItemsSlice } from '../domain/items/types';
-import { CardHistorySlice, createCardHistorySlice } from './cardHistorySlice';
+import { CardsHistorySlice, createCardHistorySlice } from './cardsHistorySlice';
 
-export type BoundStore = CardSlice & ItemsSlice & CardHistorySlice;
+export type BoundStore = CardSlice & ItemsSlice & CardsHistorySlice;
 
 export const useBoundStore = create<BoundStore>()(
   persist(
@@ -18,7 +18,7 @@ export const useBoundStore = create<BoundStore>()(
       name: 'skattjakt-storage',
       partialize: (state) => ({
         items: state.items,
-        history: state.history,
+        cardsHistory: state.cardsHistory,
       }),
     }
   )
