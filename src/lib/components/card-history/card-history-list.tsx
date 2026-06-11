@@ -11,15 +11,15 @@ interface CardHistoryListProps {
 }
 
 export default function CardHistoryList({ cards }: CardHistoryListProps) {
-  const { setCard, removeFromCardsHistory } = useBoundStore(
+  const { openCard, removeFromCardsHistory } = useBoundStore(
     useShallow((state) => ({
-      setCard: state.setCard,
+      openCard: state.openCard,
       removeFromCardsHistory: state.removeFromCardsHistory,
     }))
   );
   const navigate = useNavigate();
-  const handleNavigate = (card: BingoCardType) => {
-    setCard(card.items);
+  const handleNavigate = (index: number, card: BingoCardType) => {
+    openCard(index);
     const params = encodeCardToParams(card.items);
     navigate(`../?${params}`);
   };
@@ -36,7 +36,7 @@ export default function CardHistoryList({ cards }: CardHistoryListProps) {
               <CardHistoryItem
                 card={card}
                 index={index}
-                onOpen={() => handleNavigate(card)}
+                onOpen={() => handleNavigate(index, card)}
                 onDelete={() => removeFromCardsHistory(index)}
               />
             </div>
