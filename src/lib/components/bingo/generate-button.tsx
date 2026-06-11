@@ -35,7 +35,7 @@ export const GenerateButton = () => {
     addToCardsHistory({
       items: generatedCard,
       title: `Card #${cardsHistory.length + 1}`,
-      favourite: false,
+      isFavorited: false,
     });
     const link = encodeCardToParams(generatedCard);
     setSearchParams(link);
