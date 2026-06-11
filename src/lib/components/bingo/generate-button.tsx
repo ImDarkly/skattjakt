@@ -15,10 +15,9 @@ export function encodeCardToParams(card: Item[]): URLSearchParams {
 }
 
 export const GenerateButton = () => {
-  const { items, setCard, addToCardsHistory, cardsHistory } = useBoundStore(
+  const { items, addToCardsHistory, cardsHistory } = useBoundStore(
     useShallow((state) => ({
       items: state.items,
-      setCard: state.setCard,
       addToCardsHistory: state.addToCardsHistory,
       cardsHistory: state.cardsHistory,
     }))
@@ -31,7 +30,6 @@ export const GenerateButton = () => {
     const generatedCard = generateCard(
       items.filter((item) => item.isEligible === true)
     );
-    setCard(generatedCard);
     addToCardsHistory({
       items: generatedCard,
       title: `Card #${cardsHistory.length + 1}`,
