@@ -31,6 +31,9 @@ export const createCardHistorySlice: StateCreator<CardsHistorySlice> = (
   },
   openCard: (index: number) => {
     set((state) => {
+      if (index < 0 || index >= state.cardsHistory.length) {
+        return state;
+      }
       const card = state.cardsHistory[index];
       const newHistory = state.cardsHistory.filter((_, i) => i !== index);
       return {
