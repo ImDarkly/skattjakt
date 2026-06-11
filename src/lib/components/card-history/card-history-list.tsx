@@ -35,6 +35,7 @@ export default function CardHistoryList({ cards }: CardHistoryListProps) {
             <div className="flex justify-center px-4">
               <CardHistoryItem
                 card={card}
+                index={index}
                 onOpen={() => handleNavigate(card)}
                 onDelete={() => removeFromCardsHistory(index)}
               />

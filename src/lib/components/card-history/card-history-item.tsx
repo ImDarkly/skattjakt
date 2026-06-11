@@ -9,25 +9,38 @@ import {
 } from '../ui/card';
 import { BingoCardType } from '@/lib/domain/card/types';
 import ConfirmationDialog from '../blocks/confirmation-dialog';
+import { useBoundStore } from '@/lib/zustand/store';
+import { useShallow } from 'zustand/react/shallow';
+import { Icon } from '@iconify/react';
 
 interface CardHistoryItemProps {
   card: BingoCardType;
   onOpen: () => void;
   onDelete: () => void;
+  index: number;
 }
 
 export default function CardHistoryItem({
   card,
   onOpen,
   onDelete,
+  index,
 }: CardHistoryItemProps) {
+  const { toggleFavourite } = useBoundStore(
+    useShallow((state) => ({
+      toggleFavourite: state.toggleFavourite,
+    }))
+  );
   return (
     <Card className="w-fit">
-      <CardHeader>
-        <CardTitle>{card.title}</CardTitle>
-      </CardHeader>
       <CardContent>
-        <BingoCard disabled items={card.items} />
+        <BingoCard
+          disabled
+          title={card.title}
+          items={card.items}
+          isFavourite={card.isFavorited}
+          onToggleFavourite={() => toggleFavourite(index)}
+        />
       </CardContent>
       <CardFooter className="gap-2">
         <ConfirmationDialog
