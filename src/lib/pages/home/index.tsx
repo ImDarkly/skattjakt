@@ -18,11 +18,12 @@ import IconLink from '@/lib/components/ui/icon-link';
 export default function Home() {
   const [searchParams] = useSearchParams();
   const hideControls = searchParams.get('show-controls') !== null;
-  const { items, card, setCard } = useBoundStore(
+  const { items, card, setCard, toggleCurrentCardFavourite } = useBoundStore(
     useShallow((state) => ({
       items: state.items,
       card: state.card,
       setCard: state.setCard,
+      toggleCurrentCardFavourite: state.toggleCurrentCardFavourite,
     }))
   );
 
@@ -50,8 +51,12 @@ export default function Home() {
         right={<IconLink to="/cards-history" icon="heroicons-clock-16-solid" />}
       />
       <div className="z-0 flex h-full w-full max-w-xl  flex-1 flex-col items-center justify-center gap-6 px-4">
-        <h1 className="text-2xl">Bingo card generator</h1>
-        <BingoCard items={card.items} />
+        <BingoCard
+          title={card.title}
+          items={card.items}
+          isFavourite={card.isFavorited}
+          onToggleFavourite={toggleCurrentCardFavourite}
+        />
         {!hideControls && (
           <div className="flex w-full flex-row items-center justify-end gap-2">
             <div className="w-full">
