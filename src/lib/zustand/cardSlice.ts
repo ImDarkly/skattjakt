@@ -1,10 +1,9 @@
 import type { StateCreator } from 'zustand';
 
 import { Item } from '../domain/items/types';
-import { BingoCardType } from '../domain/card/types';
 
 export type CardSlice = {
-  card: BingoCardType;
+  card: { items: Item[]; title: string };
   setCard: (items: Item[]) => void;
 };
 
@@ -12,7 +11,6 @@ export const createCardSlice: StateCreator<CardSlice> = (set) => ({
   card: {
     items: [],
     title: '',
-    favourite: false,
   },
   setCard: (items: Item[]) =>
     set((state) => ({
