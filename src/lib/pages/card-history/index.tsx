@@ -16,9 +16,14 @@ export default function CardHistoryPage() {
   );
   const [showOnlyFavorited, setShowOnlyFavorited] = useState(false);
 
+  const cardsWithIndex = cardHistory.map((card, index) => ({
+    card,
+    originalIndex: index,
+  }));
+
   const displayedCards = showOnlyFavorited
-    ? cardHistory.filter((card) => card.isFavorited)
-    : cardHistory;
+    ? cardsWithIndex.filter(({ card }) => card.isFavorited)
+    : cardsWithIndex;
 
   return (
     <div className="flex h-screen flex-col items-center gap-4">
