@@ -1,4 +1,4 @@
-import { BingoCardType } from '@/lib/domain/card/types';
+import { BingoCardType, BingoCardWithIndex } from '@/lib/domain/card/types';
 import VirtualizedList from '../ui/virtualized-list';
 import { useNavigate } from 'react-router-dom';
 import { useBoundStore } from '@/lib/zustand/store';
@@ -7,7 +7,7 @@ import { encodeCardToParams } from '../bingo/generate-button';
 import CardHistoryItem from './card-history-item';
 
 interface CardHistoryListProps {
-  cards: BingoCardType[];
+  cards: BingoCardWithIndex[];
 }
 
 export default function CardHistoryList({ cards }: CardHistoryListProps) {
@@ -30,14 +30,14 @@ export default function CardHistoryList({ cards }: CardHistoryListProps) {
         count={cards.length}
         estimateSize={596}
         renderItem={(index) => {
-          const card = cards[index];
+          const { card, originalIndex } = cards[index];
           return (
             <div className="flex justify-center px-4">
               <CardHistoryItem
                 card={card}
-                index={index}
-                onOpen={() => handleNavigate(index, card)}
-                onDelete={() => removeFromCardsHistory(index)}
+                index={originalIndex}
+                onOpen={() => handleNavigate(originalIndex, card)}
+                onDelete={() => removeFromCardsHistory(originalIndex)}
               />
             </div>
           );
