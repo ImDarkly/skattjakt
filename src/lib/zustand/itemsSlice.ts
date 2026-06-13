@@ -13,7 +13,10 @@ export const createItemsSlice: StateCreator<ItemsSlice> = (set, get) => ({
     if (get().items.some((i) => i.id === id))
       throw Error('Item already exists!');
 
-    const next = [...get().items, { ...item, name, id }];
+    const next = [
+      ...get().items,
+      { ...item, name, id, rarity: item.rarity ?? 'common' },
+    ];
     set({ items: next });
   },
   removeItem: (id: string) => {

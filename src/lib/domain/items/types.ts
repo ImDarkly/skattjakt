@@ -3,13 +3,10 @@ export type Item = {
   name: string;
   isEligible: boolean;
   category: string;
+  rarity: 'common' | 'rare' | 'epic';
 };
 
-export type NewItem = {
-  name: string;
-  isEligible: boolean;
-  category: string;
-};
+export type NewItem = Omit<Item, 'id'>;
 
 export type ItemsSlice = {
   items: Item[];
