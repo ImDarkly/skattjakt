@@ -8,17 +8,20 @@ import { Button } from '../ui/button';
 import generateCard from '@/lib/domain/card/generateCard';
 import { Item } from '@/lib/domain/items/types';
 
-export function encodeCardToParams(card: Item[]): URLSearchParams {
+export function encodeCardToParams(
+  card: Item[],
+  title: string
+): URLSearchParams {
   const params = new URLSearchParams();
   params.set('c', card.map((item) => item.id).join(','));
+  params.set('t', title);
   return params;
 }
 
 export const GenerateButton = () => {
-  const { items, setCard, addToCardsHistory, cardsHistory } = useBoundStore(
+  const { items, addToCardsHistory, cardsHistory } = useBoundStore(
     useShallow((state) => ({
       items: state.items,
-      setCard: state.setCard,
       addToCardsHistory: state.addToCardsHistory,
       cardsHistory: state.cardsHistory,
     }))
@@ -31,13 +34,13 @@ export const GenerateButton = () => {
     const generatedCard = generateCard(
       items.filter((item) => item.isEligible === true)
     );
-    setCard(generatedCard);
+    const title = `Card #${cardsHistory.length + 1}`;
     addToCardsHistory({
       items: generatedCard,
-      title: `Card #${cardsHistory.length + 1}`,
-      favourite: false,
+      title,
+      isFavorited: false,
     });
-    const link = encodeCardToParams(generatedCard);
+    const link = encodeCardToParams(generatedCard, title);
     setSearchParams(link);
   };
 
