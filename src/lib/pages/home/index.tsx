@@ -18,7 +18,7 @@ import UserPreferencesButton from '@/lib/components/user-preferences/user-prefer
 
 export default function Home() {
   const [searchParams] = useSearchParams();
-  const hideControls = !searchParams.has('show-controls');
+  const hideControls = searchParams.has('hide-controls');
   const {
     items,
     cardsHistory,
