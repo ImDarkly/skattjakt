@@ -26,9 +26,9 @@ export const ShareButton = () => {
   useEffect(() => {
     const url = new URL(pageUrl);
     if (showControls) {
-      url.searchParams.delete('show-controls');
+      url.searchParams.set('show-controls', '');
     } else {
-      url.searchParams.set('show-controls', 'false');
+      url.searchParams.delete('show-controls');
     }
     setShareUrl(url.toString());
   }, [showControls, pageUrl]);
