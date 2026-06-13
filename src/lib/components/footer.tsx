@@ -7,15 +7,16 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from './ui/tooltip';
-import { ModeToggle } from './ui/mode-toggle';
 import UserPreferencesButton from './user-preferences/user-preferences-button';
 
 const isProduction = process.env.NODE_ENV === 'production';
 
 const version = APP_VERSION;
-export const Footer = () => {
+export const Footer = ({ hideControls }: { hideControls?: boolean }) => {
   return (
-    <footer className="flex max-h-24 w-full items-center justify-between grow gap-1 bg-background px-4">
+    <footer
+      className={`flex h-24 w-full items-center ${hideControls ? 'justify-center' : 'justify-between'} bg-background px-4`}
+    >
       <div className="flex">
         <p>Made with</p>
         <TooltipProvider>
@@ -57,7 +58,7 @@ export const Footer = () => {
           </Tooltip>
         </TooltipProvider>
       </div>
-      <UserPreferencesButton />
+      {!hideControls && <UserPreferencesButton />}
     </footer>
   );
 };

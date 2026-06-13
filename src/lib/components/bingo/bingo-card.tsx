@@ -45,7 +45,9 @@ export const BingoCard = ({
   return (
     <div className="relative space-y-2 w-full">
       {(title || onToggleFavourite || onRename) && (
-        <div className="flex items-center justify-between gap-2 h-10">
+        <div
+          className={`flex items-center ${onRename || onToggleFavourite ? 'justify-between' : 'justify-center'} gap-2 h-10`}
+        >
           {editingTitle !== null ? (
             <Input
               value={editingTitle}

@@ -14,6 +14,7 @@ import { BINGO_GRID_SIZE } from '@/lib/domain/card/generateCard';
 import { useEffect } from 'react';
 import { Item } from '@/lib/domain/items/types';
 import IconLink from '@/lib/components/ui/icon-link';
+import UserPreferencesButton from '@/lib/components/user-preferences/user-preferences-button';
 
 export default function Home() {
   const [searchParams] = useSearchParams();
@@ -71,7 +72,9 @@ export default function Home() {
         left={<AppLogo />}
         title="Skattjakt"
         right={
-          !hideControls && (
+          hideControls ? (
+            <UserPreferencesButton />
+          ) : (
             <IconLink
               to="/cards-history"
               icon="heroicons-rectangle-stack-16-solid"
@@ -102,7 +105,7 @@ export default function Home() {
           </div>
         )}
       </div>
-      <Footer />
+      <Footer hideControls={hideControls} />
     </div>
   );
 }
