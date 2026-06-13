@@ -14,19 +14,26 @@ import { BINGO_GRID_SIZE } from '@/lib/domain/card/generateCard';
 import { useEffect } from 'react';
 import { Item } from '@/lib/domain/items/types';
 import IconLink from '@/lib/components/ui/icon-link';
+import UserPreferencesButton from '@/lib/components/user-preferences/user-preferences-button';
 
 export default function Home() {
   const [searchParams] = useSearchParams();
-  const hideControls = searchParams.get('show-controls') !== null;
-  const { items, cardsHistory, addToCardsHistory, toggleFavourite } =
-    useBoundStore(
-      useShallow((state) => ({
-        items: state.items,
-        cardsHistory: state.cardsHistory,
-        addToCardsHistory: state.addToCardsHistory,
-        toggleFavourite: state.toggleFavourite,
-      }))
-    );
+  const hideControls = searchParams.has('hide-controls');
+  const {
+    items,
+    cardsHistory,
+    addToCardsHistory,
+    toggleFavourite,
+    renameCard,
+  } = useBoundStore(
+    useShallow((state) => ({
+      items: state.items,
+      cardsHistory: state.cardsHistory,
+      addToCardsHistory: state.addToCardsHistory,
+      toggleFavourite: state.toggleFavourite,
+      renameCard: state.renameCard,
+    }))
+  );
 
   const activeCard = cardsHistory[0];
 
@@ -46,9 +53,10 @@ export default function Home() {
       .filter((item): item is Item => item !== undefined);
 
     if (newCard.length === BINGO_GRID_SIZE) {
+      const title = searchParams.get('t') ?? 'Shared Card';
       addToCardsHistory({
         items: newCard,
-        title: `Shared Card`,
+        title,
         isFavorited: false,
       });
     }
@@ -63,18 +71,27 @@ export default function Home() {
         left={<AppLogo />}
         title="Skattjakt"
         right={
-          <IconLink
-            to="/cards-history"
-            icon="heroicons-rectangle-stack-16-solid"
-          />
+          hideControls ? (
+            <UserPreferencesButton />
+          ) : (
+            <IconLink
+              to="/cards-history"
+              icon="heroicons-rectangle-stack-16-solid"
+            />
+          )
         }
       />
       <div className="z-0 flex h-full w-full max-w-xl  flex-1 flex-col items-center justify-center gap-6 px-4">
         <BingoCard
-          title="Bingo Card Generator"
+          title={activeCard?.title ?? 'Bingo Card Generator'}
           items={activeCard?.items ?? []}
           isFavourite={activeCard?.isFavorited ?? false}
-          onToggleFavourite={() => toggleFavourite(0)}
+          onToggleFavourite={
+            !hideControls ? () => toggleFavourite(0) : undefined
+          }
+          onRename={
+            !hideControls ? (newTitle) => renameCard(0, newTitle) : undefined
+          }
         />
         {!hideControls && (
           <div className="flex w-full flex-row items-center justify-end gap-2">
@@ -87,7 +104,7 @@ export default function Home() {
           </div>
         )}
       </div>
-      <Footer />
+      <Footer hideControls={hideControls} />
     </div>
   );
 }

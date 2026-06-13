@@ -1,17 +1,10 @@
 import { Button } from '../ui/button';
 import { BingoCard } from '../bingo/bingo-card';
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-  CardFooter,
-} from '../ui/card';
+import { Card, CardContent, CardFooter } from '../ui/card';
 import { BingoCardType } from '@/lib/domain/card/types';
 import ConfirmationDialog from '../blocks/confirmation-dialog';
 import { useBoundStore } from '@/lib/zustand/store';
 import { useShallow } from 'zustand/react/shallow';
-import { Icon } from '@iconify/react';
 
 interface CardHistoryItemProps {
   card: BingoCardType;
@@ -26,20 +19,22 @@ export default function CardHistoryItem({
   onDelete,
   index,
 }: CardHistoryItemProps) {
-  const { toggleFavourite } = useBoundStore(
+  const { toggleFavourite, renameCard } = useBoundStore(
     useShallow((state) => ({
       toggleFavourite: state.toggleFavourite,
+      renameCard: state.renameCard,
     }))
   );
   return (
     <Card className="w-fit">
       <CardContent>
         <BingoCard
-          disabled
+          disableCells
           title={card.title}
           items={card.items}
           isFavourite={card.isFavorited}
           onToggleFavourite={() => toggleFavourite(index)}
+          onRename={(newTitle) => renameCard(index, newTitle)}
         />
       </CardContent>
       <CardFooter className="gap-2">

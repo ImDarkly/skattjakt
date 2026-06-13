@@ -6,6 +6,7 @@ export type CardsHistorySlice = {
   addToCardsHistory: (card: BingoCardType) => void;
   removeFromCardsHistory: (index: number) => void;
   toggleFavourite: (index: number) => void;
+  renameCard: (index: number, title: string) => void;
   openCard: (index: number) => void;
 };
 
@@ -26,6 +27,13 @@ export const createCardHistorySlice: StateCreator<CardsHistorySlice> = (
     set((state) => ({
       cardsHistory: state.cardsHistory.map((card, i) =>
         i === index ? { ...card, isFavorited: !card.isFavorited } : card
+      ),
+    }));
+  },
+  renameCard: (index: number, title: string) => {
+    set((state) => ({
+      cardsHistory: state.cardsHistory.map((card, i) =>
+        i === index ? { ...card, title } : card
       ),
     }));
   },
