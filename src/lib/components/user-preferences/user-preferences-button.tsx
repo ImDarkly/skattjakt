@@ -13,6 +13,8 @@ import {
 } from '../ui/dropdown-menu';
 import { Link } from 'react-router-dom';
 import { ModeToggleItems } from '../ui/mode-toggle';
+import { Dialog, DialogTrigger } from '../ui/dialog';
+import { DifficultyDialog } from './difficulty-dialog';
 
 export default function UserPreferencesButton() {
   return (
@@ -24,6 +26,15 @@ export default function UserPreferencesButton() {
       </DropdownMenuTrigger>
       <DropdownMenuContent>
         <DropdownMenuGroup>
+          <Dialog>
+            <DialogTrigger asChild>
+              <DropdownMenuItem onSelect={(e) => e.preventDefault()}>
+                Difficulty
+              </DropdownMenuItem>
+            </DialogTrigger>
+            <DifficultyDialog />
+          </Dialog>
+
           <DropdownMenuItem asChild>
             <Link to="/items">Edit Items</Link>
           </DropdownMenuItem>
