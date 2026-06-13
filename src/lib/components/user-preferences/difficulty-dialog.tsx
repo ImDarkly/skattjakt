@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useBoundStore } from '@/lib/zustand/store';
 import {
   DialogContent,
@@ -26,6 +26,14 @@ export function DifficultyDialog() {
   const currentPresetIndex = PRESETS.findIndex(
     (p) => p.rare === raritySlots.rare && p.epic === raritySlots.epic
   );
+
+  useEffect(() => {
+    if (currentPresetIndex === -1) {
+      setSliderValue(1);
+      setRaritySlots(PRESETS[1]);
+    }
+  }, [currentPresetIndex, setRaritySlots]);
+
   const [sliderValue, setSliderValue] = useState(
     currentPresetIndex === -1 ? 1 : currentPresetIndex
   );
