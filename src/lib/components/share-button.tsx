@@ -24,16 +24,14 @@ export const ShareButton = () => {
   const { toast } = useToast();
 
   useEffect(() => {
-    const updateShareUrl = (controlsHidden: boolean) => {
-      setShareUrl(`${pageUrl}${controlsHidden ? '' : '&show-controls'}`);
-    };
-
-    updateShareUrl(showControls);
+    const url = new URL(pageUrl);
+    if (showControls) {
+      url.searchParams.delete('show-controls');
+    } else {
+      url.searchParams.set('show-controls', 'false');
+    }
+    setShareUrl(url.toString());
   }, [showControls, pageUrl]);
-
-  const handleControlsChange = () => {
-    setShowControls((prevShowControls) => !prevShowControls);
-  };
 
   const handleCopyClick = () => {
     navigator.clipboard.writeText(shareUrl);
@@ -61,7 +59,7 @@ export const ShareButton = () => {
               <Label htmlFor="show-controls">Show controls</Label>
               <Switch
                 id="show-controls"
-                onCheckedChange={handleControlsChange}
+                onCheckedChange={setShowControls}
                 checked={showControls}
               />
             </div>
