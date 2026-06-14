@@ -21,18 +21,18 @@ const PRESETS = [
 
 export function DifficultyDialog() {
   const { raritySlots, setRaritySlots } = useBoundStore();
-  const [isAdvanced, setIsAdvanced] = useState(false);
-
   const currentPresetIndex = PRESETS.findIndex(
     (p) => p.rare === raritySlots.rare && p.epic === raritySlots.epic
   );
 
+  const [isAdvanced, setIsAdvanced] = useState(currentPresetIndex === -1);
+
   useEffect(() => {
-    if (currentPresetIndex === -1) {
+    if (!isAdvanced && currentPresetIndex === -1) {
       setSliderValue(1);
       setRaritySlots(PRESETS[1]);
     }
-  }, [currentPresetIndex, setRaritySlots]);
+  }, [isAdvanced, currentPresetIndex, setRaritySlots]);
 
   const [sliderValue, setSliderValue] = useState(
     currentPresetIndex === -1 ? 1 : currentPresetIndex
