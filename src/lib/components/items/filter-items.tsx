@@ -22,11 +22,9 @@ export default function FilterItems() {
 
   return (
     <ToggleGroup
-      className="justify-start"
+      className="justify-start py-1"
       type="single"
-      size="sm"
       defaultValue="all"
-      variant="outline"
     >
       <ToggleGroupItem
         value="all"

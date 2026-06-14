@@ -11,7 +11,7 @@ import { useQueryState } from 'nuqs';
 export default function ItemsPage() {
   const [category] = useQueryState('category');
   const [query] = useQueryState('query');
-  const { items, toggleEligibility } = useBoundStore();
+  const { items, toggleEligibility, setRarity } = useBoundStore();
   const searchedItems = useSearchedItems(items, query);
   const filteredItems = useFilteredItems(searchedItems, category);
 
@@ -23,7 +23,11 @@ export default function ItemsPage() {
         right={<ResetItemsButton />}
       />
       <ItemsControl items={filteredItems} />
-      <ItemsList items={filteredItems} toggleEligibility={toggleEligibility} />
+      <ItemsList
+        items={filteredItems}
+        toggleEligibility={toggleEligibility}
+        setRarity={setRarity}
+      />
     </div>
   );
 }
