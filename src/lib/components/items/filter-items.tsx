@@ -22,13 +22,12 @@ export default function FilterItems() {
 
   return (
     <ToggleGroup
-      className="justify-start"
+      className="justify-start py-1"
       type="single"
-      size="sm"
       defaultValue="all"
-      variant="outline"
     >
       <ToggleGroupItem
+        className="whitespace-nowrap p-2"
         value="all"
         key={'all'}
         onClick={() => handleCategoryCLick(null)}
@@ -38,7 +37,7 @@ export default function FilterItems() {
       {categories.map((category) => {
         return (
           <ToggleGroupItem
-            className="whitespace-nowrap"
+            className="whitespace-nowrap p-2"
             onClick={() => handleCategoryCLick(category)}
             value={category}
             key={category}
