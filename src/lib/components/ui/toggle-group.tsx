@@ -6,12 +6,8 @@ import { cn } from '@/lib/styles/utils';
 
 const baseToggleClasses = cn(
   'translate-3d ring-2 ring-inset after:absolute after:h-full after:w-full after:rounded-md after:bg-primary after:transition-transform active:translate-y-1 style-preserve relative inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors transition-transform focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50',
-  'p-2',
   'bg-secondary text-secondary-foreground ring-stone-300 dark:ring-stone-700 after:bg-stone-200 dark:after:bg-stone-800',
-  'data-[state=on]:translate-y-1 data-[state=on]:after:h-0 data-[state=on]:bg-secondary',
-  'data-[state=on]:translate-y-1',
-  'data-[state=on]:bg-accent data-[state=on]:text-accent-foreground data-[state=on]:ring-accent',
-  'data-[state=on]:after:h-0'
+  'data-[state=on]:translate-y-1 data-[state=on]:after:h-0 data-[state=on]:bg-accent data-[state=on]:text-accent-foreground data-[state=on]:ring-accent'
 );
 
 const ToggleGroup = React.forwardRef<

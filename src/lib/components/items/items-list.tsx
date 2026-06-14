@@ -10,9 +10,6 @@ import { Item as ItemType } from '@/lib/domain/items/types';
 import VirtualizedList from '../ui/virtualized-list';
 import { ToggleGroup, ToggleGroupItem } from '../ui/toggle-group';
 
-const pressAnimationClasses =
-  'translate-3d ring-2 ring-inset after:absolute after:h-full after:w-full after:rounded-md after:bg-primary after:transition-transform active:translate-y-1 relative data-[state=on]:translate-y-1 data-[state=on]:after:h-0';
-
 interface ItemsListProps {
   items: ItemType[];
   toggleEligibility: (id: string) => void;

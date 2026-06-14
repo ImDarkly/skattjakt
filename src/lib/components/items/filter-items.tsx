@@ -27,6 +27,7 @@ export default function FilterItems() {
       defaultValue="all"
     >
       <ToggleGroupItem
+        className="whitespace-nowrap p-2"
         value="all"
         key={'all'}
         onClick={() => handleCategoryCLick(null)}
@@ -36,7 +37,7 @@ export default function FilterItems() {
       {categories.map((category) => {
         return (
           <ToggleGroupItem
-            className="whitespace-nowrap"
+            className="whitespace-nowrap p-2"
             onClick={() => handleCategoryCLick(category)}
             value={category}
             key={category}
