@@ -16,7 +16,7 @@ export default function generateCard(
     .filter((i) => i.rarity === 'rare')
     .sort(() => Math.random() - 0.5);
   const commonPool = eligibleItems
-    .filter((i) => i.rarity !== 'epic' && i.rarity !== 'rare')
+    .filter((i) => i.rarity === 'common')
     .sort(() => Math.random() - 0.5);
 
   const selectedItems: Item[] = [];
