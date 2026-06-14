@@ -14,4 +14,5 @@ export type ItemsSlice = {
   resetItems: () => void;
   addItem: (item: NewItem) => void;
   setEligibilityByIds: (ids: string[], value: boolean) => void;
+  setRarity: (id: string, rarity: Item['rarity']) => void;
 };
