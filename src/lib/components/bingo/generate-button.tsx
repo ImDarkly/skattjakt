@@ -19,11 +19,12 @@ export function encodeCardToParams(
 }
 
 export const GenerateButton = () => {
-  const { items, addToCardsHistory, cardsHistory } = useBoundStore(
+  const { items, addToCardsHistory, cardsHistory, raritySlots } = useBoundStore(
     useShallow((state) => ({
       items: state.items,
       addToCardsHistory: state.addToCardsHistory,
       cardsHistory: state.cardsHistory,
+      raritySlots: state.raritySlots,
     }))
   );
   const [spinning, setSpinning] = useState(false);
@@ -32,7 +33,8 @@ export const GenerateButton = () => {
   const handleGenerateAndSetCard = () => {
     setSpinning(true);
     const generatedCard = generateCard(
-      items.filter((item) => item.isEligible === true)
+      items.filter((item) => item.isEligible === true),
+      raritySlots
     );
     const title = `Card #${cardsHistory.length + 1}`;
     addToCardsHistory({
