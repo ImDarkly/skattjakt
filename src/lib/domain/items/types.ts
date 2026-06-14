@@ -3,18 +3,16 @@ export type Item = {
   name: string;
   isEligible: boolean;
   category: string;
+  rarity: 'common' | 'rare' | 'epic';
 };
 
-export type NewItem = {
-  name: string;
-  isEligible: boolean;
-  category: string;
-};
+export type NewItem = Omit<Item, 'id' | 'rarity'> & { rarity?: Item['rarity'] };
 
 export type ItemsSlice = {
   items: Item[];
   toggleEligibility: (id: string) => void;
   resetItems: () => void;
-  addItem: (item: Item) => void;
+  addItem: (item: NewItem) => void;
   setEligibilityByIds: (ids: string[], value: boolean) => void;
+  setRarity: (id: string, rarity: Item['rarity']) => void;
 };

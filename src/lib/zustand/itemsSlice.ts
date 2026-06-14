@@ -13,7 +13,10 @@ export const createItemsSlice: StateCreator<ItemsSlice> = (set, get) => ({
     if (get().items.some((i) => i.id === id))
       throw Error('Item already exists!');
 
-    const next = [...get().items, { ...item, name, id }];
+    const next = [
+      ...get().items,
+      { ...item, name, id, rarity: item.rarity ?? 'common' },
+    ];
     set({ items: next });
   },
   removeItem: (id: string) => {
@@ -33,5 +36,11 @@ export const createItemsSlice: StateCreator<ItemsSlice> = (set, get) => ({
     const item = get().items.find((item) => item.id === id);
     if (!item) return;
     get().setEligibilityByIds([id], !item?.isEligible);
+  },
+  setRarity: (id: string, rarity: Item['rarity']) => {
+    const next = get().items.map((item) =>
+      item.id === id ? { ...item, rarity } : item
+    );
+    set({ items: next });
   },
 });
