@@ -37,4 +37,10 @@ export const createItemsSlice: StateCreator<ItemsSlice> = (set, get) => ({
     if (!item) return;
     get().setEligibilityByIds([id], !item?.isEligible);
   },
+  setRarity: (id: string, rarity: Item['rarity']) => {
+    const next = get().items.map((item) =>
+      item.id === id ? { ...item, rarity } : item
+    );
+    set({ items: next });
+  },
 });
