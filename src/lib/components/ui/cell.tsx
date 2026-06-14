@@ -8,6 +8,12 @@ type CellProps = {
   disabled?: boolean;
 };
 
+const rarityRingColors: Record<Item['rarity'], string> = {
+  common: 'ring-stone-300 dark:ring-stone-700',
+  rare: 'ring-[#BA7517] dark:ring-[#BA7517]',
+  epic: 'ring-[#534AB7] dark:ring-[#534AB7]',
+};
+
 export const Cell = ({ item, checked, onClick, disabled }: CellProps) => {
   const { id, name } = item;
 
@@ -27,7 +33,7 @@ export const Cell = ({ item, checked, onClick, disabled }: CellProps) => {
       } style-preserve translate-3d flex items-center justify-center break-words transition-all active:translate-y-1`}
     >
       <div
-        className={`h-full w-full rounded-2xl bg-card p-3 ${checked ? 'opacity-30' : ''} ${disabled ? '' : 'ring-2 ring-inset ring-stone-300 dark:ring-stone-700'}`}
+        className={`h-full w-full rounded-2xl bg-card p-3 ${checked ? 'opacity-30' : ''} ${disabled ? '' : `ring-2 ring-inset ${rarityRingColors[item.rarity]}`}`}
       >
         <img
           src={`./items/${id}.png`}
