@@ -21,6 +21,7 @@ export const Cell = ({ item, checked, onClick, disabled }: CellProps) => {
     <button
       type="button"
       onClick={onClick}
+      disabled={disabled}
       aria-pressed={disabled ? undefined : checked}
       className={`group/cell relative ${
         disabled
