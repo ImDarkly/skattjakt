@@ -9,7 +9,7 @@ export default function ResetItemsButton() {
   return (
     <ConfirmationDialog
       trigger={
-        <Button size="icon" variant="destructive">
+        <Button size="icon" variant="destructive" aria-label="Reset items">
           <Icon width={24} icon="heroicons:arrow-path-16-solid" />
         </Button>
       }

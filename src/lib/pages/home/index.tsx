@@ -88,6 +88,7 @@ export default function Home() {
             <IconLink
               to="/cards-history"
               icon="heroicons-rectangle-stack-16-solid"
+              label="Card history"
             />
           )
         }

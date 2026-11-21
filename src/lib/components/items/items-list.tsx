@@ -75,6 +75,7 @@ export default function ItemsList({
               <Switch
                 onCheckedChange={() => toggleEligibility(item.id)}
                 checked={item.isEligible}
+                aria-label={`Include ${item.name} in cards`}
               />
             </ItemActions>
           </Item>

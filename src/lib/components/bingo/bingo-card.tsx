@@ -52,6 +52,7 @@ export const BingoCard = ({
             <Input
               value={editingTitle}
               onChange={(e) => setEditingTitle(e.target.value)}
+              aria-label="Card title"
               onKeyDown={(e) => {
                 if (e.key === 'Enter') handleSave();
                 if (e.key === 'Escape') setEditingTitle(null);
@@ -67,6 +68,7 @@ export const BingoCard = ({
               <Button
                 variant={editingTitle !== null ? 'default' : 'secondary'}
                 size="icon"
+                aria-label={editingTitle !== null ? 'Save title' : 'Rename card'}
                 onClick={(e) => {
                   e.stopPropagation();
                   if (editingTitle !== null) {

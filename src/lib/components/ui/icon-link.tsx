@@ -5,12 +5,13 @@ import { Icon } from '@iconify/react/dist/iconify.js';
 interface IconLinkProps {
   to: string;
   icon: string;
+  label: string;
 }
 
-export default function IconLink({ to, icon }: IconLinkProps) {
+export default function IconLink({ to, icon, label }: IconLinkProps) {
   return (
     <Button size="icon" variant="secondary" asChild>
-      <Link to={to}>
+      <Link to={to} aria-label={label}>
         <Icon width={24} icon={icon} />
       </Link>
     </Button>

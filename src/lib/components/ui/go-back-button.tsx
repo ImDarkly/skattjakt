@@ -14,7 +14,12 @@ export default function GoBackButton() {
   };
 
   return (
-    <Button onClick={goBack} size="icon" variant="secondary">
+    <Button
+      onClick={goBack}
+      size="icon"
+      variant="secondary"
+      aria-label="Go back"
+    >
       <Icon width={24} icon="heroicons:arrow-left-16-solid" />
     </Button>
   );
