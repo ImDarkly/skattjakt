@@ -17,7 +17,7 @@ import IconLink from '@/lib/components/ui/icon-link';
 import UserPreferencesButton from '@/lib/components/user-preferences/user-preferences-button';
 
 export default function Home() {
-  const [searchParams] = useSearchParams();
+  const [searchParams, setSearchParams] = useSearchParams();
   const hideControls = searchParams.has('hide-controls');
   const {
     items,
@@ -36,6 +36,17 @@ export default function Home() {
   );
 
   const activeCard = cardsHistory[0];
+
+  const handleRename = (newTitle: string) => {
+    renameCard(0, newTitle);
+    setSearchParams(
+      (params) => {
+        params.set('t', newTitle);
+        return params;
+      },
+      { replace: true }
+    );
+  };
 
   useEffect(() => {
     const cardIdParam = searchParams.get('c');
@@ -89,9 +100,7 @@ export default function Home() {
           onToggleFavourite={
             !hideControls ? () => toggleFavourite(0) : undefined
           }
-          onRename={
-            !hideControls ? (newTitle) => renameCard(0, newTitle) : undefined
-          }
+          onRename={!hideControls ? handleRename : undefined}
         />
         {!hideControls && (
           <div className="flex w-full flex-row items-center justify-end gap-2">
