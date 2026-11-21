@@ -36,7 +36,7 @@ export const ShareButton = () => {
   const handleCopyClick = () => {
     navigator.clipboard.writeText(shareUrl);
     toast({
-      description: 'Link coppied to clipboard!',
+      description: 'Link copied to clipboard!',
     });
   };
 
