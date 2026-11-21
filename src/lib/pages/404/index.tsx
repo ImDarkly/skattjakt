@@ -23,12 +23,12 @@ export default function Page404() {
           </p>
         </div>
         <div className="flex w-full flex-col items-center justify-center">
-          <Link to="/" className="flex flex-row gap-2">
-            <Button>
+          <Button asChild>
+            <Link to="/">
               <Icon icon="heroicons:arrow-left-16-solid" width={24} />
               Back to Generator
-            </Button>
-          </Link>
+            </Link>
+          </Button>
         </div>
       </div>
     </div>
