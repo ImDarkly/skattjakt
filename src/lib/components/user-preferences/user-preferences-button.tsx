@@ -20,7 +20,7 @@ export default function UserPreferencesButton() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="secondary" size="icon">
+        <Button variant="secondary" size="icon" aria-label="Settings">
           <Icon width={24} icon="heroicons:cog-8-tooth-16-solid" />
         </Button>
       </DropdownMenuTrigger>

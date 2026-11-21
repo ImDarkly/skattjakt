@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Item } from '@/lib/domain/items/types';
 
 import { Cell } from '../ui/cell';
@@ -25,6 +25,11 @@ export const BingoCard = ({
 }: BingoCardProps) => {
   const [selectedCell, setSelectedCell] = useState<string[]>([]);
   const [editingTitle, setEditingTitle] = useState<string | null>(null);
+  const itemIds = items.map((item) => item.id).join(',');
+
+  useEffect(() => {
+    setSelectedCell([]);
+  }, [itemIds]);
 
   const handleCellClick = (cellId: string) => {
     if (disableCells) return;
@@ -37,7 +42,7 @@ export const BingoCard = ({
 
   const handleSave = () => {
     if (editingTitle && editingTitle.trim()) {
-      onRename?.(editingTitle);
+      onRename?.(editingTitle.trim());
     }
     setEditingTitle(null);
   };
@@ -52,6 +57,7 @@ export const BingoCard = ({
             <Input
               value={editingTitle}
               onChange={(e) => setEditingTitle(e.target.value)}
+              aria-label="Card title"
               onKeyDown={(e) => {
                 if (e.key === 'Enter') handleSave();
                 if (e.key === 'Escape') setEditingTitle(null);
@@ -67,6 +73,7 @@ export const BingoCard = ({
               <Button
                 variant={editingTitle !== null ? 'default' : 'secondary'}
                 size="icon"
+                aria-label={editingTitle !== null ? 'Save title' : 'Rename card'}
                 onClick={(e) => {
                   e.stopPropagation();
                   if (editingTitle !== null) {

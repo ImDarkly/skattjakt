@@ -6,6 +6,8 @@ interface VirtualizedListProps {
   count: number;
   estimateSize?: number;
   overscan?: number;
+  gap?: number;
+  measureRows?: boolean;
   className?: string;
   renderItem: (index: number) => ReactNode;
 }
@@ -14,6 +16,8 @@ export default function VirtualizedList({
   count,
   estimateSize = 80,
   overscan = 5,
+  gap = 0,
+  measureRows = false,
   className,
   renderItem,
 }: VirtualizedListProps) {
@@ -23,6 +27,7 @@ export default function VirtualizedList({
     getScrollElement: () => parentRef.current,
     estimateSize: () => estimateSize,
     overscan,
+    gap,
   });
 
   return (
@@ -37,6 +42,8 @@ export default function VirtualizedList({
         {virtualizer.getVirtualItems().map((virtualRow) => (
           <div
             key={virtualRow.key}
+            ref={measureRows ? virtualizer.measureElement : undefined}
+            data-index={virtualRow.index}
             className="absolute top-0 left-0 w-full"
             style={{ transform: `translateY(${virtualRow.start}px)` }}
           >

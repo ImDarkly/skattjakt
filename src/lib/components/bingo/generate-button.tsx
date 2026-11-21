@@ -5,8 +5,9 @@ import { useBoundStore } from '../../zustand/store';
 import { useShallow } from 'zustand/react/shallow';
 
 import { Button } from '../ui/button';
-import generateCard from '@/lib/domain/card/generateCard';
+import generateCard, { BINGO_GRID_SIZE } from '@/lib/domain/card/generateCard';
 import { Item } from '@/lib/domain/items/types';
+import { toast } from '../ui/use-toast';
 
 export function encodeCardToParams(
   card: Item[],
@@ -32,10 +33,15 @@ export const GenerateButton = () => {
 
   const handleGenerateAndSetCard = () => {
     setSpinning(true);
-    const generatedCard = generateCard(
-      items.filter((item) => item.isEligible === true),
-      raritySlots
-    );
+    const eligibleItems = items.filter((item) => item.isEligible === true);
+    if (eligibleItems.length < BINGO_GRID_SIZE) {
+      toast({
+        description: `Not enough items! Enable at least ${BINGO_GRID_SIZE} in Edit Items.`,
+        variant: 'destructive',
+      });
+      return;
+    }
+    const generatedCard = generateCard(eligibleItems, raritySlots);
     const title = `Card #${cardsHistory.length + 1}`;
     addToCardsHistory({
       items: generatedCard,

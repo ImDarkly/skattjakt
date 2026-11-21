@@ -13,7 +13,7 @@ export default function Page404() {
             <p className="font-text-6xl text-tertiary-background flex justify-center text-6xl font-semibold">
               404
             </p>
-            <p className="font-semiboldtext-2xl text-center">Page Not Found</p>
+            <p className="text-2xl font-semibold text-center">Page Not Found</p>
           </div>
           <p className="w-full text-center text-base font-normal text-muted-foreground">
             Ssss... BOOM! A{' '}
@@ -23,12 +23,12 @@ export default function Page404() {
           </p>
         </div>
         <div className="flex w-full flex-col items-center justify-center">
-          <Link to="/" className="flex flex-row gap-2">
-            <Button>
+          <Button asChild>
+            <Link to="/">
               <Icon icon="heroicons:arrow-left-16-solid" width={24} />
               Back to Generator
-            </Button>
-          </Link>
+            </Link>
+          </Button>
         </div>
       </div>
     </div>

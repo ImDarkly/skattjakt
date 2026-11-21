@@ -21,11 +21,8 @@ export const Cell = ({ item, checked, onClick, disabled }: CellProps) => {
     <button
       type="button"
       onClick={onClick}
-      onKeyDown={(e) => {
-        if (e.key === 'Enter' || e.key === ' ') {
-          onClick();
-        }
-      }}
+      disabled={disabled}
+      aria-pressed={disabled ? undefined : checked}
       className={`group/cell relative ${
         disabled
           ? 'pointer-events-none'

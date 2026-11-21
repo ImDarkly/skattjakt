@@ -4,7 +4,6 @@ import {
   Dialog,
   DialogClose,
   DialogContent,
-  DialogDescription,
   DialogFooter,
   DialogHeader,
   DialogTitle,
@@ -19,6 +18,7 @@ import { toast } from '../ui/use-toast';
 export default function AddItemButton() {
   const [itemName, setItemName] = useState('');
   const [itemCategory, setItemCategory] = useState('Custom');
+  const [open, setOpen] = useState(false);
   const addItem = useBoundStore((state) => state.addItem);
 
   function handleNameInput(e: FormEvent<HTMLInputElement>) {
@@ -44,17 +44,17 @@ export default function AddItemButton() {
     }
 
     setItemName('');
+    setOpen(false);
   }
 
   return (
-    <Dialog>
+    <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
         <Button>Add</Button>
       </DialogTrigger>
-      <DialogContent>
+      <DialogContent aria-describedby={undefined}>
         <DialogHeader>
           <DialogTitle>Add item</DialogTitle>
-          <DialogDescription></DialogDescription>
         </DialogHeader>
         <FieldGroup>
           <Field>
@@ -70,10 +70,12 @@ export default function AddItemButton() {
           </Field>
         </FieldGroup>
         <DialogFooter>
-          <DialogClose className="flex gap-4">
-            <Button variant="secondary">Close</Button>
+          <div className="flex gap-4">
+            <DialogClose asChild>
+              <Button variant="secondary">Close</Button>
+            </DialogClose>
             <Button onClick={handleAddItemClick}>Add</Button>
-          </DialogClose>
+          </div>
         </DialogFooter>
       </DialogContent>
     </Dialog>

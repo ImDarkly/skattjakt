@@ -86,8 +86,12 @@ export function DifficultyDialog() {
 
       <div className="flex items-center space-x-2">
         <Label>Simple</Label>
-        <Switch checked={isAdvanced} onCheckedChange={handleModeToggle} />
-        <Label>Advanced</Label>
+        <Switch
+          id="advanced-difficulty"
+          checked={isAdvanced}
+          onCheckedChange={handleModeToggle}
+        />
+        <Label htmlFor="advanced-difficulty">Advanced</Label>
       </div>
 
       {!isAdvanced ? (
@@ -108,8 +112,9 @@ export function DifficultyDialog() {
       ) : (
         <div className="space-y-4">
           <div className="flex flex-col space-y-2">
-            <Label>Rare</Label>
+            <Label htmlFor="rare-slots">Rare</Label>
             <Input
+              id="rare-slots"
               type="number"
               value={raritySlots.rare}
               onChange={(e) =>
@@ -118,8 +123,9 @@ export function DifficultyDialog() {
             />
           </div>
           <div className="flex flex-col space-y-2">
-            <Label>Epic</Label>
+            <Label htmlFor="epic-slots">Epic</Label>
             <Input
+              id="epic-slots"
               type="number"
               value={raritySlots.epic}
               onChange={(e) =>
@@ -128,8 +134,8 @@ export function DifficultyDialog() {
             />
           </div>
           <div className="flex flex-col space-y-2">
-            <Label>Common (Read-only)</Label>
-            <Input value={common} readOnly />
+            <Label htmlFor="common-slots">Common (Read-only)</Label>
+            <Input id="common-slots" value={common} readOnly />
           </div>
         </div>
       )}

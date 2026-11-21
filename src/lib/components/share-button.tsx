@@ -34,10 +34,14 @@ export const ShareButton = () => {
   }, [showControls, pageUrl]);
 
   const handleCopyClick = () => {
-    navigator.clipboard.writeText(shareUrl);
-    toast({
-      description: 'Link coppied to clipboard!',
-    });
+    navigator.clipboard.writeText(shareUrl).then(
+      () => toast({ description: 'Link copied to clipboard!' }),
+      () =>
+        toast({
+          description: "Couldn't copy link to clipboard!",
+          variant: 'destructive',
+        })
+    );
   };
 
   return (
@@ -49,7 +53,7 @@ export const ShareButton = () => {
             Share
           </Button>
         </DialogTrigger>
-        <DialogContent>
+        <DialogContent aria-describedby={undefined}>
           <DialogHeader>
             <DialogTitle>Share</DialogTitle>
           </DialogHeader>

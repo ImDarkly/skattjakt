@@ -24,7 +24,9 @@ export default function ItemsList({
   return (
     <VirtualizedList
       count={items.length}
-      estimateSize={80}
+      estimateSize={76}
+      gap={4}
+      measureRows
       className="max-w-xl px-4"
       renderItem={(index) => {
         const item = items[index];
@@ -75,6 +77,7 @@ export default function ItemsList({
               <Switch
                 onCheckedChange={() => toggleEligibility(item.id)}
                 checked={item.isEligible}
+                aria-label={`Include ${item.name} in cards`}
               />
             </ItemActions>
           </Item>
