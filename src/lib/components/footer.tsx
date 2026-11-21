@@ -17,7 +17,7 @@ export const Footer = ({ hideControls }: { hideControls?: boolean }) => {
     <footer
       className={`flex h-24 w-full items-center ${hideControls ? 'justify-center' : 'justify-between'} bg-background px-4`}
     >
-      <div className="flex">
+      <div className="flex items-center gap-1">
         <p>Made with</p>
         <TooltipProvider>
           <Tooltip delayDuration={5000}>
