@@ -3,7 +3,7 @@ import { useBoundStore } from '@/lib/zustand/store';
 import { useQueryState } from 'nuqs';
 
 export default function FilterItems() {
-  const [, setActiveCategory] = useQueryState('category');
+  const [activeCategory, setActiveCategory] = useQueryState('category');
   const items = useBoundStore((state) => state.items);
   const categories = Array.from(new Set(items.map((item) => item.category)));
 
@@ -24,13 +24,15 @@ export default function FilterItems() {
     <ToggleGroup
       className="justify-start py-1"
       type="single"
-      defaultValue="all"
+      value={activeCategory ?? 'all'}
+      onValueChange={(value) => {
+        if (value) handleCategoryCLick(value === 'all' ? null : value);
+      }}
     >
       <ToggleGroupItem
         className="whitespace-nowrap p-2"
         value="all"
         key={'all'}
-        onClick={() => handleCategoryCLick(null)}
       >
         All
       </ToggleGroupItem>
@@ -38,7 +40,6 @@ export default function FilterItems() {
         return (
           <ToggleGroupItem
             className="whitespace-nowrap p-2"
-            onClick={() => handleCategoryCLick(category)}
             value={category}
             key={category}
           >
