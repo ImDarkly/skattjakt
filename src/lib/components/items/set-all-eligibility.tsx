@@ -21,11 +21,9 @@ export default function SetAllEligibility({ items }: SetAllEligibilityProps) {
   }
 
   useEffect(() => {
-    if (!items.every((item) => item.isEligible === true)) {
-      setIsAllEligible(false);
-    } else {
-      setIsAllEligible(true);
-    }
+    setIsAllEligible(
+      items.length > 0 && items.every((item) => item.isEligible === true)
+    );
   }, [items]);
 
   return (
@@ -37,6 +35,7 @@ export default function SetAllEligibility({ items }: SetAllEligibilityProps) {
       </FieldContent>
       <Switch
         id="set-all-eligibility"
+        disabled={items.length === 0}
         checked={isAllEligible}
         onCheckedChange={toggleEligibility}
       />
