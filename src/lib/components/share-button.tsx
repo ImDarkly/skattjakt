@@ -53,7 +53,7 @@ export const ShareButton = () => {
             Share
           </Button>
         </DialogTrigger>
-        <DialogContent>
+        <DialogContent aria-describedby={undefined}>
           <DialogHeader>
             <DialogTitle>Share</DialogTitle>
           </DialogHeader>

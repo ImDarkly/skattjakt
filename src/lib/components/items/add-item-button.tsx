@@ -4,7 +4,6 @@ import {
   Dialog,
   DialogClose,
   DialogContent,
-  DialogDescription,
   DialogFooter,
   DialogHeader,
   DialogTitle,
@@ -53,10 +52,9 @@ export default function AddItemButton() {
       <DialogTrigger asChild>
         <Button>Add</Button>
       </DialogTrigger>
-      <DialogContent>
+      <DialogContent aria-describedby={undefined}>
         <DialogHeader>
           <DialogTitle>Add item</DialogTitle>
-          <DialogDescription></DialogDescription>
         </DialogHeader>
         <FieldGroup>
           <Field>
