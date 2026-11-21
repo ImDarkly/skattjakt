@@ -3,7 +3,7 @@ import SkattjaktLogo from '@/lib/components/assets/skattjakt-logo.svg?react';
 
 export default function AppLogo() {
   return (
-    <Link to="/" className="w-full">
+    <Link to="/" className="w-full" aria-label="Skattjakt">
       <div className="w-full rounded-md p-2 hover:bg-secondary">
         <SkattjaktLogo />
       </div>
