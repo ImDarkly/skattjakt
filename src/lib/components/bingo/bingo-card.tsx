@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Item } from '@/lib/domain/items/types';
 
 import { Cell } from '../ui/cell';
@@ -25,6 +25,11 @@ export const BingoCard = ({
 }: BingoCardProps) => {
   const [selectedCell, setSelectedCell] = useState<string[]>([]);
   const [editingTitle, setEditingTitle] = useState<string | null>(null);
+  const itemIds = items.map((item) => item.id).join(',');
+
+  useEffect(() => {
+    setSelectedCell([]);
+  }, [itemIds]);
 
   const handleCellClick = (cellId: string) => {
     if (disableCells) return;
