@@ -37,7 +37,7 @@ export const BingoCard = ({
 
   const handleSave = () => {
     if (editingTitle && editingTitle.trim()) {
-      onRename?.(editingTitle);
+      onRename?.(editingTitle.trim());
     }
     setEditingTitle(null);
   };
