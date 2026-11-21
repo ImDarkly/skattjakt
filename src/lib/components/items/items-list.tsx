@@ -24,7 +24,9 @@ export default function ItemsList({
   return (
     <VirtualizedList
       count={items.length}
-      estimateSize={80}
+      estimateSize={76}
+      gap={4}
+      measureRows
       className="max-w-xl px-4"
       renderItem={(index) => {
         const item = items[index];
