@@ -6,7 +6,11 @@ export default function GoBackButton() {
   const navigate = useNavigate();
 
   const goBack = () => {
-    navigate(-1);
+    if (window.history.state?.idx > 0) {
+      navigate(-1);
+    } else {
+      navigate('/');
+    }
   };
 
   return (
