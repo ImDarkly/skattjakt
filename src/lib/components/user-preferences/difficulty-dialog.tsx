@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { type ComponentProps, useEffect, useState } from 'react';
 import { BINGO_GRID_SIZE } from '@/lib/domain/card/generateCard';
 import { useBoundStore } from '@/lib/zustand/store';
 import {
@@ -21,7 +21,9 @@ const PRESETS = [
   { rare: 8, epic: 2 },
 ];
 
-export function DifficultyDialog() {
+export function DifficultyDialog({
+  onCloseAutoFocus,
+}: Pick<ComponentProps<typeof DialogContent>, 'onCloseAutoFocus'>) {
   const { raritySlots, setRaritySlots } = useBoundStore();
   const currentPresetIndex = PRESETS.findIndex(
     (p) => p.rare === raritySlots.rare && p.epic === raritySlots.epic
@@ -68,7 +70,7 @@ export function DifficultyDialog() {
   const common = BINGO_GRID_SIZE - raritySlots.rare - raritySlots.epic;
 
   return (
-    <DialogContent>
+    <DialogContent onCloseAutoFocus={onCloseAutoFocus}>
       <DialogHeader>
         <DialogTitle>Difficulty</DialogTitle>
         <DialogDescription>Set rarity targets for new cards.</DialogDescription>
