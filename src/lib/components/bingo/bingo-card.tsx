@@ -37,26 +37,25 @@ export const BingoCard = ({
   onToggleFavourite,
   onRename,
 }: BingoCardProps) => {
-  const [marks, setMarks] = useState({ items, ids: new Set<string>() });
+  const [marks, setMarks] = useState({ items, ids: new Set<number>() });
   const [editingTitle, setEditingTitle] = useState<string | null>(null);
 
   const markedIds = marks.items === items ? marks.ids : undefined;
   const markedCount = markedIds?.size ?? 0;
   const completedLines =
     markedIds && items.length === BINGO_GRID_SIZE
-      ? bingoLines.filter((line) =>
-          line.every((index) => markedIds.has(items[index].id))
-        ).length
+      ? bingoLines.filter((line) => line.every((index) => markedIds.has(index)))
+          .length
       : 0;
 
-  const handleCellClick = (cellId: string) => {
+  const toggleMark = (index: number) => {
     if (disableCells) return;
     setMarks((previous) => {
       const ids = new Set(previous.items === items ? previous.ids : []);
-      if (ids.has(cellId)) {
-        ids.delete(cellId);
+      if (ids.has(index)) {
+        ids.delete(index);
       } else {
-        ids.add(cellId);
+        ids.add(index);
       }
       return { items, ids };
     });
@@ -163,16 +162,38 @@ export const BingoCard = ({
         </div>
       )}
       <div className="grid aspect-square w-full grid-cols-5 grid-rows-5 gap-2">
-        {items.map((item: Item) => (
+        {items.map((item, index) => (
           <Cell
-            key={item.id}
+            key={index}
             item={item}
-            checked={markedIds?.has(item.id)}
-            onClick={() => handleCellClick(item.id)}
+            checked={markedIds?.has(index)}
+            onClick={() => toggleMark(index)}
             disabled={disableCells}
           />
         ))}
       </div>
+      {!disableCells && items.length > 0 && (
+        <details className="rounded-md border bg-background text-sm">
+          <summary className="cursor-pointer rounded-md px-3 py-2 font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-ring">
+            Item checklist
+          </summary>
+          <ul className="grid gap-1 border-t p-2 sm:grid-cols-2">
+            {items.map((item, index) => (
+              <li key={index}>
+                <label className="flex min-h-10 cursor-pointer items-center gap-2 rounded-md px-2 py-1 hover:bg-accent">
+                  <input
+                    type="checkbox"
+                    checked={markedIds?.has(index) ?? false}
+                    onChange={() => toggleMark(index)}
+                    className="h-4 w-4 shrink-0 accent-primary"
+                  />
+                  <span>{item.name}</span>
+                </label>
+              </li>
+            ))}
+          </ul>
+        </details>
+      )}
     </div>
   );
 };
