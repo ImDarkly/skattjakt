@@ -20,7 +20,10 @@ export default function ItemsControl({ items }: ItemsControlProps) {
         <FilterItems />
         <ScrollBar orientation="horizontal" />
       </ScrollArea>
-      <SetAllEligibility items={items} />
+      <p className="px-6 text-sm text-muted-foreground" role="status">
+        {items.length} {items.length === 1 ? 'item' : 'items'} shown
+      </p>
+      {items.length > 0 && <SetAllEligibility items={items} />}
     </div>
   );
 }
