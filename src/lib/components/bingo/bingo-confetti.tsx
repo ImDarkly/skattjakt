@@ -1,4 +1,5 @@
-import type { CSSProperties } from 'react';
+import confetti from 'canvas-confetti';
+import { useEffect, useRef } from 'react';
 
 export type Celebration = {
   sequence: number;
@@ -9,52 +10,58 @@ export type Celebration = {
 
 type BingoConfettiProps = {
   celebration: Celebration;
-  onEnd: () => void;
+  onEnd: (celebration: Celebration) => void;
 };
 
 const colors = ['#f43f5e', '#fbbf24', '#34d399', '#38bdf8', '#a78bfa'];
 
 export const BingoConfetti = ({ celebration, onEnd }: BingoConfettiProps) => {
-  const fullCard = celebration.kind === 'card';
-  const count = fullCard ? 64 : 16;
-  const duration = fullCard ? 1050 : 550;
-  const clampOrigin = (percent: number) => Math.min(84, Math.max(16, percent));
-  const left = fullCard ? '50%' : `${clampOrigin(celebration.x)}%`;
-  const top = fullCard ? '46%' : `${clampOrigin(celebration.y)}%`;
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+
+  useEffect(() => {
+    if (!canvasRef.current) return;
+
+    const burst = confetti.create(canvasRef.current, {
+      resize: true,
+      disableForReducedMotion: true,
+    });
+    const fullCard = celebration.kind === 'card';
+    const clampOrigin = (percent: number) =>
+      Math.min(0.84, Math.max(0.16, percent / 100));
+
+    let active = true;
+    const animation = burst({
+      colors,
+      particleCount: fullCard ? 90 : 18,
+      spread: fullCard ? 110 : 65,
+      startVelocity: fullCard ? 33 : 13,
+      ticks: fullCard ? 115 : 42,
+      scalar: fullCard ? 1 : 0.65,
+      origin: fullCard
+        ? { x: 0.5, y: 0.62 }
+        : { x: clampOrigin(celebration.x), y: clampOrigin(celebration.y) },
+    });
+
+    if (animation) {
+      void animation.then(() => {
+        if (active) onEnd(celebration);
+      });
+    } else {
+      onEnd(celebration);
+    }
+
+    return () => {
+      active = false;
+      burst.reset();
+    };
+  }, [celebration, onEnd]);
 
   return (
-    <div
+    <canvas
+      ref={canvasRef}
       aria-hidden="true"
       data-celebration={celebration.kind}
-      className="pointer-events-none invisible absolute inset-0 z-10 overflow-hidden motion-safe:visible"
-    >
-      {Array.from({ length: count }, (_, index) => {
-        const angle = index * 2.4;
-        const distance =
-          (fullCard ? 90 : 24) + ((index * 13) % 31) * (fullCard ? 5 : 2);
-        const style = {
-          left,
-          top,
-          backgroundColor: colors[index % colors.length],
-          animation: `bingo-confetti ${duration}ms ${index * (fullCard ? 3 : 4)}ms cubic-bezier(0.16, 0.8, 0.32, 1) both`,
-          '--confetti-x': `${Math.cos(angle) * distance}px`,
-          '--confetti-y': `${Math.sin(angle) * distance + (fullCard ? 32 : 12)}px`,
-          '--confetti-spin': `${index % 2 ? 290 : -290}deg`,
-        } as CSSProperties;
-
-        return (
-          <span
-            key={index}
-            className={
-              fullCard
-                ? 'absolute h-2.5 w-1.5 rounded-sm'
-                : 'absolute h-1.5 w-1 rounded-sm'
-            }
-            style={style}
-            onAnimationEnd={index === count - 1 ? onEnd : undefined}
-          />
-        );
-      })}
-    </div>
+      className="pointer-events-none absolute inset-0 z-10 h-full w-full"
+    />
   );
 };

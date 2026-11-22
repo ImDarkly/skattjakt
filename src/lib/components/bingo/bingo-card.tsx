@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
 import { Item } from '@/lib/domain/items/types';
 import { BINGO_GRID_SIZE } from '@/lib/domain/card/generateCard';
 
@@ -93,6 +93,14 @@ export const BingoCard = ({
     });
   };
 
+  const clearCelebration = useCallback((finished: Celebration) => {
+    setMarks((current) =>
+      current.celebration === finished
+        ? { ...current, celebration: null }
+        : current
+    );
+  }, []);
+
   const handleSave = () => {
     if (editingTitle && editingTitle.trim()) {
       onRename?.(editingTitle);
@@ -184,13 +192,7 @@ export const BingoCard = ({
           <BingoConfetti
             key={celebration.sequence}
             celebration={celebration}
-            onEnd={() =>
-              setMarks((current) =>
-                current.celebration === celebration
-                  ? { ...current, celebration: null }
-                  : current
-              )
-            }
+            onEnd={clearCelebration}
           />
         )}
       </div>
