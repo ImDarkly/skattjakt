@@ -17,6 +17,7 @@ interface ConfirmationDialogProps {
   description: string;
   onConfirm: () => void;
   confirmLabel?: string;
+  variant?: 'default' | 'destructive';
 }
 
 export default function ConfirmationDialog({
@@ -25,6 +26,7 @@ export default function ConfirmationDialog({
   description,
   onConfirm,
   confirmLabel = 'Confirm',
+  variant = 'default',
 }: ConfirmationDialogProps) {
   return (
     <AlertDialog>
@@ -36,7 +38,7 @@ export default function ConfirmationDialog({
         </AlertDialogHeader>
         <AlertDialogFooter>
           <AlertDialogCancel>Cancel</AlertDialogCancel>
-          <AlertDialogAction onClick={onConfirm}>
+          <AlertDialogAction variant={variant} onClick={onConfirm}>
             {confirmLabel}
           </AlertDialogAction>
         </AlertDialogFooter>

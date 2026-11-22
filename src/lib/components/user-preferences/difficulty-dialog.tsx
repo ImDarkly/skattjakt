@@ -1,4 +1,5 @@
-import { useEffect, useState } from 'react';
+import { type ComponentProps, useEffect, useState } from 'react';
+import { BINGO_GRID_SIZE } from '@/lib/domain/card/generateCard';
 import { useBoundStore } from '@/lib/zustand/store';
 import {
   DialogContent,
@@ -7,19 +8,22 @@ import {
   DialogTitle,
   DialogClose,
 } from '../ui/dialog';
-import { Slider } from '../ui/slider';
+import { ToggleGroup, ToggleGroupItem } from '../ui/toggle-group';
 import { Input } from '../ui/input';
 import { Label } from '../ui/label';
 import { Switch } from '../ui/switch';
 import { Button } from '../ui/button';
 
+const PRESET_LABELS = ['Easy', 'Normal', 'Hard'];
 const PRESETS = [
   { rare: 2, epic: 0 },
   { rare: 4, epic: 1 },
   { rare: 8, epic: 2 },
 ];
 
-export function DifficultyDialog() {
+export function DifficultyDialog({
+  onCloseAutoFocus,
+}: Pick<ComponentProps<typeof DialogContent>, 'onCloseAutoFocus'>) {
   const { raritySlots, setRaritySlots } = useBoundStore();
   const currentPresetIndex = PRESETS.findIndex(
     (p) => p.rare === raritySlots.rare && p.epic === raritySlots.epic
@@ -29,14 +33,9 @@ export function DifficultyDialog() {
 
   useEffect(() => {
     if (!isAdvanced && currentPresetIndex === -1) {
-      setSliderValue(1);
       setRaritySlots(PRESETS[1]);
     }
   }, [isAdvanced, currentPresetIndex, setRaritySlots]);
-
-  const [sliderValue, setSliderValue] = useState(
-    currentPresetIndex === -1 ? 1 : currentPresetIndex
-  );
 
   const handleModeToggle = (checked: boolean) => {
     setIsAdvanced(checked);
@@ -53,21 +52,14 @@ export function DifficultyDialog() {
           closestIndex = index;
         }
       });
-      setSliderValue(closestIndex);
       setRaritySlots(PRESETS[closestIndex]);
     }
-  };
-
-  const handleSliderChange = (value: number[]) => {
-    const index = value[0];
-    setSliderValue(index);
-    setRaritySlots(PRESETS[index]);
   };
 
   const handleAdvancedChange = (key: 'rare' | 'epic', value: number) => {
     const newSlots = { ...raritySlots, [key]: value };
     if (
-      newSlots.rare + newSlots.epic <= 25 &&
+      newSlots.rare + newSlots.epic <= BINGO_GRID_SIZE &&
       newSlots.rare >= 0 &&
       newSlots.epic >= 0
     ) {
@@ -75,13 +67,13 @@ export function DifficultyDialog() {
     }
   };
 
-  const common = 25 - raritySlots.rare - raritySlots.epic;
+  const common = BINGO_GRID_SIZE - raritySlots.rare - raritySlots.epic;
 
   return (
-    <DialogContent>
+    <DialogContent onCloseAutoFocus={onCloseAutoFocus}>
       <DialogHeader>
         <DialogTitle>Difficulty</DialogTitle>
-        <DialogDescription>Adjust rarity distribution.</DialogDescription>
+        <DialogDescription>Set rarity targets for new cards.</DialogDescription>
       </DialogHeader>
 
       <div className="flex items-center space-x-2">
@@ -92,18 +84,37 @@ export function DifficultyDialog() {
 
       {!isAdvanced ? (
         <div className="space-y-2">
-          <Slider
-            value={[sliderValue]}
-            min={0}
-            max={2}
-            step={1}
-            onValueChange={handleSliderChange}
-          />
-          <div className="flex justify-between px-1 text-xs text-muted-foreground">
-            <span>Easy</span>
-            <span>Normal</span>
-            <span>Hard</span>
-          </div>
+          <ToggleGroup
+            aria-label="Difficulty preset"
+            className="grid grid-cols-3 pb-1"
+            type="single"
+            value={String(currentPresetIndex)}
+            onValueChange={(value) => {
+              if (value) setRaritySlots(PRESETS[Number(value)]);
+            }}
+          >
+            {PRESET_LABELS.map((label, index) => (
+              <ToggleGroupItem
+                key={label}
+                value={String(index)}
+                className="h-10"
+              >
+                {label}
+              </ToggleGroupItem>
+            ))}
+          </ToggleGroup>
+          <dl className="grid grid-cols-3 gap-2 pt-2 text-center">
+            {[
+              ['Common', common],
+              ['Rare', raritySlots.rare],
+              ['Epic', raritySlots.epic],
+            ].map(([label, count]) => (
+              <div key={label} className="rounded-md bg-secondary p-2">
+                <dt className="text-xs text-muted-foreground">{label}</dt>
+                <dd className="text-lg font-semibold">{count}</dd>
+              </div>
+            ))}
+          </dl>
         </div>
       ) : (
         <div className="space-y-4">

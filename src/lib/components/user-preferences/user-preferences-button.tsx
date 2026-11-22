@@ -1,4 +1,5 @@
-import { Icon } from '@iconify/react/dist/iconify.js';
+import { useRef, useState } from 'react';
+import { Settings } from 'lucide-react';
 import { Button } from '../ui/button';
 import {
   DropdownMenu,
@@ -13,41 +14,58 @@ import {
 } from '../ui/dropdown-menu';
 import { Link } from 'react-router-dom';
 import { ModeToggleItems } from '../ui/mode-toggle';
-import { Dialog, DialogTrigger } from '../ui/dialog';
+import { Dialog } from '../ui/dialog';
 import { DifficultyDialog } from './difficulty-dialog';
 
 export default function UserPreferencesButton() {
-  return (
-    <DropdownMenu>
-      <DropdownMenuTrigger asChild>
-        <Button variant="secondary" size="icon">
-          <Icon width={24} icon="heroicons:cog-8-tooth-16-solid" />
-        </Button>
-      </DropdownMenuTrigger>
-      <DropdownMenuContent>
-        <DropdownMenuGroup>
-          <Dialog>
-            <DialogTrigger asChild>
-              <DropdownMenuItem onSelect={(e) => e.preventDefault()}>
-                Difficulty
-              </DropdownMenuItem>
-            </DialogTrigger>
-            <DifficultyDialog />
-          </Dialog>
+  const [difficultyOpen, setDifficultyOpen] = useState(false);
+  const settingsRef = useRef<HTMLButtonElement>(null);
 
-          <DropdownMenuItem asChild>
-            <Link to="/items">Edit Items</Link>
-          </DropdownMenuItem>
-          <DropdownMenuSub>
-            <DropdownMenuSubTrigger>Choose Theme</DropdownMenuSubTrigger>
-            <DropdownMenuPortal>
-              <DropdownMenuSubContent>
-                <ModeToggleItems />
-              </DropdownMenuSubContent>
-            </DropdownMenuPortal>
-          </DropdownMenuSub>
-        </DropdownMenuGroup>
-      </DropdownMenuContent>
-    </DropdownMenu>
+  return (
+    <>
+      <DropdownMenu>
+        <DropdownMenuTrigger asChild>
+          <Button
+            ref={settingsRef}
+            variant="secondary"
+            size="icon"
+            aria-label="Settings"
+          >
+            <Settings size={20} aria-hidden="true" />
+          </Button>
+        </DropdownMenuTrigger>
+        <DropdownMenuContent
+          onCloseAutoFocus={(event) => {
+            if (difficultyOpen) event.preventDefault();
+          }}
+        >
+          <DropdownMenuGroup>
+            <DropdownMenuItem onSelect={() => setDifficultyOpen(true)}>
+              Difficulty
+            </DropdownMenuItem>
+
+            <DropdownMenuItem asChild>
+              <Link to="/items">Edit Items</Link>
+            </DropdownMenuItem>
+            <DropdownMenuSub>
+              <DropdownMenuSubTrigger>Choose Theme</DropdownMenuSubTrigger>
+              <DropdownMenuPortal>
+                <DropdownMenuSubContent>
+                  <ModeToggleItems />
+                </DropdownMenuSubContent>
+              </DropdownMenuPortal>
+            </DropdownMenuSub>
+          </DropdownMenuGroup>
+        </DropdownMenuContent>
+      </DropdownMenu>
+      <Dialog open={difficultyOpen} onOpenChange={setDifficultyOpen}>
+        <DifficultyDialog
+          onCloseAutoFocus={(event) => {
+            event.preventDefault();
+            settingsRef.current?.focus();
+          }}
+        />
+      </Dialog>
+    </>
   );
 }

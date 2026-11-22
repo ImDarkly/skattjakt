@@ -26,7 +26,7 @@ export default function CardHistoryItem({
     }))
   );
   return (
-    <Card className="w-fit">
+    <Card className="w-full max-w-xl p-4 sm:p-6">
       <CardContent>
         <BingoCard
           disableCells
@@ -48,6 +48,7 @@ export default function CardHistoryItem({
           description="This action will remove card forever and can't be undone"
           onConfirm={onDelete}
           confirmLabel="Delete"
+          variant="destructive"
         />
         <Button className="w-full" variant="secondary" onClick={onOpen}>
           Open

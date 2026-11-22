@@ -14,7 +14,9 @@ export default function SearchItems() {
     <Input
       onChange={(e) => handleSearch(e)}
       value={query ?? ''}
-      placeholder="Search..."
+      type="search"
+      aria-label="Search items"
+      placeholder="Search items"
     />
   );
 }

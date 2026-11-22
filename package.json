@@ -34,6 +34,7 @@
     "@radix-ui/react-toggle-group": "^1.1.11",
     "@radix-ui/react-tooltip": "^1.0.7",
     "@tanstack/react-virtual": "^3.13.18",
+    "canvas-confetti": "^1.9.4",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "lucide-react": "^0.302.0",
@@ -51,6 +52,7 @@
   "devDependencies": {
     "@iconify/tailwind": "^0.1.4",
     "@tailwindcss/typography": "^0.5.10",
+    "@types/canvas-confetti": "^1.9.0",
     "@types/node": "^20.11.17",
     "@types/react": "18.2.45",
     "@types/react-dom": "^18.2.19",

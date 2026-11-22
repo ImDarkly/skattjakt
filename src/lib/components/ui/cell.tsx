@@ -1,5 +1,5 @@
 import { Item } from '@/lib/domain/items/types';
-import { Icon } from '@iconify/react';
+import { Check } from 'lucide-react';
 
 type CellProps = {
   item: Item;
@@ -14,18 +14,21 @@ const rarityRingColors: Record<Item['rarity'], string> = {
   epic: 'ring-[#534AB7] dark:ring-[#534AB7]',
 };
 
-export const Cell = ({ item, checked, onClick, disabled }: CellProps) => {
+export const Cell = ({
+  item,
+  checked = false,
+  onClick,
+  disabled,
+}: CellProps) => {
   const { id, name } = item;
 
   return (
     <button
       type="button"
       onClick={onClick}
-      onKeyDown={(e) => {
-        if (e.key === 'Enter' || e.key === ' ') {
-          onClick();
-        }
-      }}
+      disabled={disabled}
+      aria-label={name}
+      aria-pressed={disabled ? undefined : checked}
       className={`group/cell relative ${
         disabled
           ? 'pointer-events-none'
@@ -40,9 +43,9 @@ export const Cell = ({ item, checked, onClick, disabled }: CellProps) => {
           alt={name}
           width={16}
           height={16}
-          className="w-full transition-transform group-hover/cell:scale-0"
+          className="w-full transition-transform group-hover/cell:scale-0 group-focus-visible/cell:scale-0"
         />
-        <div className="group-hover/cell invisible absolute left-2/4 top-2/4 flex h-full w-full -translate-x-2/4 -translate-y-2/4 transform items-center justify-center break-words bg-card text-center opacity-0 ring-2 ring-inset ring-stone-300 group-hover/cell:visible group-hover/cell:rounded-2xl group-hover/cell:opacity-100 dark:ring-stone-600">
+        <div className="group-hover/cell invisible absolute left-2/4 top-2/4 flex h-full w-full -translate-x-2/4 -translate-y-2/4 transform items-center justify-center break-words bg-card text-center opacity-0 ring-2 ring-inset ring-stone-300 group-hover/cell:visible group-hover/cell:rounded-2xl group-hover/cell:opacity-100 group-focus-visible/cell:visible group-focus-visible/cell:rounded-2xl group-focus-visible/cell:opacity-100 dark:ring-stone-600">
           <p
             key={id}
             className="flex h-full w-full items-center justify-center p-1 text-xs text-secondary-foreground md:text-sm xl:text-base"
@@ -60,10 +63,7 @@ export const Cell = ({ item, checked, onClick, disabled }: CellProps) => {
           key={id}
           className="flex h-full w-full items-center justify-center p-1 text-xs text-secondary-foreground md:text-sm xl:text-base"
         >
-          <Icon
-            icon={checked ? 'line-md:confirm' : ''}
-            className="text-5xl sm:text-7xl"
-          />
+          {checked && <Check aria-hidden="true" className="h-1/2 w-1/2" />}
         </p>
       </div>
     </button>

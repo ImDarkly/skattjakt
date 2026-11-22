@@ -1,9 +1,32 @@
-export default function CardsHistoryEmptyState() {
+import { Link } from 'react-router-dom';
+import { Button } from '../ui/button';
+
+interface CardsHistoryEmptyStateProps {
+  onShowAll?: () => void;
+}
+
+export default function CardsHistoryEmptyState({
+  onShowAll,
+}: CardsHistoryEmptyStateProps) {
   return (
-    <p className="max-w-xl text-center">
-      An <span className="text-violet-500 dark:text-violet-400">Enderman</span>{' '}
-      was here. Your cards have been teleported to another dimension. Go play
-      some rounds to get them back!
-    </p>
+    <div className="mx-4 flex w-full max-w-xl flex-col items-center gap-3 px-4 py-8 text-center">
+      <h2 className="text-xl font-semibold">
+        {onShowAll ? 'No favorites yet' : 'No cards yet'}
+      </h2>
+      <p className="text-sm text-muted-foreground">
+        {onShowAll
+          ? 'Star a card to keep it handy for your next game.'
+          : 'Cards you generate or open from a shared link will appear here.'}
+      </p>
+      {onShowAll ? (
+        <Button variant="secondary" onClick={onShowAll}>
+          Show all cards
+        </Button>
+      ) : (
+        <Button asChild>
+          <Link to="/">Go to generator</Link>
+        </Button>
+      )}
+    </div>
   );
 }
