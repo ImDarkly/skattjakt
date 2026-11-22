@@ -29,6 +29,8 @@ export default function CardHistoryList({ cards }: CardHistoryListProps) {
       <VirtualizedList
         count={cards.length}
         estimateSize={596}
+        measureRows
+        gap={16}
         renderItem={(index) => {
           const { card, originalIndex } = cards[index];
           return (

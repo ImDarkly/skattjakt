@@ -26,7 +26,7 @@ export default function CardHistoryItem({
     }))
   );
   return (
-    <Card className="w-fit">
+    <Card className="w-full max-w-xl p-4 sm:p-6">
       <CardContent>
         <BingoCard
           disableCells
