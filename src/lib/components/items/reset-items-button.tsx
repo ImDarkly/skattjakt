@@ -14,10 +14,10 @@ export default function ResetItemsButton() {
         </Button>
       }
       title="Reset all items?"
-      description="This action will remove all current items and restore the list to
-      its initial state. The change cannot be undone."
+      description="This removes custom items and restores default eligibility and rarity for the item list."
       onConfirm={resetItems}
       confirmLabel="Reset"
+      variant="destructive"
     />
   );
 }

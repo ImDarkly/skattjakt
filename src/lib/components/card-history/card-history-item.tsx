@@ -48,6 +48,7 @@ export default function CardHistoryItem({
           description="This action will remove card forever and can't be undone"
           onConfirm={onDelete}
           confirmLabel="Delete"
+          variant="destructive"
         />
         <Button className="w-full" variant="secondary" onClick={onOpen}>
           Open
