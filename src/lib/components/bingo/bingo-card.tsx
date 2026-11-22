@@ -4,7 +4,7 @@ import { BINGO_GRID_SIZE } from '@/lib/domain/card/generateCard';
 
 import { Cell } from '../ui/cell';
 import { Button } from '../ui/button';
-import { Icon } from '@iconify/react/dist/iconify.js';
+import { Check, Pencil, Star } from 'lucide-react';
 import { Input } from '../ui/input';
 
 const gridSide = Math.sqrt(BINGO_GRID_SIZE);
@@ -100,6 +100,9 @@ export const BingoCard = ({
               <Button
                 variant={editingTitle !== null ? 'default' : 'secondary'}
                 size="icon"
+                aria-label={
+                  editingTitle !== null ? 'Save title' : 'Rename card'
+                }
                 onClick={(e) => {
                   e.stopPropagation();
                   if (editingTitle !== null) {
@@ -109,14 +112,11 @@ export const BingoCard = ({
                   }
                 }}
               >
-                <Icon
-                  className="text-2xl"
-                  icon={
-                    editingTitle !== null
-                      ? 'heroicons:check-16-solid'
-                      : 'heroicons:pencil-16-solid'
-                  }
-                />
+                {editingTitle !== null ? (
+                  <Check size={20} aria-hidden="true" />
+                ) : (
+                  <Pencil size={20} aria-hidden="true" />
+                )}
               </Button>
             )}
             {onToggleFavourite && (
@@ -126,11 +126,10 @@ export const BingoCard = ({
                 onClick={onToggleFavourite}
                 aria-label={isFavourite ? 'Unfavourite card' : 'Favourite card'}
               >
-                <Icon
-                  className="text-2xl"
-                  icon={
-                    isFavourite ? 'heroicons:star-16-solid' : 'heroicons:star'
-                  }
+                <Star
+                  size={20}
+                  aria-hidden="true"
+                  fill={isFavourite ? 'currentColor' : 'none'}
                 />
               </Button>
             )}

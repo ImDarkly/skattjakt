@@ -1,4 +1,5 @@
 /// <reference types="vite-plugin-svgr/client" />;
+import { Layers } from 'lucide-react';
 import { Helmet } from 'react-helmet';
 import { Link, useSearchParams } from 'react-router-dom';
 
@@ -15,7 +16,7 @@ import { useEffect, useMemo } from 'react';
 import { Item } from '@/lib/domain/items/types';
 import { Button } from '@/lib/components/ui/button';
 import IconLink from '@/lib/components/ui/icon-link';
-import UserPreferencesButton from '@/lib/components/user-preferences/user-preferences-button';
+import { ModeToggle } from '@/lib/components/ui/mode-toggle';
 
 export default function Home() {
   const [searchParams] = useSearchParams();
@@ -82,19 +83,16 @@ export default function Home() {
         title="Skattjakt"
         right={
           hideControls ? (
-            <UserPreferencesButton />
+            <ModeToggle />
           ) : (
-            <IconLink
-              to="/cards-history"
-              icon="heroicons-rectangle-stack-16-solid"
-            />
+            <IconLink to="/cards-history" icon={Layers} label="Card history" />
           )
         }
       />
       <div className="z-0 flex h-full w-full max-w-xl  flex-1 flex-col items-center justify-center gap-6 px-4">
         {invalidSharedCard ? (
           <div className="space-y-3 py-8 text-center">
-            <h1 className="text-xl font-semibold">This card is unavailable</h1>
+            <h2 className="text-xl font-semibold">This card is unavailable</h2>
             <p className="text-sm text-muted-foreground">
               The link may be incomplete or contain items missing from your
               list.

@@ -1,4 +1,4 @@
-import { Icon } from '@iconify/react/dist/iconify.js';
+import { ArrowLeft } from 'lucide-react';
 import { Button } from './button';
 import { useNavigate } from 'react-router-dom';
 
@@ -10,8 +10,13 @@ export default function GoBackButton() {
   };
 
   return (
-    <Button onClick={goBack} size="icon" variant="secondary">
-      <Icon width={24} icon="heroicons:arrow-left-16-solid" />
+    <Button
+      onClick={goBack}
+      size="icon"
+      variant="secondary"
+      aria-label="Go back"
+    >
+      <ArrowLeft size={20} aria-hidden="true" />
     </Button>
   );
 }

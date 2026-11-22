@@ -1,6 +1,6 @@
 import { useBoundStore } from '@/lib/zustand/store';
 import { Button } from '../ui/button';
-import { Icon } from '@iconify/react/dist/iconify.js';
+import { RotateCcw } from 'lucide-react';
 import ConfirmationDialog from '../blocks/confirmation-dialog';
 
 export default function ResetItemsButton() {
@@ -9,8 +9,8 @@ export default function ResetItemsButton() {
   return (
     <ConfirmationDialog
       trigger={
-        <Button size="icon" variant="destructive">
-          <Icon width={24} icon="heroicons:arrow-path-16-solid" />
+        <Button size="icon" variant="destructive" aria-label="Reset items">
+          <RotateCcw size={20} aria-hidden="true" />
         </Button>
       }
       title="Reset all items?"

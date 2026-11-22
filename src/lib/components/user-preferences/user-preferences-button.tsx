@@ -1,4 +1,4 @@
-import { Icon } from '@iconify/react/dist/iconify.js';
+import { Settings } from 'lucide-react';
 import { Button } from '../ui/button';
 import {
   DropdownMenu,
@@ -20,8 +20,8 @@ export default function UserPreferencesButton() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="secondary" size="icon">
-          <Icon width={24} icon="heroicons:cog-8-tooth-16-solid" />
+        <Button variant="secondary" size="icon" aria-label="Settings">
+          <Settings size={20} aria-hidden="true" />
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent>

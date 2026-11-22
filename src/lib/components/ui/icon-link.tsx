@@ -1,17 +1,18 @@
 import { Link } from 'react-router-dom';
 import { Button } from './button';
-import { Icon } from '@iconify/react/dist/iconify.js';
+import type { LucideIcon } from 'lucide-react';
 
 interface IconLinkProps {
   to: string;
-  icon: string;
+  icon: LucideIcon;
+  label: string;
 }
 
-export default function IconLink({ to, icon }: IconLinkProps) {
+export default function IconLink({ to, icon: Icon, label }: IconLinkProps) {
   return (
     <Button size="icon" variant="secondary" asChild>
-      <Link to={to}>
-        <Icon width={24} icon={icon} />
+      <Link to={to} aria-label={label}>
+        <Icon size={20} aria-hidden="true" />
       </Link>
     </Button>
   );

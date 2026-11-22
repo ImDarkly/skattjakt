@@ -1,5 +1,5 @@
 import { Item } from '@/lib/domain/items/types';
-import { Icon } from '@iconify/react';
+import { Check } from 'lucide-react';
 
 type CellProps = {
   item: Item;
@@ -60,10 +60,7 @@ export const Cell = ({ item, checked, onClick, disabled }: CellProps) => {
           key={id}
           className="flex h-full w-full items-center justify-center p-1 text-xs text-secondary-foreground md:text-sm xl:text-base"
         >
-          <Icon
-            icon={checked ? 'line-md:confirm' : ''}
-            className="text-5xl sm:text-7xl"
-          />
+          {checked && <Check aria-hidden="true" className="h-1/2 w-1/2" />}
         </p>
       </div>
     </button>
