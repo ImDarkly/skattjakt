@@ -75,20 +75,18 @@ body {
   background-color: hsl(var(--primary));
 }
 
-.bingo-progress {
-  background-color: hsl(var(--secondary));
-}
-
-.bingo-progress::-webkit-progress-bar {
-  background-color: hsl(var(--secondary));
-}
-
-.bingo-progress::-webkit-progress-value {
-  background-color: hsl(var(--primary));
-}
-
-.bingo-progress::-moz-progress-bar {
-  background-color: hsl(var(--primary));
+@keyframes bingo-confetti {
+  0% {
+    transform: translate(0, 0) rotate(0);
+  }
+  65% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(var(--confetti-x), var(--confetti-y))
+      rotate(var(--confetti-spin));
+  }
 }
 
 .style-preserve {

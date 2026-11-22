@@ -6,6 +6,7 @@ import { Cell } from '../ui/cell';
 import { Button } from '../ui/button';
 import { Check, Pencil, Star } from 'lucide-react';
 import { Input } from '../ui/input';
+import { BingoConfetti, type Celebration } from './bingo-confetti';
 
 const gridSide = Math.sqrt(BINGO_GRID_SIZE);
 const gridIndices = Array.from({ length: gridSide }, (_, index) => index);
@@ -37,13 +38,19 @@ export const BingoCard = ({
   onToggleFavourite,
   onRename,
 }: BingoCardProps) => {
-  const [marks, setMarks] = useState({ items, ids: new Set<number>() });
+  const [marks, setMarks] = useState<{
+    items: Item[];
+    ids: Set<number>;
+    celebration: Celebration | null;
+    sequence: number;
+  }>({ items, ids: new Set(), celebration: null, sequence: 0 });
   const [editingTitle, setEditingTitle] = useState<string | null>(null);
 
   const markedIds = marks.items === items ? marks.ids : undefined;
-  const markedCount = markedIds?.size ?? 0;
+  const celebration = marks.items === items ? marks.celebration : null;
+  const isFullCard = items.length === BINGO_GRID_SIZE;
   const completedLines =
-    markedIds && items.length === BINGO_GRID_SIZE
+    markedIds && isFullCard
       ? bingoLines.filter((line) => line.every((index) => markedIds.has(index)))
           .length
       : 0;
@@ -51,13 +58,38 @@ export const BingoCard = ({
   const toggleMark = (index: number) => {
     if (disableCells) return;
     setMarks((previous) => {
-      const ids = new Set(previous.items === items ? previous.ids : []);
-      if (ids.has(index)) {
-        ids.delete(index);
-      } else {
-        ids.add(index);
+      const sameCard = previous.items === items;
+      const ids = new Set(sameCard ? previous.ids : []);
+      const currentCelebration = sameCard ? previous.celebration : null;
+
+      if (ids.delete(index)) {
+        return { ...previous, items, ids, celebration: currentCelebration };
       }
-      return { items, ids };
+
+      ids.add(index);
+      const finishedCard = isFullCard && ids.size === BINGO_GRID_SIZE;
+      const finishedLine =
+        isFullCard &&
+        bingoLines.some(
+          (line) => line.includes(index) && line.every((cell) => ids.has(cell))
+        );
+
+      if (!finishedCard && !finishedLine) {
+        return { ...previous, items, ids, celebration: currentCelebration };
+      }
+
+      const sequence = previous.sequence + 1;
+      return {
+        items,
+        ids,
+        sequence,
+        celebration: {
+          sequence,
+          kind: finishedCard ? 'card' : 'line',
+          x: (((index % gridSide) + 0.5) / gridSide) * 100,
+          y: ((Math.floor(index / gridSide) + 0.5) / gridSide) * 100,
+        },
+      };
     });
   };
 
@@ -136,62 +168,40 @@ export const BingoCard = ({
           </div>
         </div>
       )}
-      {!disableCells && items.length > 0 && (
-        <div className="space-y-2 pb-1 text-sm">
-          <div
-            className="flex items-center justify-between gap-2"
-            role="status"
-          >
-            <span className="text-muted-foreground">
-              {markedCount} of {items.length} marked
-            </span>
-            {completedLines > 0 && (
-              <span className="font-semibold">
-                Bingo! {completedLines}{' '}
-                {completedLines === 1 ? 'line' : 'lines'}
-              </span>
-            )}
-          </div>
-          <progress
-            className="bingo-progress block h-2 w-full overflow-hidden rounded-full"
-            aria-label="Card progress"
-            max={items.length}
-            value={markedCount}
-          />
+      <div className="relative">
+        <div className="grid aspect-square w-full grid-cols-5 grid-rows-5 gap-2">
+          {items.map((item, index) => (
+            <Cell
+              key={index}
+              item={item}
+              checked={markedIds?.has(index)}
+              onClick={() => toggleMark(index)}
+              disabled={disableCells}
+            />
+          ))}
         </div>
-      )}
-      <div className="grid aspect-square w-full grid-cols-5 grid-rows-5 gap-2">
-        {items.map((item, index) => (
-          <Cell
-            key={index}
-            item={item}
-            checked={markedIds?.has(index)}
-            onClick={() => toggleMark(index)}
-            disabled={disableCells}
+        {celebration && (
+          <BingoConfetti
+            key={celebration.sequence}
+            celebration={celebration}
+            onEnd={() =>
+              setMarks((current) =>
+                current.celebration === celebration
+                  ? { ...current, celebration: null }
+                  : current
+              )
+            }
           />
-        ))}
+        )}
       </div>
-      {!disableCells && items.length > 0 && (
-        <details className="rounded-md border bg-background text-sm">
-          <summary className="cursor-pointer rounded-md px-3 py-2 font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-ring">
-            Item checklist
-          </summary>
-          <ul className="grid gap-1 border-t p-2 sm:grid-cols-2">
-            {items.map((item, index) => (
-              <li key={index}>
-                <label className="flex min-h-10 cursor-pointer items-center gap-2 rounded-md px-2 py-1 hover:bg-accent">
-                  <input
-                    type="checkbox"
-                    checked={markedIds?.has(index) ?? false}
-                    onChange={() => toggleMark(index)}
-                    className="h-4 w-4 shrink-0 accent-primary"
-                  />
-                  <span>{item.name}</span>
-                </label>
-              </li>
-            ))}
-          </ul>
-        </details>
+      {!disableCells && (
+        <div className="sr-only" role="status">
+          {isFullCard && markedIds?.size === BINGO_GRID_SIZE
+            ? 'Card complete!'
+            : completedLines > 0
+              ? `Bingo! ${completedLines} ${completedLines === 1 ? 'line' : 'lines'} completed.`
+              : ''}
+        </div>
       )}
     </div>
   );
