@@ -75,6 +75,22 @@ body {
   background-color: hsl(var(--primary));
 }
 
+.bingo-progress {
+  background-color: hsl(var(--secondary));
+}
+
+.bingo-progress::-webkit-progress-bar {
+  background-color: hsl(var(--secondary));
+}
+
+.bingo-progress::-webkit-progress-value {
+  background-color: hsl(var(--primary));
+}
+
+.bingo-progress::-moz-progress-bar {
+  background-color: hsl(var(--primary));
+}
+
 .style-preserve {
   transform-style: preserve-3d;
 }
